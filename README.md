@@ -52,4 +52,4 @@ pip install zstandard
 
 ## Contributing
 
-If you have questions or want to help archive the data from April to June 2023, DM me on [reddit](reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377). Alternatively you can open an issue or pull request.
+If you have questions or want to help archive the data from April to June 2023, DM me on [reddit](https://reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377). Alternatively you can open an issue or pull request.
