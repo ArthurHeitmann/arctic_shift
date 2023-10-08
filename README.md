@@ -27,6 +27,8 @@ With the helper scripts in this repository you can quickly get started. If you d
 
 For using the helper scripts:
 
+(You need at least Python 3.10)
+
 1. Clone this repository
 
 ```bash

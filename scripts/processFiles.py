@@ -1,4 +1,7 @@
-
+import sys
+version = sys.version_info
+if version.major < 3 or (version.major == 3 and version.minor < 10):
+	raise RuntimeError("This script requires Python 3.10 or higher")
 import os
 from typing import Any, Iterable
 
@@ -18,10 +21,8 @@ def processFile(path: str):
 		print(f"Skipping unknown file {path}")
 		return
 	for i, (lineLength, row) in enumerate(jsonStream):
-		if i % 10000 == 0:
+		if i % 10_000 == 0:
 			print(f"\rRow {i}", end="")
-		if i > 10_000:
-			break
 		processRow(row)
 	print(f"\rRow {i+1}")
 
