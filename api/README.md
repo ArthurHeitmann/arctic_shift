@@ -59,7 +59,7 @@ Comment search parameters:
 |-------------|-----------------------------|---------|---------------------------------------------------------------|
 | `body`      | `string` (full text search) |         | Only in use with `author`, `link_id` or `parent_id` parameter |
 | `link_id`   | `ID`                        |         | ID of post                                                    |
-| `parent_id` | `ID`\|`null`                |         | `null` means top level comment                                |
+| `parent_id` | `ID`\|empty                |         | empty means top level comment                                |
 
 ## Comments tree
 
