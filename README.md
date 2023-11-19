@@ -17,6 +17,10 @@ These dumps are available thanks to Pushshift.
 - [2023-02 (academic torrents)](https://academictorrents.com/details/9971c68d2909843a100ae955c6ab6de3e09c04a1)
 - [2023-03 (archive.org)](https://archive.org/details/pushshift-reddit-2023-03/)
 
+## API
+
+Depending on your use case, you can try my (limited) [API](./api).
+
 ## Usage
 
 First download one more dumps from the above links.

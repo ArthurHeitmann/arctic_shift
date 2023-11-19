@@ -28,7 +28,7 @@ Retrieve things based on their ID
 - `/api/posts/search`
 - `/api/comments/search`
 - Examples:
-	- [`/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan)
+	- [`/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan&limit=10`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan&limit=10)
 
 Search for posts or comments
 
@@ -41,7 +41,7 @@ Common parameters:
 | `after`     | `Date`          |         |                                                                  |
 | `before`    | `Date`          |         |                                                                  |
 | `limit`     | `int` (1 - 100) | 25      |                                                                  |
-| `sort`      | `asc`\|`desc`   |         | Results are sorted by `created_utc`                              |
+| `sort`      | `asc` \| `desc` |         | Results are sorted by `created_utc`                              |
 | `md2html`   | `boolean`       | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field |
 
 Post search parameters:
@@ -59,7 +59,7 @@ Comment search parameters:
 |-------------|-----------------------------|---------|---------------------------------------------------------------|
 | `body`      | `string` (full text search) |         | Only in use with `author`, `link_id` or `parent_id` parameter |
 | `link_id`   | `ID`                        |         | ID of post                                                    |
-| `parent_id` | `ID`\|empty                |         | empty means top level comment                                |
+| `parent_id` | `ID` \| empty               |         | empty means top level comment                                |
 
 ## Comments tree
 
@@ -73,14 +73,14 @@ If `limit` is exceeded, comments are collapsed. Collapsed comments use `"kind": 
 containing the IDs of the comments that are collapsed, the same way the reddit API does it. `start_breadth` and `start_depth`
 decrease by 1 for each depth level. Comments outside the current breadth or depth are collapsed.
 
-| Parameter       | Type         | Default | Notes                                            |
-|-----------------|--------------|---------|--------------------------------------------------|
-| `link_id`       | `ID`         |         | ID of post (required)                            |
-| `parent_id`     | `ID`\| empty |         | empty means top level comment (`parent_id=`)     |
-| `limit`         | `int` (>= 1) | 50      | Something like 999999 returns all comments       |
-| `start_breadth` | `int` (>= 0) | 4       | For comment collapsing                           |
-| `start_depth`   | `int` (>= 0) | 4       | For comment collapsing                           |
-| `md2html`       | `boolean`    | `false` | If `true`, adds auto generated `body_html` field |
+| Parameter       | Type          | Default | Notes                                            |
+|-----------------|---------------|---------|--------------------------------------------------|
+| `link_id`       | `ID`          |         | ID of post (required)                            |
+| `parent_id`     | `ID` \| empty |         | empty means top level comment (`parent_id=`)     |
+| `limit`         | `int` (>= 1)  | 50      | Something like 999999 returns all comments       |
+| `start_breadth` | `int` (>= 0)  | 4       | For comment collapsing                           |
+| `start_depth`   | `int` (>= 0)  | 4       | For comment collapsing                           |
+| `md2html`       | `boolean`     | `false` | If `true`, adds auto generated `body_html` field |
 
 ## Aggregations
 
@@ -91,13 +91,13 @@ Aggregate results based on date, author or subreddit.
 
 All filtering related parameters from the search endpoints are supported.
 
-| Parameter   | Type                                 | Default                                              | Notes                                 |
-|-------------|--------------------------------------|------------------------------------------------------|---------------------------------------|
-| `aggregate` | `created_utc`\|`author`\|`subreddit` |                                                      |                                       |
-| `frequency` | `string` (interval)                  |                                                      | Required with `aggregate=created_utc` |
-| `limit`     | `int` (>= 1) \| empty                | empty                                                | empty means no limit (`limit=`)       |
-| `min_count` | `int` (>= 0)                         |                                                      |                                       |
-| `sort`      | `asc`\|`desc`                        | `asc` with `aggregate=created_utc`, otherwise `desc` |                                       |
+| Parameter   | Type                                     | Default                                              | Notes                                 |
+|-------------|------------------------------------------|------------------------------------------------------|---------------------------------------|
+| `aggregate` | `created_utc` \| `author` \| `subreddit` |                                                      |                                       |
+| `frequency` | `string` (interval)                      |                                                      | Required with `aggregate=created_utc` |
+| `limit`     | `int` (>= 1) \| empty                    | empty                                                | empty means no limit (`limit=`)       |
+| `min_count` | `int` (>= 0)                             |                                                      |                                       |
+| `sort`      | `asc` \| `desc`                          | `asc` with `aggregate=created_utc`, otherwise `desc` |                                       |
 
 ## User interactions data
 
@@ -117,18 +117,32 @@ As an interactions counts:
 - someone replied to author's post
 - someone replied to author's comment
 
-| Parameter   | Type         | Default | Notes    |
-|-------------|--------------|---------|----------|
-| `author`    | `string`     |         | required |
-| `subreddit` | `string`     |         |          |
-| `after`     | `Date`       |         |          |
-| `before`    | `Date`       |         |          |
-| `limit`     | `int` (>= 1) |         |          |
-| `min_count` | `int` (>= 0) |         |          |
+| Parameter   | Type                  | Default | Notes                           |
+|-------------|-----------------------|---------|---------------------------------|
+| `author`    | `string`              |         | required                        |
+| `subreddit` | `string`              |         |                                 |
+| `after`     | `Date`                |         |                                 |
+| `before`    | `Date`                |         |                                 |
+| `min_count` | `int` (>= 0)          |         | Minimum number of interactions  |
+| `limit`     | `int` (>= 1) \| empty | 100     | empty means no limit (`limit=`) |
 
 ### User to subreddit interactions
 
 - `/api/user_interactions/subreddits`
+
+See in which subreddits a user has been active. Similar to the above `/api/posts/search/aggregate`
+and `/api/comments/search/aggregate` endpoints, but both are combined into one, with weighting and
+limiting options.
+
+| Parameter         | Type                  | Default | Notes                           |
+|-------------------|-----------------------|---------|---------------------------------|
+| `author`          | `string`              |         | required                        |
+| `weight_posts`    | `float`               | 1.0     |                                 |
+| `weight_comments` | `float`               | 1.0     |                                 |
+| `before`          | `Date`                |         |                                 |
+| `after`           | `Date`                |         |                                 |
+| `min_count`       | `int` (>= 0)          |         | Minimum number of interactions  |
+| `limit`           | `int` (>= 1) \| empty | 100     | empty means no limit (`limit=`) |
 
 ## Data type notes
 
@@ -138,6 +152,10 @@ Base 36 encoded number. Can optionally start with a t3_/t1_ prefix for posts/com
 The ID is part of the link to a post/comment. (reddit.com/.../comments/<post_id>/.../<comment_id>).
 
 Example valid IDs: `sphocx`, `t3_sphocx`, `dppum98`, `t1_dppum98`
+
+**Author and subreddit**
+
+If you include the `u/` or `r/` prefix, it will be ignored.
 
 **Date**
 
@@ -160,3 +178,16 @@ But in short:
 - `"Word1 Word2"` searches for `Word1` followed by `Word2`, possibly with other words in between
 - `Word1 OR Word2` searches for `Word1` or `Word2`
 - `Word1 -Word2` searches for `Word1` but not `Word2`
+
+## Other notes
+
+**Query timeout**
+
+If you receive the message `"Query timed out"`, you probably used a parameter combination that I haven't optimized.
+Try reducing the `limit` parameter or use a more specific filter (`after`, `before`, `subreddit`, `author`). This usually happens
+with `body`, `selftext` or `title` parameters.
+
+**Upvotes count and number of comments**
+
+The upvotes count and number of comments have usually not been updated since the post was created. This is because
+the post/comment was archived shortly after creation, and has not been updated since.
