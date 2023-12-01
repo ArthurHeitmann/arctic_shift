@@ -1,8 +1,11 @@
-
-import json
 import time
 import traceback
 from typing import Iterator
+try:
+	import orjson as json
+except ImportError:
+	import json
+	print("Recommended to install 'orjson' for faster JSON parsing")
 
 import zstandard
 
@@ -18,7 +21,7 @@ def getZstFileJsonStream(path: str, chunk_size=1024*1024*10) -> Iterator[tuple[i
 		for line in lines[:-1]:
 			try:
 				yield len(line), json.loads(line)
-			except json.decoder.JSONDecodeError:
+			except:
 				print("Error parsing line: " + line)
 				print("Current string: " + currentString)
 				traceback.print_exc()
@@ -43,7 +46,7 @@ def getZstFileJsonStream(path: str, chunk_size=1024*1024*10) -> Iterator[tuple[i
 	if len(currentString) > 0:
 		try:
 			yield len(currentString), json.loads(currentString)
-		except json.decoder.JSONDecodeError:
+		except:
 			print("Error parsing line: " + currentString)
 			print(traceback.format_exc())
 			pass
@@ -53,7 +56,7 @@ def getJsonFileJsonStream(path: str) -> Iterator[tuple[int, dict]]:
 		for line in f:
 			try:
 				yield len(line), json.loads(line)
-			except json.decoder.JSONDecodeError:
+			except:
 				print("Error parsing line: " + line)
 				traceback.print_exc()
 				continue
@@ -63,7 +66,7 @@ def getZstBlocksFileJsonStream(path: str) -> Iterator[tuple[int, dict]]:
 		for row in ZstBlocksFile.streamRows(f):
 			try:
 				yield len(row), json.loads(row.decode("utf-8", errors="replace"))
-			except json.decoder.JSONDecodeError:
+			except:
 				print("Error parsing line: " + str(row))
 				traceback.print_exc()
 				continue
