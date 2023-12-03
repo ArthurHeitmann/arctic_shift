@@ -50,12 +50,13 @@ Common parameters:
 
 Post search parameters:
 
-| Parameter  | Type                        | Default | Notes                                              |
-|------------|-----------------------------|---------|----------------------------------------------------|
-| `over_18`  | `boolean`                   |         |                                                    |
-| `spoiler`  | `boolean`                   |         |                                                    |
-| `selftext` | `string` (full text search) |         | Only in use with `author` or `subreddit` parameter |
-| `title`    | `string` (full text search) |         | Only in use with `author` or `subreddit` parameter |
+| Parameter  | Type      | Default | Notes                                                                 |
+|------------|-----------|---------|-----------------------------------------------------------------------|
+| `over_18`  | `boolean` |         |                                                                       |
+| `spoiler`  | `boolean` |         |                                                                       |
+| `selftext` | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter |
+| `title`    | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter |
+| `url`      | `string`  |         | (exact match)                                                         |
 
 Comment search parameters:
 
@@ -63,7 +64,7 @@ Comment search parameters:
 |-------------|-----------------------------|---------|---------------------------------------------------------------|
 | `body`      | `string` (full text search) |         | Only in use with `author`, `link_id` or `parent_id` parameter |
 | `link_id`   | `ID`                        |         | ID of post                                                    |
-| `parent_id` | `ID` \| empty               |         | empty means top level comment                                |
+| `parent_id` | `ID` \| empty               |         | empty means top level comment                                 |
 
 ## Comments tree
 
