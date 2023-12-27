@@ -65,7 +65,9 @@ pip install zstandard
 
 6. Run the file and be (very) patient.
 
-## Contact
+## Contact & Removal requests
+
+Removal requests and generic support requests can be submitted [here](https://docs.google.com/forms/d/e/1FAIpQLSfzkmE8Bg6K_xii7aRm66ljzvo2tR59lTsdJ99acW4WX786Vw/viewform?usp=sf_link).
 
 If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377).
 Alternatively open an issue or pull request.
