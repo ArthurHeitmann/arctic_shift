@@ -8,6 +8,8 @@ Base URL: https://arctic-shift.photon-reddit.com
 
 Status page: https://status.arctic-shift.photon-reddit.com
 
+Search UI: https://arctic-shift.photon-reddit.com/search
+
 ## ID lookup
 
 - `/api/posts/ids`
