@@ -1,0 +1,538 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "archived": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 100487,
+            "false": 99908975
+          }
+        }
+      ],
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 11.0
+          }
+        }
+      ],
+      "author_flair_background_color": [
+        {
+          "type": "null",
+          "usage": 0.72,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.28,
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 0.18
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 0.75,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.25,
+          "schema": {
+            "min_length": 0,
+            "max_length": 100,
+            "avr_length": 8.52
+          }
+        }
+      ],
+      "author_flair_template_id": [
+        {
+          "type": "null",
+          "usage": 0.89,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.11,
+          "schema": {
+            "min_length": 0,
+            "max_length": 36,
+            "avr_length": 35.7
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 0.75,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.25,
+          "schema": {
+            "min_length": 0,
+            "max_length": 220,
+            "avr_length": 14.0
+          }
+        }
+      ],
+      "author_flair_text_color": [
+        {
+          "type": "null",
+          "usage": 0.72,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.28,
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 4.02,
+            "values": [
+              {
+                "value": "dark",
+                "usage": 0.98
+              },
+              {
+                "value": "light",
+                "usage": 0.02
+              }
+            ]
+          }
+        }
+      ],
+      "body": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 296889,
+            "avr_length": 165.78
+          }
+        }
+      ],
+      "can_gild": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 98530304,
+            "false": 1479158
+          }
+        }
+      ],
+      "can_mod_post": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 100009462
+          }
+        }
+      ],
+      "controversiality": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.02
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1530403199,
+            "avr_value": 1529115495.45
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0,
+            "values": [
+              {
+                "value": "moderator",
+                "usage": 1.0
+              },
+              {
+                "value": "admin",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 0.97,
+          "schema": {
+            "true": 0,
+            "false": 96873015
+          }
+        },
+        {
+          "type": "int",
+          "usage": 0.03,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1533106441,
+            "avr_value": 1529284035.31
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 30,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 7.0
+          }
+        }
+      ],
+      "is_submitter": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 8684888,
+            "false": 91324574
+          }
+        }
+      ],
+      "link_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0
+          }
+        }
+      ],
+      "no_follow": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 76866078,
+            "false": 23143384
+          }
+        }
+      ],
+      "parent_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 9.59
+          }
+        }
+      ],
+      "permalink": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 101,
+            "avr_length": 76.52
+          }
+        }
+      ],
+      "removal_reason": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 5.0,
+            "values": [
+              {
+                "value": "legal",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1533109995,
+            "avr_value": 1532589517.93
+          }
+        }
+      ],
+      "rte_mode": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0,
+            "values": [
+              {
+                "value": "markdown",
+                "usage": 0.93
+              },
+              {
+                "value": "richtext",
+                "usage": 0.07
+              }
+            ]
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -52311,
+            "max_value": 69347,
+            "avr_value": 9.27
+          }
+        }
+      ],
+      "score_hidden": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 495855,
+            "false": 99513607
+          }
+        }
+      ],
+      "send_replies": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 98826077,
+            "false": 1183385
+          }
+        }
+      ],
+      "stickied": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 376258,
+            "false": 99633204
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 24,
+            "avr_length": 9.78
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0
+          }
+        }
+      ],
+      "subreddit_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 6.02,
+            "values": [
+              {
+                "value": "public",
+                "usage": 0.99
+              },
+              {
+                "value": "restricted",
+                "usage": 0.01
+              },
+              {
+                "value": "user",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "author_flair_richtext": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 15,
+            "avr_length": 0.16,
+            "schema": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "e": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 5,
+                        "avr_length": 4.02,
+                        "values": [
+                          {
+                            "value": "text",
+                            "usage": 0.98
+                          },
+                          {
+                            "value": "emoji",
+                            "usage": 0.02
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "t": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 220,
+                        "avr_length": 17.01
+                      }
+                    }
+                  ],
+                  "a": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 26,
+                        "avr_length": 8.3
+                      }
+                    }
+                  ],
+                  "u": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 77,
+                        "avr_length": 59.12
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "author_flair_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 4.63,
+            "values": [
+              {
+                "value": "text",
+                "usage": 0.84
+              },
+              {
+                "value": "richtext",
+                "usage": 0.16
+              }
+            ]
+          }
+        }
+      ],
+      "author_cakeday": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 342686,
+            "false": 0
+          }
+        }
+      ]
+    }
+  }
+]

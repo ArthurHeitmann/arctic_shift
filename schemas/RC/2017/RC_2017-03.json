@@ -1,0 +1,241 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 10.82
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 17,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 21,
+            "avr_length": 9.69
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1491004799,
+            "avr_value": 1489675435.4
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 0.97,
+          "schema": {
+            "true": 0,
+            "false": 77184576
+          }
+        },
+        {
+          "type": "int",
+          "usage": 0.03,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1491953384,
+            "avr_value": 1489745169.63
+          }
+        }
+      ],
+      "controversiality": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.02
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 0.69,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.31,
+          "schema": {
+            "min_length": 0,
+            "max_length": 109,
+            "avr_length": 13.95
+          }
+        }
+      ],
+      "parent_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 9.61
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -2434,
+            "max_value": 63090,
+            "avr_value": 7.5
+          }
+        }
+      ],
+      "link_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 7.0
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 0.69,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.31,
+          "schema": {
+            "min_length": 0,
+            "max_length": 95,
+            "avr_length": 8.06
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0,
+            "values": [
+              {
+                "value": "moderator",
+                "usage": 1.0
+              },
+              {
+                "value": "admin",
+                "usage": 0.0
+              },
+              {
+                "value": "special",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "stickied": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 248666,
+            "false": 79474440
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0
+          }
+        }
+      ],
+      "body": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 25000,
+            "avr_length": 174.51
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1491958439,
+            "avr_value": 1491514184.47
+          }
+        }
+      ],
+      "author_cakeday": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 278673,
+            "false": 0
+          }
+        }
+      ]
+    }
+  }
+]

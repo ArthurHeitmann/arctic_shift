@@ -1,0 +1,232 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "controversiality": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.02
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 0.66,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.34,
+          "schema": {
+            "min_length": 0,
+            "max_length": 220,
+            "avr_length": 14.47
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0
+          }
+        }
+      ],
+      "parent_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 9.61
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 0.97,
+          "schema": {
+            "true": 0,
+            "false": 53854324
+          }
+        },
+        {
+          "type": "int",
+          "usage": 0.03,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1444687138,
+            "avr_value": 1442418735.61
+          }
+        }
+      ],
+      "body": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 15450,
+            "avr_length": 173.33
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 7.0
+          }
+        }
+      ],
+      "link_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 0.66,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.34,
+          "schema": {
+            "min_length": 0,
+            "max_length": 83,
+            "avr_length": 7.84
+          }
+        }
+      ],
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 10.65
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 21,
+            "avr_length": 9.53
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 10.0
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1444689151,
+            "avr_value": 1444390286.76
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 19,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "ups": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -2725,
+            "max_value": 8114,
+            "avr_value": 5.68
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -2725,
+            "max_value": 8114,
+            "avr_value": 5.68
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0,
+            "values": [
+              {
+                "value": "moderator",
+                "usage": 1.0
+              },
+              {
+                "value": "admin",
+                "usage": 0.0
+              },
+              {
+                "value": "special",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

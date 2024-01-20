@@ -1,0 +1,296 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "created_utc": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 10.0
+          }
+        }
+      ],
+      "ups": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -1712,
+            "max_value": 6761,
+            "avr_value": 5.74
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0
+          }
+        }
+      ],
+      "link_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0
+          }
+        }
+      ],
+      "name": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 10.0
+          }
+        }
+      ],
+      "score_hidden": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 79381,
+            "false": 54425029
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 0.67,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.33,
+          "schema": {
+            "min_length": 0,
+            "max_length": 83,
+            "avr_length": 6.53
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 0.66,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.34,
+          "schema": {
+            "min_length": 0,
+            "max_length": 228,
+            "avr_length": 14.07
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 24,
+            "avr_length": 9.44
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 7.0
+          }
+        }
+      ],
+      "removal_reason": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 5.0,
+            "values": [
+              {
+                "value": "legal",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 27,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "downs": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 0,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "archived": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 54504410
+          }
+        }
+      ],
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 10.65
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -1712,
+            "max_value": 6761,
+            "avr_value": 5.74
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1435758762,
+            "avr_value": 1433061064.31
+          }
+        }
+      ],
+      "body": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 39943,
+            "avr_length": 173.76
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 9.0,
+            "values": [
+              {
+                "value": "moderator",
+                "usage": 1.0
+              },
+              {
+                "value": "admin",
+                "usage": 0.0
+              },
+              {
+                "value": "special",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 0.97,
+          "schema": {
+            "true": 0,
+            "false": 52831576
+          }
+        },
+        {
+          "type": "int",
+          "usage": 0.03,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1435389972,
+            "avr_value": 1431804480.65
+          }
+        }
+      ],
+      "controversiality": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.02
+          }
+        }
+      ],
+      "parent_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 9.61
+          }
+        }
+      ]
+    }
+  }
+]

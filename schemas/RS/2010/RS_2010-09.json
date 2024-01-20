@@ -1,0 +1,2793 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "archived": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 599427,
+            "false": 782
+          }
+        }
+      ],
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 9.6
+          }
+        }
+      ],
+      "author_flair_background_color": [
+        {
+          "type": "null",
+          "usage": 0.72,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.28,
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 0.0,
+            "values": [
+              {
+                "value": "",
+                "usage": 1.0
+              },
+              {
+                "value": "#edeff1",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 0.97,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.03,
+          "schema": {
+            "min_length": 0,
+            "max_length": 67,
+            "avr_length": 7.52
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 0.97,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.03,
+          "schema": {
+            "min_length": 0,
+            "max_length": 67,
+            "avr_length": 11.43
+          }
+        }
+      ],
+      "author_flair_text_color": [
+        {
+          "type": "null",
+          "usage": 0.72,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.28,
+          "schema": {
+            "min_length": 0,
+            "max_length": 4,
+            "avr_length": 4.0,
+            "values": [
+              {
+                "value": "dark",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "brand_safe": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 497309,
+            "false": 102900
+          }
+        }
+      ],
+      "can_gild": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 431147,
+            "false": 169062
+          }
+        }
+      ],
+      "contest_mode": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 600209
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1285891185,
+            "avr_value": 1284623020.45
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 9,
+            "avr_length": 8.88,
+            "values": [
+              {
+                "value": "moderator",
+                "usage": 0.97
+              },
+              {
+                "value": "admin",
+                "usage": 0.03
+              }
+            ]
+          }
+        }
+      ],
+      "domain": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 71,
+            "avr_length": 14.66
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 0.97,
+          "schema": {
+            "true": 0,
+            "false": 582052
+          }
+        },
+        {
+          "type": "float",
+          "usage": 0.03,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1521559091.0,
+            "avr_value": 1286509809.61
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "hidden": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 600209
+          }
+        }
+      ],
+      "hide_score": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 165,
+            "false": 600044
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 5.0
+          }
+        }
+      ],
+      "is_crosspostable": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 275322,
+            "false": 324887
+          }
+        }
+      ],
+      "is_reddit_media_domain": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 600209
+          }
+        }
+      ],
+      "is_self": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 134322,
+            "false": 465887
+          }
+        }
+      ],
+      "is_video": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 600209
+          }
+        }
+      ],
+      "link_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 21,
+            "avr_length": 5.37
+          }
+        }
+      ],
+      "link_flair_richtext": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 1,
+            "avr_length": 0.0,
+            "schema": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "e": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 4,
+                        "avr_length": 4.0,
+                        "values": [
+                          {
+                            "value": "text",
+                            "usage": "always"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "t": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 37,
+                        "avr_length": 9.16
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "link_flair_text": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 37,
+            "avr_length": 8.62
+          }
+        }
+      ],
+      "link_flair_text_color": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 4,
+            "avr_length": 4.0,
+            "values": [
+              {
+                "value": "dark",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "link_flair_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 4.0,
+            "values": [
+              {
+                "value": "text",
+                "usage": 1.0
+              },
+              {
+                "value": "richtext",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "locked": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 54,
+            "false": 600155
+          }
+        }
+      ],
+      "media": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "object",
+          "usage": 0.0,
+          "schema": {
+            "oembed": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "height": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 550,
+                        "avr_value": 345.62
+                      }
+                    }
+                  ],
+                  "html": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 889,
+                        "avr_length": 257.65
+                      }
+                    }
+                  ],
+                  "provider_name": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 14,
+                        "avr_length": 7.01,
+                        "values": [
+                          {
+                            "value": "YouTube",
+                            "usage": 0.92
+                          },
+                          {
+                            "value": "Ustream.tv",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Google Maps",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Funny Or Die",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Vimeo",
+                            "usage": 0.03
+                          },
+                          {
+                            "value": "Imgur",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "SoundCloud",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Trailer Addict",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Libsyn",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "BandCamp",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Kickstarter",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "provider_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 29,
+                        "avr_length": 23.62,
+                        "values": [
+                          {
+                            "value": "https://www.youtube.com/",
+                            "usage": 0.92
+                          },
+                          {
+                            "value": "http://ustream.tv",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "http://google.com/maps",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://www.funnyordie.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "https://vimeo.com/",
+                            "usage": 0.03
+                          },
+                          {
+                            "value": "http://imgur.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "http://soundcloud.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "https://www.traileraddict.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "https://www.libsyn.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://bandcamp.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://www.youtube.com/",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "https://www.kickstarter.com/",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "thumbnail_height": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 1280,
+                        "avr_value": 368.51
+                      }
+                    }
+                  ],
+                  "thumbnail_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 307,
+                        "avr_length": 55.38
+                      }
+                    }
+                  ],
+                  "thumbnail_width": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 1280,
+                        "avr_value": 500.44
+                      }
+                    }
+                  ],
+                  "title": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 103,
+                        "avr_length": 36.82
+                      }
+                    }
+                  ],
+                  "type": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 5,
+                        "avr_length": 4.97,
+                        "values": [
+                          {
+                            "value": "video",
+                            "usage": 0.97
+                          },
+                          {
+                            "value": "rich",
+                            "usage": 0.03
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "version": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 3,
+                        "avr_length": 3.0,
+                        "values": [
+                          {
+                            "value": "1.0",
+                            "usage": "always"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "width": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 600,
+                        "avr_value": 517.91
+                      }
+                    }
+                  ],
+                  "author_name": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 51,
+                        "avr_length": 12.07
+                      }
+                    }
+                  ],
+                  "author_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 49,
+                        "avr_length": 39.91
+                      }
+                    }
+                  ],
+                  "description": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 574,
+                        "avr_length": 158.98
+                      }
+                    }
+                  ],
+                  "url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 42,
+                        "avr_length": 42.0
+                      }
+                    }
+                  ],
+                  "mean_alpha": [
+                    {
+                      "type": "float",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 121.768253968,
+                        "avr_value": 121.77
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "type": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 21,
+                  "avr_length": 11.04,
+                  "values": [
+                    {
+                      "value": "youtube.com",
+                      "usage": 0.92
+                    },
+                    {
+                      "value": "ustream.tv",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "maps.google.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "funnyordie.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "vimeo.com",
+                      "usage": 0.03
+                    },
+                    {
+                      "value": "imgur.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "soundcloud.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "traileraddict.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "radarhead.libsyn.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "waitwhat.bandcamp.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "magicks.bandcamp.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "kickstarter.com",
+                      "usage": 0.0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "media_embed": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "content": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 889,
+                  "avr_length": 257.65
+                }
+              }
+            ],
+            "height": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 0,
+                  "max_value": 550,
+                  "avr_value": 345.62
+                }
+              }
+            ],
+            "media_domain_url": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 44,
+                  "avr_length": 44.0
+                }
+              }
+            ],
+            "scrolling": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 546
+                }
+              }
+            ],
+            "width": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 0,
+                  "max_value": 600,
+                  "avr_value": 517.91
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "no_follow": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 405588,
+            "false": 194621
+          }
+        }
+      ],
+      "num_comments": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 8785,
+            "avr_value": 7.17
+          }
+        }
+      ],
+      "num_crossposts": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "over_18": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 18546,
+            "false": 581663
+          }
+        }
+      ],
+      "parent_whitelist_status": [
+        {
+          "type": "string",
+          "usage": 0.92,
+          "schema": {
+            "min_length": 0,
+            "max_length": 16,
+            "avr_length": 7.65,
+            "values": [
+              {
+                "value": "all_ads",
+                "usage": 0.9
+              },
+              {
+                "value": "promo_specified",
+                "usage": 0.04
+              },
+              {
+                "value": "promo_adult",
+                "usage": 0.03
+              },
+              {
+                "value": "promo_all",
+                "usage": 0.0
+              },
+              {
+                "value": "promo_adult_nsfw",
+                "usage": 0.02
+              },
+              {
+                "value": "house_only",
+                "usage": 0.0
+              },
+              {
+                "value": "no_ads",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.08,
+          "schema": null
+        }
+      ],
+      "permalink": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 90,
+            "avr_length": 65.49
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1522958683,
+            "avr_value": 1522953861.02
+          }
+        }
+      ],
+      "rte_mode": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 8.0,
+            "values": [
+              {
+                "value": "markdown",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 5578,
+            "avr_value": 12.11
+          }
+        }
+      ],
+      "secure_media": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "object",
+          "usage": 0.0,
+          "schema": {
+            "oembed": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "height": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 550,
+                        "avr_value": 345.62
+                      }
+                    }
+                  ],
+                  "html": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 889,
+                        "avr_length": 257.65
+                      }
+                    }
+                  ],
+                  "provider_name": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 14,
+                        "avr_length": 7.01,
+                        "values": [
+                          {
+                            "value": "YouTube",
+                            "usage": 0.92
+                          },
+                          {
+                            "value": "Ustream.tv",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Google Maps",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Funny Or Die",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Vimeo",
+                            "usage": 0.03
+                          },
+                          {
+                            "value": "Imgur",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "SoundCloud",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "Trailer Addict",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Libsyn",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "BandCamp",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "Kickstarter",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "provider_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 29,
+                        "avr_length": 23.62,
+                        "values": [
+                          {
+                            "value": "https://www.youtube.com/",
+                            "usage": 0.92
+                          },
+                          {
+                            "value": "http://ustream.tv",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "http://google.com/maps",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://www.funnyordie.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "https://vimeo.com/",
+                            "usage": 0.03
+                          },
+                          {
+                            "value": "http://imgur.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "http://soundcloud.com",
+                            "usage": 0.01
+                          },
+                          {
+                            "value": "https://www.traileraddict.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "https://www.libsyn.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://bandcamp.com",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "http://www.youtube.com/",
+                            "usage": 0.0
+                          },
+                          {
+                            "value": "https://www.kickstarter.com/",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "thumbnail_height": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 1280,
+                        "avr_value": 368.51
+                      }
+                    }
+                  ],
+                  "thumbnail_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 307,
+                        "avr_length": 55.38
+                      }
+                    }
+                  ],
+                  "thumbnail_width": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 1280,
+                        "avr_value": 500.44
+                      }
+                    }
+                  ],
+                  "title": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 103,
+                        "avr_length": 36.82
+                      }
+                    }
+                  ],
+                  "type": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 5,
+                        "avr_length": 4.97,
+                        "values": [
+                          {
+                            "value": "video",
+                            "usage": 0.97
+                          },
+                          {
+                            "value": "rich",
+                            "usage": 0.03
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "version": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 3,
+                        "avr_length": 3.0,
+                        "values": [
+                          {
+                            "value": "1.0",
+                            "usage": "always"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "width": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 600,
+                        "avr_value": 517.91
+                      }
+                    }
+                  ],
+                  "author_name": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 51,
+                        "avr_length": 12.07
+                      }
+                    }
+                  ],
+                  "author_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 49,
+                        "avr_length": 39.91
+                      }
+                    }
+                  ],
+                  "description": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 574,
+                        "avr_length": 158.98
+                      }
+                    }
+                  ],
+                  "url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 42,
+                        "avr_length": 42.0
+                      }
+                    }
+                  ],
+                  "mean_alpha": [
+                    {
+                      "type": "float",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 121.768253968,
+                        "avr_value": 121.77
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "type": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 21,
+                  "avr_length": 11.04,
+                  "values": [
+                    {
+                      "value": "youtube.com",
+                      "usage": 0.92
+                    },
+                    {
+                      "value": "ustream.tv",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "maps.google.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "funnyordie.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "vimeo.com",
+                      "usage": 0.03
+                    },
+                    {
+                      "value": "imgur.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "soundcloud.com",
+                      "usage": 0.01
+                    },
+                    {
+                      "value": "traileraddict.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "radarhead.libsyn.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "waitwhat.bandcamp.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "magicks.bandcamp.com",
+                      "usage": 0.0
+                    },
+                    {
+                      "value": "kickstarter.com",
+                      "usage": 0.0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "secure_media_embed": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "content": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 889,
+                  "avr_length": 257.65
+                }
+              }
+            ],
+            "height": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 0,
+                  "max_value": 550,
+                  "avr_value": 345.62
+                }
+              }
+            ],
+            "media_domain_url": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 44,
+                  "avr_length": 44.0
+                }
+              }
+            ],
+            "scrolling": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 546
+                }
+              }
+            ],
+            "width": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 0,
+                  "max_value": 600,
+                  "avr_value": 517.91
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "selftext": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 26670,
+            "avr_length": 72.11
+          }
+        }
+      ],
+      "send_replies": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 600209,
+            "false": 0
+          }
+        }
+      ],
+      "spoiler": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 11,
+            "false": 600198
+          }
+        }
+      ],
+      "stickied": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 600209
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 21,
+            "avr_length": 8.24
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 6.83
+          }
+        }
+      ],
+      "subreddit_name_prefixed": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 23,
+            "avr_length": 10.24
+          }
+        }
+      ],
+      "subreddit_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 6.61,
+            "values": [
+              {
+                "value": "public",
+                "usage": 0.71
+              },
+              {
+                "value": "archived",
+                "usage": 0.29
+              },
+              {
+                "value": "restricted",
+                "usage": 0.01
+              },
+              {
+                "value": "gold_only",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "suggested_sort": [
+        {
+          "type": "null",
+          "usage": 0.98,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.02,
+          "schema": {
+            "min_length": 0,
+            "max_length": 13,
+            "avr_length": 9.26,
+            "values": [
+              {
+                "value": "confidence",
+                "usage": 0.89
+              },
+              {
+                "value": "top",
+                "usage": 0.06
+              },
+              {
+                "value": "new",
+                "usage": 0.04
+              },
+              {
+                "value": "old",
+                "usage": 0.0
+              },
+              {
+                "value": "qa",
+                "usage": 0.0
+              },
+              {
+                "value": "controversial",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "thumbnail": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 80,
+            "avr_length": 5.28
+          }
+        }
+      ],
+      "title": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 436,
+            "avr_length": 58.19
+          }
+        }
+      ],
+      "url": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 2243,
+            "avr_length": 69.14
+          }
+        }
+      ],
+      "whitelist_status": [
+        {
+          "type": "string",
+          "usage": 0.92,
+          "schema": {
+            "min_length": 0,
+            "max_length": 16,
+            "avr_length": 7.7,
+            "values": [
+              {
+                "value": "all_ads",
+                "usage": 0.9
+              },
+              {
+                "value": "promo_specified",
+                "usage": 0.04
+              },
+              {
+                "value": "promo_adult",
+                "usage": 0.03
+              },
+              {
+                "value": "promo_all",
+                "usage": 0.0
+              },
+              {
+                "value": "promo_adult_nsfw",
+                "usage": 0.03
+              },
+              {
+                "value": "house_only",
+                "usage": 0.0
+              },
+              {
+                "value": "no_ads",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.08,
+          "schema": null
+        }
+      ],
+      "thumbnail_height": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "int",
+          "usage": 0.01,
+          "schema": {
+            "min_value": 0,
+            "max_value": 140,
+            "avr_value": 103.81
+          }
+        }
+      ],
+      "thumbnail_width": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "int",
+          "usage": 0.01,
+          "schema": {
+            "min_value": 0,
+            "max_value": 140,
+            "avr_value": 135.8
+          }
+        }
+      ],
+      "author_flair_richtext": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 2,
+            "avr_length": 0.03,
+            "schema": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "e": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 5,
+                        "avr_length": 4.0,
+                        "values": [
+                          {
+                            "value": "text",
+                            "usage": 1.0
+                          },
+                          {
+                            "value": "emoji",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "t": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 67,
+                        "avr_length": 14.4
+                      }
+                    }
+                  ],
+                  "a": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 13,
+                        "avr_length": 10.5,
+                        "values": [
+                          {
+                            "value": ":Waterloo-sm:",
+                            "usage": 0.5
+                          },
+                          {
+                            "value": ":bastok:",
+                            "usage": 0.5
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "u": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 64,
+                        "avr_length": 61.5
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "author_flair_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 4.12,
+            "values": [
+              {
+                "value": "text",
+                "usage": 0.97
+              },
+              {
+                "value": "richtext",
+                "usage": 0.03
+              }
+            ]
+          }
+        }
+      ],
+      "approved": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 2,
+            "false": 5196
+          }
+        }
+      ],
+      "ignore_reports": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 5198
+          }
+        }
+      ],
+      "removed": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 5198
+          }
+        }
+      ],
+      "spam": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 5198
+          }
+        }
+      ],
+      "post_hint": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 5.07,
+            "values": [
+              {
+                "value": "link",
+                "usage": 0.55
+              },
+              {
+                "value": "rich:video",
+                "usage": 0.12
+              },
+              {
+                "value": "image",
+                "usage": 0.32
+              },
+              {
+                "value": "self",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "preview": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "enabled": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 1230,
+                  "false": 2575
+                }
+              }
+            ],
+            "images": [
+              {
+                "type": "array",
+                "usage": "always",
+                "schema": {
+                  "min_length": 0,
+                  "max_length": 1,
+                  "avr_length": 1.0,
+                  "schema": [
+                    {
+                      "type": "object",
+                      "usage": "always",
+                      "schema": {
+                        "id": [
+                          {
+                            "type": "string",
+                            "usage": "always",
+                            "schema": {
+                              "min_length": 0,
+                              "max_length": 43,
+                              "avr_length": 43.0
+                            }
+                          }
+                        ],
+                        "resolutions": [
+                          {
+                            "type": "array",
+                            "usage": "always",
+                            "schema": {
+                              "min_length": 0,
+                              "max_length": 6,
+                              "avr_length": 3.37,
+                              "schema": [
+                                {
+                                  "type": "object",
+                                  "usage": "always",
+                                  "schema": {
+                                    "height": [
+                                      {
+                                        "type": "int",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_value": 0,
+                                          "max_value": 2160,
+                                          "avr_value": 273.25
+                                        }
+                                      }
+                                    ],
+                                    "url": [
+                                      {
+                                        "type": "string",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_length": 0,
+                                          "max_length": 177,
+                                          "avr_length": 166.18
+                                        }
+                                      }
+                                    ],
+                                    "width": [
+                                      {
+                                        "type": "int",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_value": 0,
+                                          "max_value": 1080,
+                                          "avr_value": 347.82
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "source": [
+                          {
+                            "type": "object",
+                            "usage": "always",
+                            "schema": {
+                              "height": [
+                                {
+                                  "type": "int",
+                                  "usage": "always",
+                                  "schema": {
+                                    "min_value": 0,
+                                    "max_value": 10000,
+                                    "avr_value": 563.68
+                                  }
+                                }
+                              ],
+                              "url": [
+                                {
+                                  "type": "string",
+                                  "usage": "always",
+                                  "schema": {
+                                    "min_length": 0,
+                                    "max_length": 119,
+                                    "avr_length": 108.17
+                                  }
+                                }
+                              ],
+                              "width": [
+                                {
+                                  "type": "int",
+                                  "usage": "always",
+                                  "schema": {
+                                    "min_value": 0,
+                                    "max_value": 5066,
+                                    "avr_value": 675.83
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "variants": [
+                          {
+                            "type": "object",
+                            "usage": "always",
+                            "schema": {
+                              "nsfw": [
+                                {
+                                  "type": "object",
+                                  "usage": "always",
+                                  "schema": {
+                                    "resolutions": [
+                                      {
+                                        "type": "array",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_length": 0,
+                                          "max_length": 6,
+                                          "avr_length": 3.77,
+                                          "schema": [
+                                            {
+                                              "type": "object",
+                                              "usage": "always",
+                                              "schema": {
+                                                "height": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1997,
+                                                      "avr_value": 369.77
+                                                    }
+                                                  }
+                                                ],
+                                                "url": [
+                                                  {
+                                                    "type": "string",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_length": 0,
+                                                      "max_length": 201,
+                                                      "avr_length": 200.03
+                                                    }
+                                                  }
+                                                ],
+                                                "width": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1080,
+                                                      "avr_value": 353.21
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "source": [
+                                      {
+                                        "type": "object",
+                                        "usage": "always",
+                                        "schema": {
+                                          "height": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 3600,
+                                                "avr_value": 804.23
+                                              }
+                                            }
+                                          ],
+                                          "url": [
+                                            {
+                                              "type": "string",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_length": 0,
+                                                "max_length": 142,
+                                                "avr_length": 142.0
+                                              }
+                                            }
+                                          ],
+                                          "width": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 2543,
+                                                "avr_value": 751.42
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ],
+                              "obfuscated": [
+                                {
+                                  "type": "object",
+                                  "usage": "always",
+                                  "schema": {
+                                    "resolutions": [
+                                      {
+                                        "type": "array",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_length": 0,
+                                          "max_length": 6,
+                                          "avr_length": 3.77,
+                                          "schema": [
+                                            {
+                                              "type": "object",
+                                              "usage": "always",
+                                              "schema": {
+                                                "height": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1997,
+                                                      "avr_value": 369.77
+                                                    }
+                                                  }
+                                                ],
+                                                "url": [
+                                                  {
+                                                    "type": "string",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_length": 0,
+                                                      "max_length": 201,
+                                                      "avr_length": 200.03
+                                                    }
+                                                  }
+                                                ],
+                                                "width": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1080,
+                                                      "avr_value": 353.21
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "source": [
+                                      {
+                                        "type": "object",
+                                        "usage": "always",
+                                        "schema": {
+                                          "height": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 3600,
+                                                "avr_value": 804.23
+                                              }
+                                            }
+                                          ],
+                                          "url": [
+                                            {
+                                              "type": "string",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_length": 0,
+                                                "max_length": 142,
+                                                "avr_length": 142.0
+                                              }
+                                            }
+                                          ],
+                                          "width": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 2543,
+                                                "avr_value": 751.42
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ],
+                              "gif": [
+                                {
+                                  "type": "object",
+                                  "usage": "always",
+                                  "schema": {
+                                    "resolutions": [
+                                      {
+                                        "type": "array",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_length": 0,
+                                          "max_length": 5,
+                                          "avr_length": 2.64,
+                                          "schema": [
+                                            {
+                                              "type": "object",
+                                              "usage": "always",
+                                              "schema": {
+                                                "height": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1280,
+                                                      "avr_value": 204.06
+                                                    }
+                                                  }
+                                                ],
+                                                "url": [
+                                                  {
+                                                    "type": "string",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_length": 0,
+                                                      "max_length": 166,
+                                                      "avr_length": 166.0
+                                                    }
+                                                  }
+                                                ],
+                                                "width": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 960,
+                                                      "avr_value": 222.43
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "source": [
+                                      {
+                                        "type": "object",
+                                        "usage": "always",
+                                        "schema": {
+                                          "height": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 3998,
+                                                "avr_value": 461.84
+                                              }
+                                            }
+                                          ],
+                                          "url": [
+                                            {
+                                              "type": "string",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_length": 0,
+                                                "max_length": 108,
+                                                "avr_length": 108.0
+                                              }
+                                            }
+                                          ],
+                                          "width": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 974,
+                                                "avr_value": 400.57
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ],
+                              "mp4": [
+                                {
+                                  "type": "object",
+                                  "usage": "always",
+                                  "schema": {
+                                    "resolutions": [
+                                      {
+                                        "type": "array",
+                                        "usage": "always",
+                                        "schema": {
+                                          "min_length": 0,
+                                          "max_length": 5,
+                                          "avr_length": 2.64,
+                                          "schema": [
+                                            {
+                                              "type": "object",
+                                              "usage": "always",
+                                              "schema": {
+                                                "height": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 1280,
+                                                      "avr_value": 204.06
+                                                    }
+                                                  }
+                                                ],
+                                                "url": [
+                                                  {
+                                                    "type": "string",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_length": 0,
+                                                      "max_length": 202,
+                                                      "avr_length": 202.0
+                                                    }
+                                                  }
+                                                ],
+                                                "width": [
+                                                  {
+                                                    "type": "int",
+                                                    "usage": "always",
+                                                    "schema": {
+                                                      "min_value": 0,
+                                                      "max_value": 960,
+                                                      "avr_value": 222.43
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "source": [
+                                      {
+                                        "type": "object",
+                                        "usage": "always",
+                                        "schema": {
+                                          "height": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 3998,
+                                                "avr_value": 461.84
+                                              }
+                                            }
+                                          ],
+                                          "url": [
+                                            {
+                                              "type": "string",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_length": 0,
+                                                "max_length": 144,
+                                                "avr_length": 144.0
+                                              }
+                                            }
+                                          ],
+                                          "width": [
+                                            {
+                                              "type": "int",
+                                              "usage": "always",
+                                              "schema": {
+                                                "min_value": 0,
+                                                "max_value": 974,
+                                                "avr_value": 400.57
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "reddit_video_preview": [
+              {
+                "type": "object",
+                "usage": "always",
+                "schema": {
+                  "dash_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 48,
+                        "avr_length": 48.0
+                      }
+                    }
+                  ],
+                  "duration": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 47,
+                        "avr_value": 6.97
+                      }
+                    }
+                  ],
+                  "fallback_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 42,
+                        "avr_length": 42.0
+                      }
+                    }
+                  ],
+                  "height": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 1080,
+                        "avr_value": 291.59
+                      }
+                    }
+                  ],
+                  "hls_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 48,
+                        "avr_length": 48.0
+                      }
+                    }
+                  ],
+                  "is_gif": [
+                    {
+                      "type": "bool",
+                      "usage": "always",
+                      "schema": {
+                        "true": 34,
+                        "false": 0
+                      }
+                    }
+                  ],
+                  "scrubber_media_url": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 42,
+                        "avr_length": 42.0
+                      }
+                    }
+                  ],
+                  "transcoding_status": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 0,
+                        "max_length": 9,
+                        "avr_length": 9.0,
+                        "values": [
+                          {
+                            "value": "completed",
+                            "usage": "always"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "width": [
+                    {
+                      "type": "int",
+                      "usage": "always",
+                      "schema": {
+                        "min_value": 0,
+                        "max_value": 640,
+                        "avr_value": 315.12
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "author_cakeday": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 1313,
+            "false": 0
+          }
+        }
+      ],
+      "adserver_click_url": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "adserver_imp_pixel": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "author_id": [
+        {
+          "type": "string",
+          "usage": 0.79,
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 7.95
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.21,
+          "schema": null
+        }
+      ],
+      "domain_override": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 0,
+            "max_length": 29,
+            "avr_length": 16.86,
+            "values": [
+              {
+                "value": "youtube.com",
+                "usage": 0.57
+              },
+              {
+                "value": "http://www.civilization5.com/",
+                "usage": 0.29
+              },
+              {
+                "value": "reviews.cnet.com",
+                "usage": 0.14
+              }
+            ]
+          }
+        }
+      ],
+      "embed_type": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "embed_url": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "events": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "schema": []
+          }
+        }
+      ],
+      "eventsOnRender": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "schema": []
+          }
+        }
+      ],
+      "href_url": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 373,
+            "avr_length": 46.67
+          }
+        }
+      ],
+      "is_blank": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 782
+          }
+        }
+      ],
+      "mobile_ad_url": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "values": [
+              {
+                "value": "",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "original_link": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "outbound_link": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {}
+        }
+      ],
+      "priority_id": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "promoted": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 782,
+            "false": 0
+          }
+        }
+      ],
+      "promoted_by": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "promoted_display_name": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "promoted_url": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "third_party_trackers": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "schema": []
+          }
+        }
+      ],
+      "third_party_tracking": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "third_party_tracking_2": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "link_flair_background_color": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "values": [
+              {
+                "value": "",
+                "usage": "always"
+              }
+            ]
+          }
+        }
+      ],
+      "link_flair_template_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 36,
+            "avr_length": 36.0,
+            "values": [
+              {
+                "value": "983d9952-ec13-11e7-b558-0e3992e3a2be",
+                "usage": 0.08
+              },
+              {
+                "value": "92f7c828-ec13-11e7-a213-0e55a4ea24ae",
+                "usage": 0.42
+              },
+              {
+                "value": "8fc8c9fe-ec13-11e7-a109-0ed8d186392c",
+                "usage": 0.17
+              },
+              {
+                "value": "efd5e3e0-ec13-11e7-a322-0e7f57890812",
+                "usage": 0.08
+              },
+              {
+                "value": "3a6e8d08-ec14-11e7-970f-0e4abc07fb78",
+                "usage": 0.08
+              },
+              {
+                "value": "9ea3bbb4-ec13-11e7-8976-0e082e1a0288",
+                "usage": 0.08
+              },
+              {
+                "value": "390a84ee-3096-11e5-8982-0ee61c357d3b",
+                "usage": 0.08
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

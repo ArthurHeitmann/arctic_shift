@@ -1,0 +1,313 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "name": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 10.0
+          }
+        }
+      ],
+      "body": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 9501,
+            "avr_length": 161.75
+          }
+        }
+      ],
+      "subreddit_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 5.46
+          }
+        }
+      ],
+      "distinguished": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "ups": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -106,
+            "max_value": 1150,
+            "avr_value": 3.16
+          }
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 7.0
+          }
+        }
+      ],
+      "downs": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 0,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "author_flair_css_class": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 11,
+            "avr_length": 6.44,
+            "values": [
+              {
+                "value": "compsci",
+                "usage": 0.13
+              },
+              {
+                "value": "NHLLeafs",
+                "usage": 0.11
+              },
+              {
+                "value": "bio",
+                "usage": 0.06
+              },
+              {
+                "value": "NFLBrowns",
+                "usage": 0.02
+              },
+              {
+                "value": "physics",
+                "usage": 0.27
+              },
+              {
+                "value": "MLBGiants",
+                "usage": 0.04
+              },
+              {
+                "value": "MLBRedSox",
+                "usage": 0.01
+              },
+              {
+                "value": "eng",
+                "usage": 0.21
+              },
+              {
+                "value": "MLBBraves",
+                "usage": 0.01
+              },
+              {
+                "value": "NHLFlames",
+                "usage": 0.02
+              },
+              {
+                "value": "NFLGiants",
+                "usage": 0.07
+              },
+              {
+                "value": "med",
+                "usage": 0.01
+              },
+              {
+                "value": "SOCarsenal",
+                "usage": 0.01
+              },
+              {
+                "value": "NBAKnicks",
+                "usage": 0.01
+              },
+              {
+                "value": "NFLSeahawks",
+                "usage": 0.01
+              }
+            ]
+          }
+        }
+      ],
+      "subreddit": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 13,
+            "avr_length": 9.4
+          }
+        }
+      ],
+      "score": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": -106,
+            "max_value": 1150,
+            "avr_value": 3.16
+          }
+        }
+      ],
+      "gilded": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 0,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 10.0
+          }
+        }
+      ],
+      "link_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 8,
+            "avr_length": 7.97
+          }
+        }
+      ],
+      "controversiality": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 0,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "edited": [
+        {
+          "type": "bool",
+          "usage": 1.0,
+          "schema": {
+            "true": 43741,
+            "false": 329160
+          }
+        },
+        {
+          "type": "int",
+          "usage": 0.0,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1423015689,
+            "avr_value": 1406371772.15
+          }
+        }
+      ],
+      "parent_id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10,
+            "avr_length": 8.95
+          }
+        }
+      ],
+      "score_hidden": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 372983
+          }
+        }
+      ],
+      "author": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 8.8
+          }
+        }
+      ],
+      "author_flair_text": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 0,
+            "max_length": 49,
+            "avr_length": 21.1
+          }
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 1427424835,
+            "avr_value": 1427422953.12
+          }
+        }
+      ],
+      "archived": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 372796,
+            "false": 187
+          }
+        }
+      ]
+    }
+  }
+]

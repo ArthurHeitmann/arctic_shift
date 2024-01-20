@@ -1,0 +1,20 @@
+interface RedditComment {
+	author: string,
+	author_flair_css_class: null|string,
+	author_flair_text: null|string,
+	body: string,
+	controversiality: number,
+	created_utc: string,
+	distinguished: null|"moderator"|"admin",
+	edited: boolean|number,
+	gilded: number,
+	id: string,
+	link_id: string,
+	parent_id: string,
+	retrieved_on: number,
+	score: number,
+	stickied?: boolean, // 132568/57117500 (0.23%)
+	subreddit: string,
+	subreddit_id: string,
+	ups: number,
+}

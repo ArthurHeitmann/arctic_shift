@@ -5,6 +5,8 @@ one post or comment. The objects are modified slightly, as described below. Some
 modifications are only introduced in later dumps. This does not apply to the
 previous pushshift dumps (2023-03 and earlier).
 
+Auto generated JSON schemas are available [here](./schemas).
+
 ## 2023-04+
 
 - All objects are sorted by `created_utc`, `id` (secondary) in ascending order
