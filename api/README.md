@@ -31,8 +31,8 @@ Retrieve things based on their ID
 - `/api/posts/search`
 - `/api/comments/search`
 - Examples:
-	- Search in r/worldnews for 10 posts with "wuhan" in the title, starting from December 2019  
-	  [`/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan&limit=10`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-01&subreddit=worldnews&title=wuhan&limit=10)
+	- Search in r/worldnews for 10 posts with "wuhan" in the title, between 2019-12-30 and 2020-01-10, sorted by ascending date
+	  [`/api/posts/search?sort=asc&after=2019-12-30&before=2020-01-10&subreddit=worldnews&title=wuhan&limit=10`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-30&before=2020-01-10&subreddit=worldnews&title=wuhan&limit=10)
 	- Search for up to 100 comments from u/PresidentObama under the post z1c9z  
 	  [`/api/comments/search?author=PresidentObama&link_id=z1c9z&limit=100`](https://arctic-shift.photon-reddit.com/api/comments/search?author=PresidentObama&link_id=z1c9z&limit=100)
 
@@ -52,13 +52,13 @@ Common parameters:
 
 Post search parameters:
 
-| Parameter  | Type      | Default | Notes                                                                 |
-|------------|-----------|---------|-----------------------------------------------------------------------|
-| `over_18`  | `boolean` |         |                                                                       |
-| `spoiler`  | `boolean` |         |                                                                       |
-| `selftext` | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter |
-| `title`    | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter |
-| `url`      | `string`  |         | (exact match)                                                         |
+| Parameter  | Type      | Default | Notes                                                                                                                      |
+|------------|-----------|---------|----------------------------------------------------------------------------------------------------------------------------|
+| `over_18`  | `boolean` |         |                                                                                                                            |
+| `spoiler`  | `boolean` |         |                                                                                                                            |
+| `selftext` | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
+| `title`    | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
+| `url`      | `string`  |         | (exact match)                                                                                                              |
 
 Comment search parameters:
 
