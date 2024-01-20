@@ -1,6 +1,8 @@
 # Project Arctic Shift
 
-Archiving Reddit for posterity.
+Making Reddit data accessible to everyone.
+
+Interact the data through large dumps, an API or web interface.
 
 ## Downloads
 
@@ -70,5 +72,5 @@ pip install zstandard
 Removal requests and generic support requests can be submitted [here](https://docs.google.com/forms/d/e/1FAIpQLSfzkmE8Bg6K_xii7aRm66ljzvo2tR59lTsdJ99acW4WX786Vw/viewform?usp=sf_link).
 To check if your data is in the dataset, search for your username [here](https://arctic-shift.photon-reddit.com/search).
 
-If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377).
+If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377) (*raiderbv* if the link doesn't work).
 Alternatively open an issue or pull request.
