@@ -21,10 +21,11 @@ Search UI: https://arctic-shift.photon-reddit.com/search
 
 Retrieve things based on their ID
 
-| Parameter | Type      | Default | Notes                                                            |
-|-----------|-----------|---------|------------------------------------------------------------------|
-| `ids`     | `ID[]`    |         | Comma separated list                                             |
-| `md2html` | `boolean` | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field |
+| Parameter | Type      | Default | Notes                                                                      |
+|-----------|-----------|---------|----------------------------------------------------------------------------|
+| `ids`     | `ID[]`    |         | Comma separated list                                                       |
+| `md2html` | `boolean` | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field           |
+| `fields`  | `string`  |         | Comma separated list of fields to return ([more info](#selectable-fields)) |
 
 ## Search
 
@@ -40,25 +41,27 @@ Search for posts or comments
 
 Common parameters:
 
-| Parameter   | Type            | Default | Notes                                                            |
-|-------------|-----------------|---------|------------------------------------------------------------------|
-| `author`    | `string`        |         |                                                                  |
-| `subreddit` | `string`        |         |                                                                  |
-| `after`     | `Date`          |         |                                                                  |
-| `before`    | `Date`          |         |                                                                  |
-| `limit`     | `int` (1 - 100) | 25      |                                                                  |
-| `sort`      | `asc` \| `desc` |         | Results are sorted by `created_utc`                              |
-| `md2html`   | `boolean`       | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field |
+| Parameter   | Type            | Default | Notes                                                                      |
+|-------------|-----------------|---------|----------------------------------------------------------------------------|
+| `author`    | `string`        |         |                                                                            |
+| `subreddit` | `string`        |         |                                                                            |
+| `after`     | `Date`          |         |                                                                            |
+| `before`    | `Date`          |         |                                                                            |
+| `limit`     | `int` (1 - 100) | 25      |                                                                            |
+| `sort`      | `asc` \| `desc` |         | Results are sorted by `created_utc`                                        |
+| `md2html`   | `boolean`       | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field           |
+| `fields`    | `string`        |         | Comma separated list of fields to return ([more info](#selectable-fields)) |
 
 Post search parameters:
 
-| Parameter  | Type      | Default | Notes                                                                                                                      |
-|------------|-----------|---------|----------------------------------------------------------------------------------------------------------------------------|
-| `over_18`  | `boolean` |         |                                                                                                                            |
-| `spoiler`  | `boolean` |         |                                                                                                                            |
-| `selftext` | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
-| `title`    | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
-| `url`      | `string`  |         | (exact match)                                                                                                              |
+| Parameter             | Type      | Default | Notes                                                                                                                      |
+|-----------------------|-----------|---------|----------------------------------------------------------------------------------------------------------------------------|
+| `crosspost_parent_id` | `ID`      |         |                                                                                                                            |
+| `over_18`             | `boolean` |         |                                                                                                                            |
+| `spoiler`             | `boolean` |         |                                                                                                                            |
+| `selftext`            | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
+| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
+| `url`                 | `string`  |         | (exact match)                                                                                                              |
 
 Comment search parameters:
 
@@ -165,6 +168,14 @@ limiting options.
 | `limit`           | `int` (>= 1) \| empty | 100     | empty means no limit (`limit=`) |
 
 ## Data type notes
+
+#### **Selectable fields**
+
+By only selecting the fields you need, you can potentially reduce the response time and size.
+
+Common: `author`, `author_flair_text`, `created_utc`, `distinguished`, `id`, `retrieved_on`, `subreddit`, `score`  
+Posts: `crosspost_parent_id`, `link_flair_text`, `over_18`, `selftext`, `spoiler`, `title`, `url`  
+Comments: `body`, `link_id`, `parent_id`
 
 **Boolean**
 
