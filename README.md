@@ -1,8 +1,8 @@
 # Project Arctic Shift
 
-Making Reddit data accessible to everyone.
+Making Reddit data accessible to researchers, moderators and everyone else.
 
-Interact the data through large dumps, an API or web interface.
+Interact with the data through large dumps, an API or web interface.
 
 ## Downloads
 
@@ -72,5 +72,8 @@ pip install zstandard
 Removal requests and generic support requests can be submitted [here](https://docs.google.com/forms/d/e/1FAIpQLSfzkmE8Bg6K_xii7aRm66ljzvo2tR59lTsdJ99acW4WX786Vw/viewform?usp=sf_link).
 To check if your data is in the dataset, search for your username [here](https://arctic-shift.photon-reddit.com/search).
 
-If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev) or [discord](https://discord.com/users/282513022734565377) (*raiderbv* if the link doesn't work).
+Removal forms of other archives: [Pushshift](https://docs.google.com/forms/d/1JSYY0HbudmYYjnZaAMgf2y_GDFgHzZTolK6Yqaz6_kQ) | [PullPush](https://removals.pullpush.io) | potentially [archive.org](https://help.archive.org/help/how-do-i-request-to-remove-something-from-archive-org/#:~:text=If%20you%20would%20like%20to%20submit%20a%20request%20for%20archives,you%20wish%20to%20have%20excluded).
+
+If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev), [discord](https://discord.com/users/282513022734565377) (*raiderbv* if the link doesn't work) or [email](mailto:arctic.shift.contact@gmail.com
+).
 Alternatively open an issue or pull request.

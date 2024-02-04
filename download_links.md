@@ -18,7 +18,7 @@ https://drive.filen.io/f/fb67389b-2eb2-42e8-9d2f-474ca153e105#cgZ5eW2NWXuS9n9rVh
 
 ## Torrents
 
-Torrents are available either in the original zst_blocks format or as recompressed zst files.
+Torrents are available either in the original zst_blocks format or as recompressed zst files. Zst files are reformatted and updated with additional data sources. For question specifically regarding zst files, ask [u/Watchful1](https://www.reddit.com/user/Watchful1/).
 
 Please seed the torrents for as long as possible. Shortly after release downloads will be a bit slow.
 
