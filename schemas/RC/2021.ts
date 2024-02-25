@@ -217,6 +217,6 @@ interface RedditComment_2021 {
 	subreddit_type: "public"|"restricted"|"user"|"archived"|"private",
 	top_awarded_type: null,
 	total_awards_received: number,
-	treatment_tags: ("econ:render:lottie:redstar"|"econ:render:lottie:bulb"|"econ:render:lottie:sunny2"|"econ:render:lottie:cutie"|"econ:render:lottie:champagne")[],
+	treatment_tags: string[],
 	unrepliable_reason?: null,
 }

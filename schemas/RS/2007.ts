@@ -9,7 +9,7 @@ interface RedditPost_2007 {
 		e: "text",
 		t: string,
 	}[],
-	author_flair_text: null|"BS | Zoology | Ecology and Entomology"|"PhD | Robotics"|"PhD | Synthetic Organic Chemistry"|"MS | Computer Science"|"BS | Computer Science"|"North Carolina"|"New York"|"Brian Howard | Writer"|"California"|"Alabama"|"Arkansas"|"Colorado"|"BS | Physics and Astronomy|Education"|"Foreign",
+	author_flair_text: null|string,
 	author_flair_text_color: null|"dark",
 	author_flair_type?: "text"|"richtext",
 	brand_safe: boolean,
@@ -41,7 +41,7 @@ interface RedditPost_2007 {
 	media: null|{
 		oembed: {
 			author_name?: "chrisofduke"|"sevim1987"|"Josh McAdams"|"Chase Nunes"|"Google"|"HardwareWars"|"CanadiansNanaimo"|"Sidewinder77"|"J"|"chatni02"|"MadGangster"|"dayjoborchestra",
-			author_url?: "https://www.youtube.com/user/chrisofduke"|"https://www.youtube.com/user/sevim1987"|"http://www.youtube.com/user/Ikoniak"|"https://www.youtube.com/user/SirChaos"|"https://www.youtube.com/user/Google"|"https://www.youtube.com/user/vortexblade",
+			author_url?: string,
 			description?: string,
 			height: number,
 			html: string,
@@ -50,7 +50,7 @@ interface RedditPost_2007 {
 			thumbnail_height: number,
 			thumbnail_url: string,
 			thumbnail_width: number,
-			title?: "The Wilhelm Scream Compilation"|"kaybolan yillar klip(sevim1987)"|"How to: Magic Smoking Fingers"|"baghdad"|"Police Officer steals Marijuana."|"Tech Talk: Linus Torvalds on git"|"Hardware Wars 1 of 2"|"Penn and Teller - The FCC"|"Kiai Master vs MMA",
+			title?: string,
 			type: "video"|"rich",
 			url?: string,
 			version: "1.0",
@@ -145,7 +145,7 @@ interface RedditPost_2007 {
 	secure_media: null|{
 		oembed: {
 			author_name?: "chrisofduke"|"sevim1987"|"Josh McAdams"|"Chase Nunes"|"Google"|"HardwareWars"|"CanadiansNanaimo"|"Sidewinder77"|"J"|"chatni02"|"MadGangster"|"dayjoborchestra",
-			author_url?: "https://www.youtube.com/user/chrisofduke"|"https://www.youtube.com/user/sevim1987"|"http://www.youtube.com/user/Ikoniak"|"https://www.youtube.com/user/SirChaos"|"https://www.youtube.com/user/Google"|"https://www.youtube.com/user/vortexblade",
+			author_url?: string,
 			description?: string,
 			height: number,
 			html: string,
@@ -154,7 +154,7 @@ interface RedditPost_2007 {
 			thumbnail_height: number,
 			thumbnail_url: string,
 			thumbnail_width: number,
-			title?: "The Wilhelm Scream Compilation"|"kaybolan yillar klip(sevim1987)"|"How to: Magic Smoking Fingers"|"baghdad"|"Police Officer steals Marijuana."|"Tech Talk: Linus Torvalds on git"|"Hardware Wars 1 of 2"|"Penn and Teller - The FCC"|"Kiai Master vs MMA",
+			title?: string,
 			type: "video"|"rich",
 			url?: string,
 			version: "1.0",

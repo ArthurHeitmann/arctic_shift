@@ -104,7 +104,7 @@ interface RedditPost_2020 {
 		link_ids: string[],
 		permalink: string,
 		sr_detail?: {
-			banner_img: "",
+			banner_img: string,
 			banner_size: null|number[],
 			community_icon: string,
 			created: number,
@@ -324,7 +324,7 @@ interface RedditPost_2020 {
 				hls_url?: string,
 				is_gif?: boolean,
 				scrubber_media_url?: string,
-				transcoding_message?: "No tasks are completed",
+				transcoding_message?: string,
 				transcoding_status: "completed"|"error",
 				width?: number,
 			},
@@ -517,7 +517,7 @@ interface RedditPost_2020 {
 				hls_url?: string,
 				is_gif?: boolean,
 				scrubber_media_url?: string,
-				transcoding_message?: "No tasks are completed",
+				transcoding_message?: string,
 				transcoding_status: "completed"|"error",
 				width?: number,
 			},
@@ -576,7 +576,7 @@ interface RedditPost_2020 {
 			caption?: string,
 			display_url?: string,
 			id: number,
-			media_id: "zh1b5vm1nx751"|"e2sc7vm1nx751",
+			media_id: string,
 			outbound_url?: string,
 		}[],
 	}|null,
@@ -616,7 +616,7 @@ interface RedditPost_2020 {
 	link_flair_type: "text"|"richtext",
 	locked: boolean,
 	media: null|{
-		event_id?: "14d816ty1ylvo"|"14mpc1u5zq28o"|"14x7jcyn7h7fx"|"14j4tfj9egfds"|"14y2kkzfls9bi"|"14yfgzskx6ixc"|"14ylk4atxhf3l"|"14yqv010rha10"|"14yytlncxz4x5"|"14yyumkgu980z"|"14zhlibyvj2o4"|"150kzr5qr8hdi"|"1514otayqzge8"|"151lh9fqtg8yp",
+		event_id?: string,
 		oembed?: {
 			author_name?: string,
 			author_url?: string,
@@ -818,7 +818,7 @@ interface RedditPost_2020 {
 	},
 	score: number,
 	secure_media: null|{
-		event_id?: "14d816ty1ylvo"|"14mpc1u5zq28o"|"14x7jcyn7h7fx"|"14j4tfj9egfds"|"14y2kkzfls9bi"|"14yfgzskx6ixc"|"14ylk4atxhf3l"|"14yqv010rha10"|"14yytlncxz4x5"|"14yyumkgu980z"|"14zhlibyvj2o4"|"150kzr5qr8hdi"|"1514otayqzge8"|"151lh9fqtg8yp",
+		event_id?: string,
 		oembed?: {
 			author_name?: string,
 			author_url?: string,

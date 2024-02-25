@@ -6,7 +6,7 @@ interface RedditPost_2018 {
 	author: string,
 	author_cakeday?: boolean,
 	author_created_utc?: number|null,
-	author_flair_background_color?: null|"",
+	author_flair_background_color?: null|string,
 	author_flair_css_class: null|string,
 	author_flair_richtext?: {
 		a?: string,
@@ -29,9 +29,9 @@ interface RedditPost_2018 {
 	category?: null|string,
 	clicked?: boolean,
 	collections?: {
-		author_id: "t2_xrnc7wf"|"t2_240rydgk"|"t2_ryprsip"|"t2_9eisf"|"t2_9qf0f"|"t2_tkm12"|"t2_17aq3ltt"|"t2_nimfq"|"t2_10q8f9"|"t2_zvwma"|"t2_5uijg"|"t2_7nuof"|"t2_d5h4t"|"t2_cf7aq"|"t2_5g3tq",
-		author_name: "KpKrunal"|"lss_ev1"|"RLMatchThreads"|"Chtorrr"|"NicholasCajun"|"RSurvivorMods"|"kp-krunal"|"Vino_7s"|"Rocked03"|"ShuichiRL"|"listn2moremetal"|"ZoomBoingDing"|"optimalg"|"dmziggy"|"Jankinator",
-		collection_id: "45655ba2-0baa-468a-b8f9-a443381c15b4"|"ae841be6-c163-4dc1-8656-a23b8973dd35"|"2f23ec07-cbca-4eff-ab4b-00e0e4bfe6c5"|"ae9cdb06-24e7-40a5-a09e-6fa7b48e3bf0"|"e58b0a7f-8b7f-4ba4-94c8-961e8c752fea"|"00215223-88d0-4326-b19b-9cb9e15cc25a"|"ab52d33f-497d-4bfb-bc47-ec74e19f01dd"|"c3ac1ba3-cc96-485c-a63c-b2eafcd58ef7"|"c77c2d24-e672-4336-9e65-e2abf979d952"|"1013cf77-cf0a-4b8a-963a-635bb03f1276"|"cda86efb-d27f-4024-bdc8-f48acd425701"|"84058501-22f8-4de5-9afc-3b9306eaa656"|"e7542cc6-f3ea-49cd-b90f-a4f8b46ed07a"|"5e084a52-b40e-4aa1-b717-c5d17f1afa5f"|"51e73dec-6089-4a43-aa86-58d58dd2902c",
+		author_id: string,
+		author_name: string,
+		collection_id: string,
 		created_at_utc: number,
 		description?: null|"",
 		display_layout?: null,
@@ -52,7 +52,7 @@ interface RedditPost_2018 {
 		archived: boolean,
 		author: string,
 		author_cakeday?: boolean,
-		author_flair_background_color?: null|"",
+		author_flair_background_color?: null|string,
 		author_flair_css_class: null|string,
 		author_flair_richtext?: {
 			a?: string,
@@ -114,7 +114,7 @@ interface RedditPost_2018 {
 		is_self: boolean,
 		is_video: boolean,
 		likes: null,
-		link_flair_background_color?: ""|"#dadada"|"#ffd635"|"#00a6a5"|"#ff66ac"|"#ffb000",
+		link_flair_background_color?: string,
 		link_flair_css_class: null|string,
 		link_flair_richtext?: {
 			a?: string,
@@ -393,7 +393,7 @@ interface RedditPost_2018 {
 	link_flair_background_color?: string,
 	link_flair_css_class: null|string,
 	link_flair_richtext?: {
-		a?: ":snoo_facepalm:"|":snoo_hearteyes:"|":thumbsup:"|":snoo_dealwithit:"|":snoo_shrug:"|":partyparrot:"|":snoo_simple_smile:",
+		a?: string,
 		e: "text"|"emoji",
 		t?: string,
 		u?: string,
@@ -458,7 +458,7 @@ interface RedditPost_2018 {
 			isGif?: boolean,
 			m?: "image/jpg"|"image/png"|"image/gif",
 			s?: {
-				gif?: "https://i.redd.it/1jb76jalx0121.gif",
+				gif?: string,
 				mp4?: string,
 				u?: string,
 				x: number,

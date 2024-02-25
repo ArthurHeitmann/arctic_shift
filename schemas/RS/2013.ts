@@ -76,7 +76,7 @@ interface RedditPost_2013 {
 			version: "1.0",
 			width: number,
 		},
-		type: "youtube.com"|"youtu.be"|"soundcloud.com"|"vimeo.com"|"m.youtube.com",
+		type: string,
 	},
 	secure_media_embed: {
 		content?: string,
