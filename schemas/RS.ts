@@ -2,7 +2,7 @@ interface RedditPost {
 	_meta?: {
 		is_edited?: boolean,
 		note?: "no_2nd_retrieval"|"initially_unavailable",
-		removal_type?: "deleted"|"moderator"|"reddit"|"automod_filtered"|"content_takedown"|"author"|"copyright_takedown"|"anti_evil_ops"|"community_ops",
+		removal_type?: "deleted"|"moderator"|"reddit"|"automod_filtered"|"content_takedown"|"author"|"copyright_takedown"|"community_ops"|"anti_evil_ops",
 		retrieved_2nd_on?: number,
 		was_deleted_later?: boolean,
 		was_initially_deleted?: boolean,
@@ -319,7 +319,7 @@ interface RedditPost {
 			is_chat_post_feature_enabled?: boolean,
 			is_default_banner?: boolean,
 			is_default_icon?: boolean,
-			key_color: ""|"#ea0027"|"#0079d3"|"#24a0ed"|"#222222"|"#ff4500"|"#ff8717"|"#a5a4a4"|"#545452"|"#ddbd37",
+			key_color: ""|"#ea0027"|"#0079d3"|"#ff8717"|"#24a0ed"|"#222222"|"#ff4500"|"#a5a4a4"|"#545452"|"#ddbd37",
 			link_flair_enabled: boolean,
 			link_flair_position: "left"|"right"|""|null,
 			name: string,
