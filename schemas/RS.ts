@@ -58,8 +58,8 @@ interface RedditPost {
 		archived: boolean,
 		author: string,
 		author_cakeday?: boolean,
-		author_flair_background_color: null|""|"transparent"|"#ffb000"|"#373c3f"|"#23adf9"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#dadada",
-		author_flair_css_class: null|"zBowser"|"ModJamieYoung"|"SHIELD1"|"TheLeague1"|"OrphanBlack1",
+		author_flair_background_color: null|""|"transparent"|"#ffb000"|"#373c3f"|"#23adf9"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#dadada"|"#ff4500",
+		author_flair_css_class: null|"zBowser"|"ModJamieYoung"|"SHIELD1"|"TheLeague1"|"OrphanBlack1"|"staff",
 		author_flair_richtext?: {
 			a?: ":Bowser:"|":invincible3:"|":Chiefs:"|":Broncos:"|":robot2:"|":burgermarttrash:"|":dudeisawit:"|":snoo_dealwithit:",
 			e: "text"|"emoji",
@@ -130,7 +130,7 @@ interface RedditPost {
 		is_video: boolean,
 		likes: null,
 		link_flair_background_color: string|null,
-		link_flair_css_class: null|string,
+		link_flair_css_class: string|null,
 		link_flair_richtext: {
 			a?: ":Discussion:"|":Question:"|":Dive:"|":Camera:"|":619dda9a618eb:",
 			e: "text"|"emoji",
@@ -138,13 +138,13 @@ interface RedditPost {
 			u?: string,
 		}[],
 		link_flair_template_id?: string,
-		link_flair_text: null|string,
+		link_flair_text: string|null,
 		link_flair_text_color: "dark"|"light"|null,
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
 			oembed?: {
-				author_name: "Paramount Pictures"|"Lionsgate Movies"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ",
+				author_name: "Paramount Pictures"|"Lionsgate Movies"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ"|"Prime Video",
 				author_url: string,
 				height: number,
 				html: string,
@@ -215,7 +215,7 @@ interface RedditPost {
 		parent_whitelist_status: "all_ads"|"no_ads"|null,
 		permalink: string,
 		pinned: boolean,
-		post_hint?: "image"|"link"|"self"|"rich:video"|"hosted:video",
+		post_hint?: "image"|"link"|"rich:video"|"self"|"hosted:video",
 		preview?: {
 			enabled: boolean,
 			images: {
@@ -257,7 +257,7 @@ interface RedditPost {
 		score: number,
 		secure_media: null|{
 			oembed?: {
-				author_name: "Paramount Pictures"|"Lionsgate Movies"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ",
+				author_name: "Paramount Pictures"|"Lionsgate Movies"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ"|"Prime Video",
 				author_url: string,
 				height: number,
 				html: string,
@@ -319,7 +319,7 @@ interface RedditPost {
 			is_chat_post_feature_enabled?: boolean,
 			is_default_banner?: boolean,
 			is_default_icon?: boolean,
-			key_color: ""|"#ea0027"|"#0079d3"|"#ff8717"|"#24a0ed"|"#222222"|"#ff4500"|"#a5a4a4"|"#545452"|"#ddbd37",
+			key_color: ""|"#ea0027"|"#ff8717"|"#0079d3"|"#24a0ed"|"#222222"|"#ff4500"|"#a5a4a4"|"#545452"|"#ddbd37",
 			link_flair_enabled: boolean,
 			link_flair_position: "left"|"right"|""|null,
 			name: string,
@@ -636,7 +636,7 @@ interface RedditPost {
 				display_name_prefixed: string,
 				icon_img: string,
 				icon_size: null|number[],
-				key_color: ""|"#46d160"|"#545452"|"#222222"|"#7e53c1"|"#ea0027"|"#ddbd37"|"#0079d3"|"#ff8717",
+				key_color: ""|"#46d160"|"#545452"|"#222222"|"#7e53c1"|"#ea0027"|"#ddbd37"|"#0079d3"|"#ff8717"|"#24a0ed",
 				mod_permissions: [],
 				name: string,
 				over_18: boolean,
