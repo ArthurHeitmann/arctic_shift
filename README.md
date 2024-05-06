@@ -6,7 +6,6 @@ Interact with the data through large dumps, an API or web interface.
 
 ## Downloads
 
-### New dumps
 
 All download links are organized [here](./download_links.md). Once a new dump is available, it will
 also be added on the [releases page](https://github.com/ArthurHeitmann/arctic_shift/releases).
@@ -14,15 +13,6 @@ also be added on the [releases page](https://github.com/ArthurHeitmann/arctic_sh
 Alternatively for downloading data of users or smaller subreddits, you can use [this tool](https://arctic-shift.photon-reddit.com/download-tool).
 
 For information on how the data was collected and modified, see [here](./file_content_explanations.md).
-
-### Original dumps
-
-These dumps are available thanks to Pushshift.
-
-- [2005-06 - 2022-12 (academic torrents)](https://academictorrents.com/details/7c0645c94321311bb05bd879ddee4d0eba08aaee)
-- [2023-01 (academic torrents)](https://academictorrents.com/details/c861d265525c488a9439fb874bd9c3fc38dcdfa5)
-- [2023-02 (academic torrents)](https://academictorrents.com/details/9971c68d2909843a100ae955c6ab6de3e09c04a1)
-- [2023-03 (archive.org)](https://archive.org/details/pushshift-reddit-2023-03/)
 
 ## API
 
@@ -36,7 +26,7 @@ Generally I'd recommend to work with the compressed files instead of unpacking t
 course you have seemingly infinite disk space.
 
 With the helper scripts in this repository you can quickly get started. If you don't want to
-use those files or want to use a CLI tool, head over to the [zst_blocks repository](https://github.com/ArthurHeitmann/zst_blocks_format).
+use those files or want to use a CLI tool, head over to the [zst_blocks repository](https://github.com/ArthurHeitmann/zst_blocks_format) for processing .zst_blocks files.
 
 For using the helper scripts:
 

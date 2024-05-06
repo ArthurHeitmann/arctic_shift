@@ -2,7 +2,7 @@ interface RedditComment {
 	_meta?: {
 		is_edited?: boolean,
 		note?: "no_2nd_retrieval"|"initially_unavailable",
-		removal_type?: "deleted"|"removed",
+		removal_type?: "deleted"|"removed"|"removed by reddit",
 		retrieved_2nd_on?: number,
 		was_deleted_later?: boolean,
 		was_initially_deleted?: boolean,

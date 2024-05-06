@@ -34,3 +34,8 @@ the new content are merged, in the following way:
 - If a thing could not be retrieved a 2nd time (usually because the subreddit was banned),
   `_meta.note` is set to `"no_2nd_retrieval"`
 - If a thing was initially unavailable, but now is, `_meta.note` is set to `"initially_unavailable"`
+
+## 2024-04+
+
+Archives will now only be released as .zst files, now that I'm changing by database and API architecture,
+and am no longer using .zst_blocks files.

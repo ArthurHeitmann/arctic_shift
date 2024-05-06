@@ -1,13 +1,13 @@
 interface RedditPost {
 	_meta: {
-		is_edited?: boolean, // 1046786/88380667 (1.18%)
-		note?: "initially_unavailable"|"no_2nd_retrieval", // 48242432/88380667 (54.58%)
-		removal_type?: "deleted"|"reddit"|"moderator"|"automod_filtered"|"content_takedown"|"copyright_takedown"|"author"|"anti_evil_ops"|"community_ops", // 9292179/88380667 (10.51%)
-		retrieved_2nd_on?: number, // 40138235/88380667 (45.42%)
-		was_deleted_later?: boolean, // 8473650/88380667 (9.59%)
-		was_initially_deleted?: boolean, // 818529/88380667 (0.93%)
+		is_edited?: boolean, // 32509/41914348 (0.08%)
+		note?: "no_2nd_retrieval"|"initially_unavailable", // 40650484/41914348 (96.98%)
+		removal_type?: "deleted"|"reddit"|"moderator"|"automod_filtered"|"content_takedown"|"copyright_takedown"|"author", // 315638/41914348 (0.75%)
+		retrieved_2nd_on?: number, // 1263864/41914348 (3.02%)
+		was_deleted_later?: boolean, // 291091/41914348 (0.69%)
+		was_initially_deleted?: boolean, // 24547/41914348 (0.06%)
 	},
-	ad_business?: null, // 273657/88380667 (0.31%)
+	ad_business?: null, // 130238/41914348 (0.31%)
 	ad_promoted_user_posts?: null|{
 		all_awardings: [],
 		allow_live_comments: boolean,
@@ -47,11 +47,11 @@ interface RedditPost {
 		edited: boolean,
 		gallery_data?: {
 			items: {
-				caption?: string, // 12/42 (28.57%)
+				caption?: string, // 6/21 (28.57%)
 				id: number,
 				media_id: "hoo0fdvjnslc1"|"8dlqmlpknslc1"|"a7rdcig4qnmc1"|"tls53ig4qnmc1"|"gkzbrig4qnmc1"|"gpu8mig4qnmc1"|"d9c29ig4qnmc1",
 			}[],
-		}, // 12/30 (40.00%)
+		}, // 6/15 (40.00%)
 		gilded: number,
 		gildings: {
 		},
@@ -60,7 +60,7 @@ interface RedditPost {
 		id: "1b8b6hr"|"1b46sa1"|"1b7sryd"|"18np0kv"|"19fb9zq"|"19ej1fh",
 		is_created_from_ads_ui: boolean,
 		is_crosspostable: boolean,
-		is_gallery?: boolean, // 12/30 (40.00%)
+		is_gallery?: boolean, // 6/15 (40.00%)
 		is_meta: boolean,
 		is_original_content: boolean,
 		is_reddit_media_domain: boolean,
@@ -98,10 +98,10 @@ interface RedditPost {
 			type: "youtube.com",
 		},
 		media_embed: {
-			content?: string, // 4/30 (13.33%)
-			height?: number, // 4/30 (13.33%)
-			scrolling?: boolean, // 4/30 (13.33%)
-			width?: number, // 4/30 (13.33%)
+			content?: string, // 2/15 (13.33%)
+			height?: number, // 2/15 (13.33%)
+			scrolling?: boolean, // 2/15 (13.33%)
+			width?: number, // 2/15 (13.33%)
 		},
 		media_metadata?: {
 			[key: string]: {
@@ -120,7 +120,7 @@ interface RedditPost {
 				},
 				status: "valid",
 			},
-		}, // 12/30 (40.00%)
+		}, // 6/15 (40.00%)
 		media_only: boolean,
 		mod_note: null,
 		mod_reason_by: null,
@@ -135,7 +135,7 @@ interface RedditPost {
 		parent_whitelist_status: "all_ads",
 		permalink: string,
 		pinned: boolean,
-		post_hint?: "image"|"rich:video", // 12/30 (40.00%)
+		post_hint?: "image"|"rich:video", // 6/15 (40.00%)
 		preview?: {
 			enabled: boolean,
 			images: {
@@ -153,7 +153,7 @@ interface RedditPost {
 				variants: {
 				},
 			}[],
-		}, // 12/30 (40.00%)
+		}, // 6/15 (40.00%)
 		pwls: number,
 		quarantine: boolean,
 		removal_reason: null,
@@ -181,11 +181,11 @@ interface RedditPost {
 			type: "youtube.com",
 		},
 		secure_media_embed: {
-			content?: string, // 4/30 (13.33%)
-			height?: number, // 4/30 (13.33%)
-			media_domain_url?: string, // 4/30 (13.33%)
-			scrolling?: boolean, // 4/30 (13.33%)
-			width?: number, // 4/30 (13.33%)
+			content?: string, // 2/15 (13.33%)
+			height?: number, // 2/15 (13.33%)
+			media_domain_url?: string, // 2/15 (13.33%)
+			scrolling?: boolean, // 2/15 (13.33%)
+			width?: number, // 2/15 (13.33%)
 		},
 		selftext: string,
 		selftext_html: null|string,
@@ -251,51 +251,51 @@ interface RedditPost {
 		ups: number,
 		upvote_ratio: number,
 		url: string,
-		url_overridden_by_dest?: string, // 24/30 (80.00%)
+		url_overridden_by_dest?: string, // 12/15 (80.00%)
 		user_reports: [],
 		view_count: null,
 		visited: boolean,
 		whitelist_status: "all_ads",
 		wls: number,
-	}[], // 273657/88380667 (0.31%)
-	ad_supplementary_text_md?: null|string, // 273657/88380667 (0.31%)
-	ad_user_targeting?: null, // 273657/88380667 (0.31%)
-	adserver_click_url?: null, // 273657/88380667 (0.31%)
-	adserver_imp_pixel?: null, // 273657/88380667 (0.31%)
+	}[], // 130238/41914348 (0.31%)
+	ad_supplementary_text_md?: null|string, // 130238/41914348 (0.31%)
+	ad_user_targeting?: null, // 130238/41914348 (0.31%)
+	adserver_click_url?: null, // 130238/41914348 (0.31%)
+	adserver_imp_pixel?: null, // 130238/41914348 (0.31%)
 	all_awardings: [],
 	allow_live_comments: boolean,
-	app_store_data?: null, // 273657/88380667 (0.31%)
-	approved?: boolean, // 1/88380667 (0.00%)
+	app_store_data?: null, // 130238/41914348 (0.31%)
+	approved?: boolean, // 1/41914348 (0.00%)
 	approved_at_utc: null,
 	approved_by: null,
 	archived: boolean,
 	author: string,
-	author_cakeday?: boolean, // 223192/88380667 (0.25%)
+	author_cakeday?: boolean, // 96726/41914348 (0.23%)
 	author_flair_background_color: null|string,
 	author_flair_css_class: null|string,
 	author_flair_richtext?: {
-		a?: string, // 1684343/4538169 (37.12%)
+		a?: string, // 831381/2246752 (37.00%)
 		e: "text"|"emoji",
-		t?: string, // 2853826/4538169 (62.88%)
-		u?: string, // 1684343/4538169 (37.12%)
-	}[], // 79252555/88380667 (89.67%)
+		t?: string, // 1415371/2246752 (63.00%)
+		u?: string, // 831381/2246752 (37.00%)
+	}[], // 41524132/41914348 (99.07%)
 	author_flair_template_id: null|string,
 	author_flair_text: null|string,
 	author_flair_text_color: null|"dark"|"light"|"",
-	author_flair_type?: "text"|"richtext", // 79252555/88380667 (89.67%)
-	author_fullname?: string, // 79252555/88380667 (89.67%)
-	author_id?: string|null, // 273657/88380667 (0.31%)
+	author_flair_type?: "text"|"richtext", // 41524132/41914348 (99.07%)
+	author_fullname?: string, // 41524132/41914348 (99.07%)
+	author_id?: string|null, // 130238/41914348 (0.31%)
 	author_is_blocked: boolean,
-	author_patreon_flair?: boolean, // 79252555/88380667 (89.67%)
-	author_premium?: boolean, // 79252555/88380667 (89.67%)
+	author_patreon_flair?: boolean, // 41524132/41914348 (99.07%)
+	author_premium?: boolean, // 41524132/41914348 (99.07%)
 	awarders: [],
 	banned_at_utc: null,
 	banned_by: null,
-	call_to_action?: string, // 223269/88380667 (0.25%)
-	campaign_id?: null, // 273657/88380667 (0.31%)
+	call_to_action?: "Learn More"|"Shop Now"|"Download"|"Sign Up"|"Install"|"View More"|"Apply Now"|"Play Now"|"Order Now"|"Contact Us"|"Watch Now"|"Get a Quote"|"Get Showtimes"|"Pre-order Now"|"See Menu", // 106575/41914348 (0.25%)
+	campaign_id?: null, // 130238/41914348 (0.31%)
 	can_gild: boolean,
 	can_mod_post: boolean,
-	category: null|"diy_and_crafts"|"drawing_and_painting"|"entertainment"|"gaming"|"photography"|"animals"|"videos"|"food"|"music"|"funny"|""|"memes",
+	category: null|"diy_and_crafts"|"drawing_and_painting"|"entertainment"|"photography"|"gaming"|"funny",
 	clicked: boolean,
 	collections?: {
 		author_id: string,
@@ -317,11 +317,11 @@ interface RedditPost {
 			display_name_prefixed: string,
 			icon_img: string,
 			icon_size: null|number[],
-			key_color: ""|"#0dd3bb"|"#ddbd37"|"#ffb000"|"#46d160"|"#0079d3"|"#25b79f"|"#ea0027",
+			key_color: ""|"#0dd3bb"|"#ffb000"|"#46d160"|"#0079d3"|"#25b79f",
 			mod_permissions: [],
 			name: string,
 			over_18: boolean,
-			primary_color: string,
+			primary_color: ""|"#0a2255"|"#373c3f"|"#fd8ba8"|"#0dd3bb"|"#fb5050"|"#ffffff"|"#19e6b9"|"#bbbdbf"|"#ffb000"|"#007373"|"#7a28d7"|"#ff002b"|"#1b1c1d"|"#5876ee",
 			sr: string,
 			sr_display_name_prefixed: string,
 			subreddit_type: "public"|"restricted",
@@ -330,15 +330,15 @@ interface RedditPost {
 			url: string,
 			user_can_crosspost: boolean|null,
 			whitelist_status: null|"all_ads",
-		}, // 37/14317 (0.26%)
+		}, // 28/5245 (0.53%)
 		subreddit_id: string,
 		title: string,
-	}[], // 14317/88380667 (0.02%)
+	}[], // 5245/41914348 (0.01%)
 	content_categories: null|("drawing_and_painting"|"gaming"|"photography"|"diy_and_crafts"|"entertainment"|"music"|"comics"|"writing"|"videos")[],
 	contest_mode: boolean,
 	created: number,
 	created_utc: number,
-	crosspost_parent?: string, // 3015668/88380667 (3.41%)
+	crosspost_parent?: string, // 1413843/41914348 (3.37%)
 	crosspost_parent_list?: {
 		all_awardings: [],
 		allow_live_comments: boolean,
@@ -346,27 +346,27 @@ interface RedditPost {
 		approved_by: null,
 		archived: boolean,
 		author: string,
-		author_cakeday?: boolean, // 9237/2990759 (0.31%)
+		author_cakeday?: boolean, // 4076/1410343 (0.29%)
 		author_flair_background_color: null|string,
 		author_flair_css_class: null|string,
 		author_flair_richtext?: {
-			a?: string, // 84529/229493 (36.83%)
+			a?: string, // 40072/108706 (36.86%)
 			e: "text"|"emoji",
-			t?: string, // 144964/229493 (63.17%)
-			u?: string, // 84529/229493 (36.83%)
-		}[], // 2875696/2990759 (96.15%)
+			t?: string, // 68634/108706 (63.14%)
+			u?: string, // 40072/108706 (36.86%)
+		}[], // 1395675/1410343 (98.96%)
 		author_flair_template_id: null|string,
 		author_flair_text: null|string,
 		author_flair_text_color: null|"dark"|"light"|"",
-		author_flair_type?: "text"|"richtext", // 2875696/2990759 (96.15%)
-		author_fullname?: string, // 2875696/2990759 (96.15%)
+		author_flair_type?: "text"|"richtext", // 1395675/1410343 (98.96%)
+		author_fullname?: string, // 1395675/1410343 (98.96%)
 		author_is_blocked: boolean,
-		author_patreon_flair?: boolean, // 2875696/2990759 (96.15%)
-		author_premium?: boolean, // 2875696/2990759 (96.15%)
+		author_patreon_flair?: boolean, // 1395675/1410343 (98.96%)
+		author_premium?: boolean, // 1395675/1410343 (98.96%)
 		awarders: [],
 		banned_at_utc: null,
 		banned_by: null,
-		call_to_action?: "", // 161/2990759 (0.01%)
+		call_to_action?: "", // 57/1410343 (0.00%)
 		can_gild: boolean,
 		can_mod_post: boolean,
 		category: null|""|"diy_and_crafts"|"drawing_and_painting"|"gaming"|"food"|"memes"|"entertainment",
@@ -387,27 +387,27 @@ interface RedditPost {
 				community_icon: string,
 				created: number,
 				created_utc: number,
-				display_name: "ClassicAJPW"|"TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC",
-				display_name_prefixed: "r/ClassicAJPW"|"r/TheOriginOfTheSongs"|"r/The_Guardian_Temple"|"r/CGLightsC",
+				display_name: "TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC"|"ClassicAJPW",
+				display_name_prefixed: "r/TheOriginOfTheSongs"|"r/The_Guardian_Temple"|"r/CGLightsC"|"r/ClassicAJPW",
 				icon_img: string,
 				icon_size: null|number[],
 				key_color: ""|"#24a0ed",
 				mod_permissions: [],
-				name: "t5_ahxm0g"|"t5_aukdxj"|"t5_xg9hh"|"t5_9broja",
+				name: "t5_aukdxj"|"t5_xg9hh"|"t5_9broja"|"t5_ahxm0g",
 				over_18: boolean,
 				primary_color: "",
-				sr: "ClassicAJPW"|"TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC",
-				sr_display_name_prefixed: "r/ClassicAJPW"|"r/TheOriginOfTheSongs"|"r/The_Guardian_Temple"|"r/CGLightsC",
+				sr: "TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC"|"ClassicAJPW",
+				sr_display_name_prefixed: "r/TheOriginOfTheSongs"|"r/The_Guardian_Temple"|"r/CGLightsC"|"r/ClassicAJPW",
 				subreddit_type: "public",
 				subscribers: number,
-				title: "ClassicAJPW"|"TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC",
-				url: "/r/ClassicAJPW/"|"/r/TheOriginOfTheSongs/"|"/r/The_Guardian_Temple/"|"/r/CGLightsC/",
+				title: "TheOriginOfTheSongs"|"The_Guardian_Temple"|"CGLightsC"|"ClassicAJPW",
+				url: "/r/TheOriginOfTheSongs/"|"/r/The_Guardian_Temple/"|"/r/CGLightsC/"|"/r/ClassicAJPW/",
 				user_can_crosspost: boolean,
-				whitelist_status: "all_ads"|"some_ads"|null,
-			}, // 5/1147 (0.44%)
+				whitelist_status: null|"some_ads"|"all_ads",
+			}, // 4/480 (0.83%)
 			subreddit_id: string,
 			title: string,
-		}[], // 1147/2990759 (0.04%)
+		}[], // 480/1410343 (0.03%)
 		content_categories: null|("photography"|"drawing_and_painting"|"comics"|"gaming"|"diy_and_crafts"|"entertainment"|"writing"|"music"|"videos")[],
 		contest_mode: boolean,
 		created: number,
@@ -419,12 +419,12 @@ interface RedditPost {
 		edited: boolean|number,
 		gallery_data?: {
 			items: {
-				caption?: string, // 92602/2436213 (3.80%)
+				caption?: string, // 44029/1233918 (3.57%)
 				id: number,
 				media_id: string,
-				outbound_url?: string, // 54429/2436213 (2.23%)
+				outbound_url?: string, // 25719/1233918 (2.08%)
 			}[],
-		}|null, // 423359/2990759 (14.16%)
+		}|null, // 200717/1410343 (14.23%)
 		gilded: number,
 		gildings: {
 		},
@@ -433,7 +433,7 @@ interface RedditPost {
 		id: string,
 		is_created_from_ads_ui: boolean,
 		is_crosspostable: boolean,
-		is_gallery?: boolean, // 423359/2990759 (14.16%)
+		is_gallery?: boolean, // 200717/1410343 (14.23%)
 		is_meta: boolean,
 		is_original_content: boolean,
 		is_reddit_media_domain: boolean,
@@ -444,89 +444,89 @@ interface RedditPost {
 		link_flair_background_color: string|null,
 		link_flair_css_class: null|string,
 		link_flair_richtext: {
-			a?: string, // 78888/491692 (16.04%)
+			a?: string, // 37351/231482 (16.14%)
 			e: "text"|"emoji",
-			t?: string, // 412804/491692 (83.96%)
-			u?: string, // 78888/491692 (16.04%)
+			t?: string, // 194131/231482 (83.86%)
+			u?: string, // 37351/231482 (16.14%)
 		}[],
-		link_flair_template_id?: string, // 1041155/2990759 (34.81%)
+		link_flair_template_id?: string, // 487090/1410343 (34.54%)
 		link_flair_text: null|string,
 		link_flair_text_color: "dark"|"light"|null,
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
-			event_id?: "18hnzysb1elcs", // 2/969515 (0.00%)
+			event_id?: "18hnzysb1elcs", // 1/457691 (0.00%)
 			oembed?: {
-				author_name?: string, // 55045/723237 (7.61%)
-				author_url?: string, // 54740/723237 (7.57%)
-				cache_age?: number, // 6918/723237 (0.96%)
-				description?: string, // 4469/723237 (0.62%)
-				height?: number|null, // 722945/723237 (99.96%)
-				html?: string, // 722945/723237 (99.96%)
-				mean_alpha?: number, // 123/723237 (0.02%)
-				provider_name?: string, // 722945/723237 (99.96%)
-				provider_url?: string, // 722945/723237 (99.96%)
-				thumbnail_height?: number|null, // 674865/723237 (93.31%)
-				thumbnail_url?: string, // 715468/723237 (98.93%)
-				thumbnail_width?: number|null, // 674865/723237 (93.31%)
-				title?: string, // 716005/723237 (99.00%)
-				type?: "video"|"rich", // 722945/723237 (99.96%)
-				url?: string, // 8170/723237 (1.13%)
-				version?: "1.0", // 722945/723237 (99.96%)
-				width?: number, // 722945/723237 (99.96%)
-			}, // 723237/969515 (74.60%)
+				author_name?: string, // 25666/341874 (7.51%)
+				author_url?: string, // 25518/341874 (7.46%)
+				cache_age?: number, // 3324/341874 (0.97%)
+				description?: string, // 2135/341874 (0.62%)
+				height?: number|null, // 341726/341874 (99.96%)
+				html?: string, // 341726/341874 (99.96%)
+				mean_alpha?: number, // 59/341874 (0.02%)
+				provider_name?: string, // 341726/341874 (99.96%)
+				provider_url?: string, // 341726/341874 (99.96%)
+				thumbnail_height?: number|null, // 318460/341874 (93.15%)
+				thumbnail_url?: string, // 338138/341874 (98.91%)
+				thumbnail_width?: number|null, // 318460/341874 (93.15%)
+				title?: string, // 338391/341874 (98.98%)
+				type?: "video"|"rich", // 341726/341874 (99.96%)
+				url?: string, // 3937/341874 (1.15%)
+				version?: "1.0", // 341726/341874 (99.96%)
+				width?: number, // 341726/341874 (99.96%)
+			}, // 341874/457691 (74.70%)
 			reddit_video?: {
-				bitrate_kbps?: number, // 245644/246276 (99.74%)
-				dash_url?: string, // 246245/246276 (99.99%)
-				duration?: number, // 246245/246276 (99.99%)
-				fallback_url?: string, // 246245/246276 (99.99%)
-				has_audio?: boolean, // 239524/246276 (97.26%)
-				height?: number|null, // 246275/246276 (100.00%)
-				hls_url?: string, // 246245/246276 (99.99%)
-				is_gif?: boolean, // 246245/246276 (99.99%)
-				scrubber_media_url?: string, // 246245/246276 (99.99%)
-				transcoding_message?: string, // 31/246276 (0.01%)
+				bitrate_kbps?: number, // 115522/115816 (99.75%)
+				dash_url?: string, // 115803/115816 (99.99%)
+				duration?: number, // 115803/115816 (99.99%)
+				fallback_url?: string, // 115803/115816 (99.99%)
+				has_audio?: boolean, // 112692/115816 (97.30%)
+				height: number|null,
+				hls_url?: string, // 115803/115816 (99.99%)
+				is_gif?: boolean, // 115803/115816 (99.99%)
+				scrubber_media_url?: string, // 115803/115816 (99.99%)
+				transcoding_message?: string, // 13/115816 (0.01%)
 				transcoding_status: "completed"|"error",
-				width?: number|null, // 246275/246276 (100.00%)
-			}, // 246276/969515 (25.40%)
-			type?: string, // 723239/969515 (74.60%)
+				width: number|null,
+			}, // 115816/457691 (25.30%)
+			type?: string, // 341875/457691 (74.70%)
 		},
 		media_embed: {
-			content?: string|null, // 723239/2990759 (24.18%)
-			height?: number, // 723239/2990759 (24.18%)
-			scrolling?: boolean, // 723239/2990759 (24.18%)
-			width?: number, // 723239/2990759 (24.18%)
+			content?: string|null, // 341875/1410343 (24.24%)
+			height?: number, // 341875/1410343 (24.24%)
+			scrolling?: boolean, // 341875/1410343 (24.24%)
+			width?: number, // 341875/1410343 (24.24%)
 		},
 		media_metadata?: {
 			[key: string]: {
-				dashUrl?: string, // 3091/2519726 (0.12%)
-				e?: "Image"|"AnimatedImage"|"RedditVideo", // 2519008/2519726 (99.97%)
-				hlsUrl?: string, // 3091/2519726 (0.12%)
-				id?: string, // 2519008/2519726 (99.97%)
-				isGif?: boolean, // 3091/2519726 (0.12%)
-				m?: "image/jpg"|"image/png"|"image/gif", // 2515917/2519726 (99.85%)
+				dashUrl?: string, // 1499/1273837 (0.12%)
+				e?: "Image"|"AnimatedImage"|"RedditVideo", // 1273378/1273837 (99.96%)
+				hlsUrl?: string, // 1499/1273837 (0.12%)
+				id?: string, // 1273378/1273837 (99.96%)
+				isGif?: boolean, // 1499/1273837 (0.12%)
+				m?: "image/jpg"|"image/png"|"image/gif", // 1271879/1273837 (99.85%)
 				o?: {
 					u: string,
 					x: number,
 					y: number,
-				}[], // 1799701/2519726 (71.42%)
+				}[], // 908876/1273837 (71.35%)
 				p?: {
 					u: string,
 					x: number,
 					y: number,
-				}[], // 2515917/2519726 (99.85%)
+				}[], // 1271879/1273837 (99.85%)
 				s?: {
-					gif?: string, // 91801/2515917 (3.65%)
-					mp4?: string, // 91801/2515917 (3.65%)
-					u?: string, // 2424116/2515917 (96.35%)
+					gif?: string, // 44761/1271879 (3.52%)
+					mp4?: string, // 44761/1271879 (3.52%)
+					u?: string, // 1227118/1271879 (96.48%)
 					x: number,
 					y: number,
-				}, // 2515917/2519726 (99.85%)
+				}, // 1271879/1273837 (99.85%)
 				status: "valid"|"failed"|"unprocessed",
-				x?: number, // 3091/2519726 (0.12%)
-				y?: number, // 3091/2519726 (0.12%)
+				x?: number, // 1499/1273837 (0.12%)
+				y?: number, // 1499/1273837 (0.12%)
 			},
-		}|null, // 457673/2990759 (15.30%)
+		}|null, // 216767/1410343 (15.37%)
 		media_only: boolean,
 		mod_note: null,
 		mod_reason_by: null,
@@ -546,7 +546,7 @@ interface RedditPost {
 			options: {
 				id: string,
 				text: string,
-				vote_count?: number, // 1340/13359 (10.03%)
+				vote_count?: number, // 205/6604 (3.10%)
 			}[],
 			prediction_status: null,
 			resolved_option_id: null,
@@ -557,8 +557,8 @@ interface RedditPost {
 			user_won_amount: null,
 			vote_updates_remained: null,
 			voting_end_timestamp: number,
-		}|null, // 3818/2990759 (0.13%)
-		post_hint?: "image"|"rich:video"|"hosted:video"|"link"|"self"|"video", // 2201746/2990759 (73.62%)
+		}|null, // 1796/1410343 (0.13%)
+		post_hint?: "image"|"rich:video"|"hosted:video"|"link"|"self"|"video", // 1074641/1410343 (76.20%)
 		preview?: {
 			enabled: boolean,
 			images: {
@@ -585,7 +585,7 @@ interface RedditPost {
 							url: string,
 							width: number,
 						},
-					}, // 170324/2201746 (7.74%)
+					}, // 81788/1074641 (7.61%)
 					mp4?: {
 						resolutions: {
 							height: number,
@@ -597,7 +597,7 @@ interface RedditPost {
 							url: string,
 							width: number,
 						},
-					}, // 170324/2201746 (7.74%)
+					}, // 81788/1074641 (7.61%)
 					nsfw?: {
 						resolutions: {
 							height: number,
@@ -609,7 +609,7 @@ interface RedditPost {
 							url: string,
 							width: number,
 						},
-					}, // 1499726/2201746 (68.12%)
+					}, // 725296/1074641 (67.49%)
 					obfuscated?: {
 						resolutions: {
 							height: number,
@@ -621,11 +621,11 @@ interface RedditPost {
 							url: string,
 							width: number,
 						},
-					}, // 1504947/2201746 (68.35%)
+					}, // 727773/1074641 (67.72%)
 				},
 			}[],
 			reddit_video_preview?: {
-				bitrate_kbps?: number, // 775246/775334 (99.99%)
+				bitrate_kbps?: number, // 372339/372380 (99.99%)
 				dash_url: string,
 				duration: number,
 				fallback_url: string,
@@ -635,59 +635,59 @@ interface RedditPost {
 				scrubber_media_url: string,
 				transcoding_status: "completed",
 				width: number,
-			}, // 775334/2201746 (35.21%)
-		}, // 2201746/2990759 (73.62%)
+			}, // 372380/1074641 (34.65%)
+		}, // 1074641/1410343 (76.20%)
 		pwls: null|number,
 		quarantine: boolean,
 		removal_reason: null|"legal",
 		removed_by: null,
-		removed_by_category: null|"deleted"|"moderator"|"reddit"|"content_takedown"|"automod_filtered"|"author"|"copyright_takedown",
+		removed_by_category: null|"moderator"|"deleted"|"reddit"|"author"|"automod_filtered"|"copyright_takedown"|"content_takedown",
 		report_reasons: null,
 		saved: boolean,
 		score: number,
 		secure_media: null|{
-			event_id?: "18hnzysb1elcs", // 2/969515 (0.00%)
+			event_id?: "18hnzysb1elcs", // 1/457691 (0.00%)
 			oembed?: {
-				author_name?: string, // 55045/723237 (7.61%)
-				author_url?: string, // 54740/723237 (7.57%)
-				cache_age?: number, // 6918/723237 (0.96%)
-				description?: string, // 4469/723237 (0.62%)
-				height?: number|null, // 722945/723237 (99.96%)
-				html?: string, // 722945/723237 (99.96%)
-				mean_alpha?: number, // 123/723237 (0.02%)
-				provider_name?: string, // 722945/723237 (99.96%)
-				provider_url?: string, // 722945/723237 (99.96%)
-				thumbnail_height?: number|null, // 674865/723237 (93.31%)
-				thumbnail_url?: string, // 715468/723237 (98.93%)
-				thumbnail_width?: number|null, // 674865/723237 (93.31%)
-				title?: string, // 716005/723237 (99.00%)
-				type?: "video"|"rich", // 722945/723237 (99.96%)
-				url?: string, // 8170/723237 (1.13%)
-				version?: "1.0", // 722945/723237 (99.96%)
-				width?: number, // 722945/723237 (99.96%)
-			}, // 723237/969515 (74.60%)
+				author_name?: string, // 25666/341874 (7.51%)
+				author_url?: string, // 25518/341874 (7.46%)
+				cache_age?: number, // 3324/341874 (0.97%)
+				description?: string, // 2135/341874 (0.62%)
+				height?: number|null, // 341726/341874 (99.96%)
+				html?: string, // 341726/341874 (99.96%)
+				mean_alpha?: number, // 59/341874 (0.02%)
+				provider_name?: string, // 341726/341874 (99.96%)
+				provider_url?: string, // 341726/341874 (99.96%)
+				thumbnail_height?: number|null, // 318460/341874 (93.15%)
+				thumbnail_url?: string, // 338138/341874 (98.91%)
+				thumbnail_width?: number|null, // 318460/341874 (93.15%)
+				title?: string, // 338391/341874 (98.98%)
+				type?: "video"|"rich", // 341726/341874 (99.96%)
+				url?: string, // 3937/341874 (1.15%)
+				version?: "1.0", // 341726/341874 (99.96%)
+				width?: number, // 341726/341874 (99.96%)
+			}, // 341874/457691 (74.70%)
 			reddit_video?: {
-				bitrate_kbps?: number, // 245644/246276 (99.74%)
-				dash_url?: string, // 246245/246276 (99.99%)
-				duration?: number, // 246245/246276 (99.99%)
-				fallback_url?: string, // 246245/246276 (99.99%)
-				has_audio?: boolean, // 239524/246276 (97.26%)
-				height?: number|null, // 246275/246276 (100.00%)
-				hls_url?: string, // 246245/246276 (99.99%)
-				is_gif?: boolean, // 246245/246276 (99.99%)
-				scrubber_media_url?: string, // 246245/246276 (99.99%)
-				transcoding_message?: string, // 31/246276 (0.01%)
+				bitrate_kbps?: number, // 115522/115816 (99.75%)
+				dash_url?: string, // 115803/115816 (99.99%)
+				duration?: number, // 115803/115816 (99.99%)
+				fallback_url?: string, // 115803/115816 (99.99%)
+				has_audio?: boolean, // 112692/115816 (97.30%)
+				height: number|null,
+				hls_url?: string, // 115803/115816 (99.99%)
+				is_gif?: boolean, // 115803/115816 (99.99%)
+				scrubber_media_url?: string, // 115803/115816 (99.99%)
+				transcoding_message?: string, // 13/115816 (0.01%)
 				transcoding_status: "completed"|"error",
-				width?: number|null, // 246275/246276 (100.00%)
-			}, // 246276/969515 (25.40%)
-			type?: string, // 723239/969515 (74.60%)
+				width: number|null,
+			}, // 115816/457691 (25.30%)
+			type?: string, // 341875/457691 (74.70%)
 		},
 		secure_media_embed: {
-			content?: string|null, // 723239/2990759 (24.18%)
-			height?: number, // 723239/2990759 (24.18%)
-			media_domain_url?: string, // 723239/2990759 (24.18%)
-			scrolling?: boolean, // 723239/2990759 (24.18%)
-			width?: number, // 723239/2990759 (24.18%)
+			content?: string|null, // 341875/1410343 (24.24%)
+			height?: number, // 341875/1410343 (24.24%)
+			media_domain_url?: string, // 341875/1410343 (24.24%)
+			scrolling?: boolean, // 341875/1410343 (24.24%)
+			width?: number, // 341875/1410343 (24.24%)
 		},
 		selftext: string,
 		selftext_html: null|string,
@@ -710,151 +710,148 @@ interface RedditPost {
 		ups: number,
 		upvote_ratio: number,
 		url: string,
-		url_overridden_by_dest?: string, // 2674147/2990759 (89.41%)
+		url_overridden_by_dest?: string, // 1260494/1410343 (89.37%)
 		user_reports: [],
 		view_count: null,
 		visited: boolean,
 		whitelist_status: null|"all_ads"|"some_ads"|"house_only",
 		wls: null|number,
-	}[], // 3015668/88380667 (3.41%)
+	}[], // 1413843/41914348 (3.37%)
 	discussion_type: null,
 	distinguished: null|"moderator"|"admin",
 	domain: string,
-	domain_override?: string|null, // 273657/88380667 (0.31%)
+	domain_override?: string|null, // 130238/41914348 (0.31%)
 	downs: number,
 	edited: boolean|number,
-	embed_type?: null|"scrape", // 273657/88380667 (0.31%)
-	embed_url?: null|string, // 273657/88380667 (0.31%)
-	event_end?: number, // 3/88380667 (0.00%)
-	event_is_live?: boolean, // 3/88380667 (0.00%)
-	event_start?: number, // 3/88380667 (0.00%)
-	events?: [], // 273657/88380667 (0.31%)
-	eventsOnRender?: [], // 273657/88380667 (0.31%)
+	embed_type?: null|"scrape", // 130238/41914348 (0.31%)
+	embed_url?: null|string, // 130238/41914348 (0.31%)
+	events?: [], // 130238/41914348 (0.31%)
+	eventsOnRender?: [], // 130238/41914348 (0.31%)
 	gallery_data?: {
 		items: {
-			call_to_action?: "Shop Now"|"Learn More"|"Sign Up"|"View More"|"Download"|"Order Now"|"Install"|"Apply Now"|"Contact Us"|"Watch Now"|"Play Now"|"Get a Quote"|"See Menu"|"Get Showtimes"|"Pre-order Now", // 173672/26207237 (0.66%)
-			caption?: string, // 734426/26207237 (2.80%)
-			display_url?: string, // 182569/26207237 (0.70%)
+			call_to_action?: "Shop Now"|"Learn More"|"Sign Up"|"View More"|"Download"|"Order Now"|"Install"|"Apply Now"|"Contact Us"|"Play Now"|"Watch Now"|"See Menu"|"Get a Quote"|"Get Showtimes"|"Pre-order Now", // 84398/13992763 (0.60%)
+			caption?: string, // 353055/13992763 (2.52%)
+			display_url?: string, // 88650/13992763 (0.63%)
 			id: number,
 			media_id: string,
-			outbound_url?: string, // 373800/26207237 (1.43%)
+			outbound_url?: string, // 176247/13992763 (1.26%)
 			product?: {
 				description: string,
-				price?: string, // 74464/78221 (95.20%)
+				price?: string, // 36514/38380 (95.14%)
 				title: string,
-			}, // 78221/26207237 (0.30%)
+			}, // 38380/13992763 (0.27%)
 		}[],
-	}|null, // 7915970/88380667 (8.96%)
+	}|null, // 3763035/41914348 (8.98%)
 	gilded: number,
 	gildings: {
 	},
 	hidden: boolean,
 	hide_score: boolean,
-	href_url?: string, // 273657/88380667 (0.31%)
+	href_url?: string, // 130238/41914348 (0.31%)
 	id: string,
-	ignore_reports?: boolean, // 1/88380667 (0.00%)
-	impression_id?: null, // 273657/88380667 (0.31%)
-	impression_id_str?: null, // 273657/88380667 (0.31%)
-	is_blank?: boolean, // 273657/88380667 (0.31%)
+	ignore_reports?: boolean, // 1/41914348 (0.00%)
+	impression_id?: null, // 130238/41914348 (0.31%)
+	impression_id_str?: null, // 130238/41914348 (0.31%)
+	is_blank?: boolean, // 130238/41914348 (0.31%)
 	is_created_from_ads_ui: boolean,
 	is_crosspostable: boolean,
-	is_gallery?: boolean, // 7915970/88380667 (8.96%)
+	is_gallery?: boolean, // 3763035/41914348 (8.98%)
 	is_meta: boolean,
 	is_original_content: boolean,
 	is_reddit_media_domain: boolean,
 	is_robot_indexable: boolean,
 	is_self: boolean,
-	is_survey_ad?: boolean, // 273657/88380667 (0.31%)
+	is_survey_ad?: boolean, // 130238/41914348 (0.31%)
 	is_video: boolean,
 	likes: null,
 	link_flair_background_color: string|null,
 	link_flair_css_class: null|string,
 	link_flair_richtext: {
-		a?: string, // 1949676/17810847 (10.95%)
+		a?: string, // 903662/8182725 (11.04%)
 		e: "text"|"emoji",
-		t?: string, // 15861171/17810847 (89.05%)
-		u?: string, // 1949676/17810847 (10.95%)
+		t?: string, // 7279063/8182725 (88.96%)
+		u?: string, // 903662/8182725 (11.04%)
 	}[],
-	link_flair_template_id?: string, // 34381359/88380667 (38.90%)
+	link_flair_template_id?: string, // 15749961/41914348 (37.58%)
 	link_flair_text: null|string,
 	link_flair_text_color: "dark"|"light"|null,
 	link_flair_type: "text"|"richtext",
 	locked: boolean,
 	media: null|{
-		event_id?: string, // 457/7572676 (0.01%)
+		event_id?: string, // 403/3164536 (0.01%)
 		oembed?: {
-			author_name?: string, // 1595882/5309538 (30.06%)
-			author_url?: string, // 1592773/5309538 (30.00%)
-			cache_age?: number, // 87328/5309538 (1.64%)
-			description?: string, // 183456/5309538 (3.46%)
-			height?: number|null, // 5306592/5309538 (99.94%)
-			html?: string, // 5306592/5309538 (99.94%)
-			mean_alpha?: number, // 5851/5309538 (0.11%)
-			provider_name?: string, // 5306592/5309538 (99.94%)
-			provider_url?: string, // 5306592/5309538 (99.94%)
-			thumbnail_height?: number|null, // 5080860/5309538 (95.69%)
-			thumbnail_url?: string, // 5219771/5309538 (98.31%)
-			thumbnail_width?: number|null, // 5080860/5309538 (95.69%)
-			title?: string, // 5219420/5309538 (98.30%)
-			type?: "video"|"rich", // 5306592/5309538 (99.94%)
-			url?: string, // 144809/5309538 (2.73%)
-			version?: "1.0", // 5306592/5309538 (99.94%)
-			width?: number, // 5306592/5309538 (99.94%)
-		}, // 5309538/7572676 (70.11%)
+			author_name?: string, // 738098/2432411 (30.34%)
+			author_url?: string, // 736676/2432411 (30.29%)
+			cache_age?: number, // 40920/2432411 (1.68%)
+			description?: string, // 81620/2432411 (3.36%)
+			height?: number|null, // 2431038/2432411 (99.94%)
+			html?: string, // 2431038/2432411 (99.94%)
+			mean_alpha?: number, // 2686/2432411 (0.11%)
+			provider_name?: string, // 2431038/2432411 (99.94%)
+			provider_url?: string, // 2431038/2432411 (99.94%)
+			thumbnail_height?: number|null, // 2324458/2432411 (95.56%)
+			thumbnail_url?: string, // 2390361/2432411 (98.27%)
+			thumbnail_width?: number|null, // 2324458/2432411 (95.56%)
+			title?: string, // 2390218/2432411 (98.27%)
+			type?: "video"|"rich", // 2431038/2432411 (99.94%)
+			url?: string, // 66890/2432411 (2.75%)
+			version?: "1.0", // 2431038/2432411 (99.94%)
+			width?: number, // 2431038/2432411 (99.94%)
+		}, // 2432411/3164536 (76.86%)
 		reddit_video?: {
-			bitrate_kbps?: number, // 2254029/2262681 (99.62%)
-			dash_url?: string, // 2254029/2262681 (99.62%)
-			duration?: number, // 2254029/2262681 (99.62%)
-			fallback_url?: string, // 2254029/2262681 (99.62%)
-			has_audio?: boolean, // 2250986/2262681 (99.48%)
-			height?: number|null, // 2262105/2262681 (99.97%)
-			hls_url?: string, // 2254029/2262681 (99.62%)
-			is_gif?: boolean, // 2254029/2262681 (99.62%)
-			scrubber_media_url?: string, // 2254029/2262681 (99.62%)
-			transcoding_message?: string, // 8652/2262681 (0.38%)
+			bitrate_kbps?: number, // 728475/731722 (99.56%)
+			dash_url?: string, // 728475/731722 (99.56%)
+			duration?: number, // 728475/731722 (99.56%)
+			fallback_url?: string, // 728475/731722 (99.56%)
+			has_audio?: boolean, // 727015/731722 (99.36%)
+			height?: number|null, // 731583/731722 (99.98%)
+			hls_url?: string, // 728475/731722 (99.56%)
+			is_gif?: boolean, // 728475/731722 (99.56%)
+			scrubber_media_url?: string, // 728475/731722 (99.56%)
+			transcoding_message?: string, // 3247/731722 (0.44%)
 			transcoding_status: "completed"|"error",
-			width?: number|null, // 2262105/2262681 (99.97%)
-		}, // 2262681/7572676 (29.88%)
-		type?: string, // 5309995/7572676 (70.12%)
+			width?: number|null, // 731583/731722 (99.98%)
+		}, // 731722/3164536 (23.12%)
+		type?: string, // 2432814/3164536 (76.88%)
 	},
 	media_embed: {
-		content?: string|null, // 5309995/88380667 (6.01%)
-		height?: number, // 5309995/88380667 (6.01%)
-		scrolling?: boolean, // 5309995/88380667 (6.01%)
-		width?: number, // 5309995/88380667 (6.01%)
+		content?: string|null, // 2432814/41914348 (5.80%)
+		height?: number, // 2432814/41914348 (5.80%)
+		scrolling?: boolean, // 2432814/41914348 (5.80%)
+		width?: number, // 2432814/41914348 (5.80%)
 	},
 	media_metadata?: {
 		[key: string]: {
-			dashUrl?: string, // 46556/27481071 (0.17%)
-			e?: "Image"|"AnimatedImage"|"RedditVideo", // 27416574/27481071 (99.77%)
-			hlsUrl?: string, // 46556/27481071 (0.17%)
-			id?: string, // 27416574/27481071 (99.77%)
-			isGif?: boolean, // 46556/27481071 (0.17%)
-			m?: "image/jpg"|"image/png"|"image/gif", // 27370018/27481071 (99.60%)
+			dashUrl?: string, // 18098/14569005 (0.12%)
+			e?: "Image"|"AnimatedImage"|"RedditVideo", // 14513298/14569005 (99.62%)
+			hlsUrl?: string, // 18098/14569005 (0.12%)
+			id?: string, // 14513298/14569005 (99.62%)
+			isGif?: boolean, // 18098/14569005 (0.12%)
+			m?: "image/jpg"|"image/png"|"image/gif", // 14495200/14569005 (99.49%)
 			o?: {
 				u: string,
 				x: number,
 				y: number,
-			}[], // 11885213/27481071 (43.25%)
+			}[], // 6787198/14569005 (46.59%)
 			p?: {
 				u: string,
 				x: number,
 				y: number,
-			}[], // 27370018/27481071 (99.60%)
+			}[], // 14495200/14569005 (99.49%)
 			s?: {
-				gif?: string, // 349784/27370018 (1.28%)
-				mp4?: string, // 349784/27370018 (1.28%)
-				u?: string, // 27020234/27370018 (98.72%)
+				gif?: string, // 189857/14495200 (1.31%)
+				mp4?: string, // 189857/14495200 (1.31%)
+				u?: string, // 14305343/14495200 (98.69%)
 				x: number,
 				y: number,
-			}, // 27370018/27481071 (99.60%)
+			}, // 14495200/14569005 (99.49%)
 			status: "valid"|"unprocessed"|"failed",
-			x?: number, // 46556/27481071 (0.17%)
-			y?: number, // 46556/27481071 (0.17%)
+			x?: number, // 18098/14569005 (0.12%)
+			y?: number, // 18098/14569005 (0.12%)
 		},
-	}|null, // 8929983/88380667 (10.10%)
+	}|null, // 4202998/41914348 (10.03%)
 	media_only: boolean,
-	mobile_ad_url?: string, // 273657/88380667 (0.31%)
+	mobile_ad_url?: string, // 130238/41914348 (0.31%)
 	mod_note: null,
 	mod_reason_by: null,
 	mod_reason_title: null,
@@ -864,9 +861,9 @@ interface RedditPost {
 	num_comments: number,
 	num_crossposts: number,
 	num_reports: null,
-	original_link?: null, // 273657/88380667 (0.31%)
+	original_link?: null, // 130238/41914348 (0.31%)
 	outbound_link?: {
-	}, // 273657/88380667 (0.31%)
+	}, // 130238/41914348 (0.31%)
 	over_18: boolean,
 	parent_whitelist_status: null|"all_ads"|"some_ads"|"house_only"|"promo_all"|"promo_adult_nsfw",
 	permalink: string,
@@ -876,7 +873,7 @@ interface RedditPost {
 		options: {
 			id: string,
 			text: string,
-			vote_count?: number, // 51602/565348 (9.13%)
+			vote_count?: number, // 743/303902 (0.24%)
 		}[],
 		prediction_status: null,
 		resolved_option_id: null,
@@ -887,8 +884,8 @@ interface RedditPost {
 		user_won_amount: null,
 		vote_updates_remained: null,
 		voting_end_timestamp: number,
-	}|null, // 204422/88380667 (0.23%)
-	post_hint?: "image"|"link"|"rich:video"|"hosted:video"|"self"|"gallery"|"video", // 36510661/88380667 (41.31%)
+	}|null, // 94587/41914348 (0.23%)
+	post_hint?: "image"|"link"|"rich:video"|"hosted:video"|"self"|"gallery"|"video", // 20693479/41914348 (49.37%)
 	preview?: {
 		enabled: boolean,
 		images: {
@@ -915,7 +912,7 @@ interface RedditPost {
 						url: string,
 						width: number,
 					},
-				}, // 1989257/36510661 (5.45%)
+				}, // 1075119/20693479 (5.20%)
 				mp4?: {
 					resolutions: {
 						height: number,
@@ -927,7 +924,7 @@ interface RedditPost {
 						url: string,
 						width: number,
 					},
-				}, // 1989257/36510661 (5.45%)
+				}, // 1075119/20693479 (5.20%)
 				nsfw?: {
 					resolutions: {
 						height: number,
@@ -939,7 +936,7 @@ interface RedditPost {
 						url: string,
 						width: number,
 					},
-				}, // 19710920/36510661 (53.99%)
+				}, // 11496724/20693479 (55.56%)
 				obfuscated?: {
 					resolutions: {
 						height: number,
@@ -951,11 +948,11 @@ interface RedditPost {
 						url: string,
 						width: number,
 					},
-				}, // 19865986/36510661 (54.41%)
+				}, // 11578378/20693479 (55.95%)
 			},
 		}[],
 		reddit_video_preview?: {
-			bitrate_kbps?: number, // 2995320/2995427 (100.00%)
+			bitrate_kbps?: number, // 1597764/1597818 (100.00%)
 			dash_url: string,
 			duration: number,
 			fallback_url: string,
@@ -965,99 +962,97 @@ interface RedditPost {
 			scrubber_media_url: string,
 			transcoding_status: "completed",
 			width: number,
-		}, // 2995427/36510661 (8.20%)
-	}, // 36510661/88380667 (41.31%)
-	priority_id?: null, // 273657/88380667 (0.31%)
-	product_ids?: [], // 273657/88380667 (0.31%)
-	promo_layout?: null|"PRODUCT"|"SPOTLIGHT_VIDEO", // 273657/88380667 (0.31%)
-	promoted?: boolean, // 273657/88380667 (0.31%)
-	promoted_by?: null, // 273657/88380667 (0.31%)
-	promoted_display_name?: null, // 273657/88380667 (0.31%)
-	promoted_url?: null, // 273657/88380667 (0.31%)
+		}, // 1597818/20693479 (7.72%)
+	}, // 20693479/41914348 (49.37%)
+	priority_id?: null, // 130238/41914348 (0.31%)
+	product_ids?: [], // 130238/41914348 (0.31%)
+	promo_layout?: null|"PRODUCT"|"SPOTLIGHT_VIDEO", // 130238/41914348 (0.31%)
+	promoted?: boolean, // 130238/41914348 (0.31%)
+	promoted_by?: null, // 130238/41914348 (0.31%)
+	promoted_display_name?: null, // 130238/41914348 (0.31%)
+	promoted_url?: null, // 130238/41914348 (0.31%)
 	pwls: null|number,
 	quarantine: boolean,
 	removal_reason: null|"legal",
-	removed?: boolean, // 1/88380667 (0.00%)
+	removed?: boolean, // 1/41914348 (0.00%)
 	removed_by: null,
-	removed_by_category: null|"deleted"|"moderator"|"reddit"|"automod_filtered"|"content_takedown"|"author"|"copyright_takedown"|"anti_evil_ops"|"community_ops",
+	removed_by_category: null|"reddit"|"moderator"|"automod_filtered"|"deleted"|"author"|"content_takedown",
 	report_reasons: null,
 	retrieved_on: number,
-	rte_mode?: "markdown", // 2/88380667 (0.00%)
 	saved: boolean,
 	score: number,
 	secure_media: null|{
-		event_id?: string, // 457/7572676 (0.01%)
+		event_id?: string, // 403/3164536 (0.01%)
 		oembed?: {
-			author_name?: string, // 1595882/5309538 (30.06%)
-			author_url?: string, // 1592773/5309538 (30.00%)
-			cache_age?: number, // 87328/5309538 (1.64%)
-			description?: string, // 183456/5309538 (3.46%)
-			height?: number|null, // 5306592/5309538 (99.94%)
-			html?: string, // 5306592/5309538 (99.94%)
-			mean_alpha?: number, // 5851/5309538 (0.11%)
-			provider_name?: string, // 5306592/5309538 (99.94%)
-			provider_url?: string, // 5306592/5309538 (99.94%)
-			thumbnail_height?: number|null, // 5080860/5309538 (95.69%)
-			thumbnail_url?: string, // 5219771/5309538 (98.31%)
-			thumbnail_width?: number|null, // 5080860/5309538 (95.69%)
-			title?: string, // 5219420/5309538 (98.30%)
-			type?: "video"|"rich", // 5306592/5309538 (99.94%)
-			url?: string, // 144809/5309538 (2.73%)
-			version?: "1.0", // 5306592/5309538 (99.94%)
-			width?: number, // 5306592/5309538 (99.94%)
-		}, // 5309538/7572676 (70.11%)
+			author_name?: string, // 738098/2432411 (30.34%)
+			author_url?: string, // 736676/2432411 (30.29%)
+			cache_age?: number, // 40920/2432411 (1.68%)
+			description?: string, // 81620/2432411 (3.36%)
+			height?: number|null, // 2431038/2432411 (99.94%)
+			html?: string, // 2431038/2432411 (99.94%)
+			mean_alpha?: number, // 2686/2432411 (0.11%)
+			provider_name?: string, // 2431038/2432411 (99.94%)
+			provider_url?: string, // 2431038/2432411 (99.94%)
+			thumbnail_height?: number|null, // 2324458/2432411 (95.56%)
+			thumbnail_url?: string, // 2390361/2432411 (98.27%)
+			thumbnail_width?: number|null, // 2324458/2432411 (95.56%)
+			title?: string, // 2390218/2432411 (98.27%)
+			type?: "video"|"rich", // 2431038/2432411 (99.94%)
+			url?: string, // 66890/2432411 (2.75%)
+			version?: "1.0", // 2431038/2432411 (99.94%)
+			width?: number, // 2431038/2432411 (99.94%)
+		}, // 2432411/3164536 (76.86%)
 		reddit_video?: {
-			bitrate_kbps?: number, // 2254029/2262681 (99.62%)
-			dash_url?: string, // 2254029/2262681 (99.62%)
-			duration?: number, // 2254029/2262681 (99.62%)
-			fallback_url?: string, // 2254029/2262681 (99.62%)
-			has_audio?: boolean, // 2250986/2262681 (99.48%)
-			height?: number|null, // 2262105/2262681 (99.97%)
-			hls_url?: string, // 2254029/2262681 (99.62%)
-			is_gif?: boolean, // 2254029/2262681 (99.62%)
-			scrubber_media_url?: string, // 2254029/2262681 (99.62%)
-			transcoding_message?: string, // 8652/2262681 (0.38%)
+			bitrate_kbps?: number, // 728475/731722 (99.56%)
+			dash_url?: string, // 728475/731722 (99.56%)
+			duration?: number, // 728475/731722 (99.56%)
+			fallback_url?: string, // 728475/731722 (99.56%)
+			has_audio?: boolean, // 727015/731722 (99.36%)
+			height?: number|null, // 731583/731722 (99.98%)
+			hls_url?: string, // 728475/731722 (99.56%)
+			is_gif?: boolean, // 728475/731722 (99.56%)
+			scrubber_media_url?: string, // 728475/731722 (99.56%)
+			transcoding_message?: string, // 3247/731722 (0.44%)
 			transcoding_status: "completed"|"error",
-			width?: number|null, // 2262105/2262681 (99.97%)
-		}, // 2262681/7572676 (29.88%)
-		type?: string, // 5309995/7572676 (70.12%)
+			width?: number|null, // 731583/731722 (99.98%)
+		}, // 731722/3164536 (23.12%)
+		type?: string, // 2432814/3164536 (76.88%)
 	},
 	secure_media_embed: {
-		content?: string|null, // 5309995/88380667 (6.01%)
-		height?: number, // 5309995/88380667 (6.01%)
-		media_domain_url?: string, // 5309995/88380667 (6.01%)
-		scrolling?: boolean, // 5309995/88380667 (6.01%)
-		width?: number, // 5309995/88380667 (6.01%)
+		content?: string|null, // 2432814/41914348 (5.80%)
+		height?: number, // 2432814/41914348 (5.80%)
+		media_domain_url?: string, // 2432814/41914348 (5.80%)
+		scrolling?: boolean, // 2432814/41914348 (5.80%)
+		width?: number, // 2432814/41914348 (5.80%)
 	},
 	selftext: string,
 	send_replies: boolean,
-	show_media?: boolean, // 273657/88380667 (0.31%)
-	sk_ad_network_data?: null, // 273657/88380667 (0.31%)
-	spam?: boolean, // 1/88380667 (0.00%)
+	show_media?: boolean, // 130238/41914348 (0.31%)
+	sk_ad_network_data?: null, // 130238/41914348 (0.31%)
+	spam?: boolean, // 1/41914348 (0.00%)
 	spoiler: boolean,
 	stickied: boolean,
-	subcaption?: string, // 9275/88380667 (0.01%)
+	subcaption?: string, // 4540/41914348 (0.01%)
 	subreddit: string,
 	subreddit_id: string,
 	subreddit_name_prefixed: string,
 	subreddit_subscribers: number,
 	subreddit_type: "public"|"user"|"restricted"|"private",
 	suggested_sort: null|"new"|"confidence"|"qa"|"top"|"old"|"live"|"controversial"|"random",
-	third_party_trackers?: [], // 273657/88380667 (0.31%)
-	third_party_tracking?: null, // 273657/88380667 (0.31%)
-	third_party_tracking_2?: null, // 273657/88380667 (0.31%)
-	thumbnail: string|null,
-	thumbnail_height?: number|null, // 88379690/88380667 (100.00%)
-	thumbnail_width?: number|null, // 88379690/88380667 (100.00%)
+	third_party_trackers?: [], // 130238/41914348 (0.31%)
+	third_party_tracking?: null, // 130238/41914348 (0.31%)
+	third_party_tracking_2?: null, // 130238/41914348 (0.31%)
+	thumbnail: string,
+	thumbnail_height?: number|null, // 41913937/41914348 (100.00%)
+	thumbnail_width?: number|null, // 41913937/41914348 (100.00%)
 	title: string,
 	top_awarded_type: null,
 	total_awards_received: number,
 	treatment_tags: [],
-	unrepliable_reason?: "BLOCK", // 5/88380667 (0.00%)
 	ups: number,
 	upvote_ratio: number,
 	url: string,
-	url_overridden_by_dest?: string, // 52581876/88380667 (59.49%)
+	url_overridden_by_dest?: string, // 24668315/41914348 (58.85%)
 	user_reports: [],
 	view_count: null,
 	visited: boolean,

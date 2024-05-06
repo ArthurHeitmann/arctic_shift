@@ -18,7 +18,7 @@ https://drive.filen.io/f/fb67389b-2eb2-42e8-9d2f-474ca153e105#cgZ5eW2NWXuS9n9rVh
 
 ## Torrents
 
-Torrents are available either in the original zst_blocks format or as recompressed zst files. Zst files are reformatted and updated with additional data sources. For question specifically regarding zst files, ask [u/Watchful1](https://www.reddit.com/user/Watchful1/).
+Torrents are available either in the original zst_blocks format or as recompressed zst files. Zst files up to 2024-03 are reformatted and updated with additional data sources. For question specifically regarding zst files, ask [u/Watchful1](https://www.reddit.com/user/Watchful1/). Starting from 2024-04, archives will only be released as zst files by me.
 
 Please seed the torrents for as long as possible. Shortly after release downloads will be a bit slow.
 
@@ -30,8 +30,10 @@ Please seed the torrents for as long as possible. Shortly after release download
 | 2023-11           | [Academic Torrents (superseded)](https://academictorrents.com/details/aee7728b787892d3cce4d6df3c86c2728e2be1d7) | [Academic Torrents](https://academictorrents.com/details/425b791647cdb2752f921351828452ca8e09aef8) |
 | 2023-12           | -                                                                                                               | [Academic Torrents](https://academictorrents.com/details/0d0364f8433eb90b6e3276b7e150a37da8e4a12b) |
 | 2005-06 - 2023-12 | [Academic Torrents](https://academictorrents.com/details/9c263fc85366c1ef8f5bb9da0203f4c8c8db75f4)              | -                                                                                                  |
-| 2023-01           | [Academic Torrents](https://academictorrents.com/details/ac88546145ca3227e2b90e51ab477c4527dd8b90)              | [Academic Torrents](https://academictorrents.com/details/c440a293602270f03a47e3110a174365b965a093) |
-| 2023-02           | [Academic Torrents](https://academictorrents.com/details/5969ae3e21bb481fea63bf649ec933c222c1f824)              | [Academic Torrents](https://academictorrents.com/details/1dc131c38d09d8f3912a0040a9a7434ffccc1c78) |
+| 2024-01           | [Academic Torrents](https://academictorrents.com/details/ac88546145ca3227e2b90e51ab477c4527dd8b90)              | [Academic Torrents](https://academictorrents.com/details/c440a293602270f03a47e3110a174365b965a093) |
+| 2024-02           | [Academic Torrents](https://academictorrents.com/details/5969ae3e21bb481fea63bf649ec933c222c1f824)              | [Academic Torrents](https://academictorrents.com/details/1dc131c38d09d8f3912a0040a9a7434ffccc1c78) |
+| 2024-03           | [Academic Torrents](https://academictorrents.com/details/deef710de36929e0aa77200fddda73c86142372c)              | [Academic Torrents](https://academictorrents.com/details/ca989aa94cbd0ac5258553500d9b0f3584f6e4f7) |
+| 2024-04           | [Academic Torrents](https://academictorrents.com/details/ad4617a3e9c1f52405197fc088b28a8018e12a7a)              | discontinued                                                                                       |
 
 ### Other
 
