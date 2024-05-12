@@ -2,7 +2,7 @@
 
 An API for querying reddit data.
 
-Still work in progress. No uptime or performance guarantees :)
+No uptime or performance guarantees :)
 
 Base URL: https://arctic-shift.photon-reddit.com
 
@@ -54,22 +54,23 @@ Common parameters:
 
 Post search parameters:
 
-| Parameter             | Type      | Default | Notes                                                                                                                      |
-|-----------------------|-----------|---------|----------------------------------------------------------------------------------------------------------------------------|
-| `crosspost_parent_id` | `ID`      |         |                                                                                                                            |
-| `over_18`             | `boolean` |         |                                                                                                                            |
-| `spoiler`             | `boolean` |         |                                                                                                                            |
-| `selftext`            | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
-| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits) |
-| `url`                 | `string`  |         | (exact match)                                                                                                              |
+| Parameter             | Type      | Default | Notes                                                                                                                                     |
+|-----------------------|-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| `crosspost_parent_id` | `ID`      |         |                                                                                                                                           |
+| `over_18`             | `boolean` |         |                                                                                                                                           |
+| `spoiler`             | `boolean` |         |                                                                                                                                           |
+| `selftext`            | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                |
+| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                |
+| `url`                 | `string`  |         | prefix match, example: https://www.youtube.com/xyz will return https://www.youtube.com/xyz?p=abc or also https://www.youtube.com/xyz?=15s |
+| `url_exact`           | `boolean` | `false` | if `true`, `url` queries will only return exact matches                                                                                   |
 
 Comment search parameters:
 
-| Parameter   | Type                        | Default | Notes                                                         |
-|-------------|-----------------------------|---------|---------------------------------------------------------------|
-| `body`      | `string` (full text search) |         | Only in use with `author`, `link_id` or `parent_id` parameter |
-| `link_id`   | `ID`                        |         | ID of post                                                    |
-| `parent_id` | `ID` \| empty               |         | empty means top level comment                                 |
+| Parameter   | Type                        | Default | Notes                                                                                                                           |
+|-------------|-----------------------------|---------|---------------------------------------------------------------|-----------------------------------------------------------------|
+| `body`      | `string` (full text search) |         | Only in use with `author`, `subreddit`, `link_id` or `parent_id` parameter (not supported with very active users or subreddits) |
+| `link_id`   | `ID`                        |         | ID of post                                                                                                                      |
+| `parent_id` | `ID` \| empty               |         | empty means top level comment                                                                                                   |
 
 ## Comments tree
 
@@ -173,8 +174,8 @@ limiting options.
 
 By only selecting the fields you need, you can potentially reduce the response time and size.
 
-Common: `author`, `author_flair_text`, `created_utc`, `distinguished`, `id`, `retrieved_on`, `subreddit`, `score`  
-Posts: `crosspost_parent_id`, `link_flair_text`, `over_18`, `selftext`, `spoiler`, `title`, `url`  
+Common: `author`, `author_fullname`, `author_flair_text`, `created_utc`, `distinguished`, `id`, `retrieved_on`, `subreddit`, `subreddit_id`, `score`  
+Posts: `crosspost_parent`, `link_flair_text`, `num_comments`, `over_18`, `post_hint`, `selftext`, `spoiler`, `title`, `url`  
 Comments: `body`, `link_id`, `parent_id`
 
 **Boolean**
@@ -228,5 +229,5 @@ Sometimes the database needs to warm up, so if you try again a second time, it m
 
 **Upvotes count and number of comments**
 
-The upvotes count and number of comments have usually not been updated since the post was created. This is because
-the post/comment was archived shortly after creation, and has not been updated since.
+After 36 hours, all data is updated and should then be the same as that released in .zst dumps.
+Before that, `score`, `num_comments` will be 1 or 0, since data is archived the first time, the moment it was posted.
