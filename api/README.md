@@ -1,5 +1,26 @@
 # Arctic Shift API
 
+<!-- TOC -->
+
+- [Arctic Shift API](#arctic-shift-api)
+	- [ID lookup](#id-lookup)
+	- [Posts and comments](#posts-and-comments)
+		- [Search](#search)
+		- [Comments tree](#comments-tree)
+		- [Aggregations](#aggregations)
+	- [Subreddits](#subreddits)
+		- [Search](#search)
+	- [Users](#users)
+		- [Search](#search)
+		- [Interactions](#interactions)
+			- [User to user interactions](#user-to-user-interactions)
+			- [User to subreddit interactions](#user-to-subreddit-interactions)
+		- [Aggregate flairs](#aggregate-flairs)
+	- [Data type notes](#data-type-notes)
+	- [Other notes](#other-notes)
+
+<!-- /TOC -->
+
 An API for querying reddit data.
 
 No uptime or performance guarantees :)
@@ -11,10 +32,10 @@ Status page: https://status.arctic-shift.photon-reddit.com
 Search UI: https://arctic-shift.photon-reddit.com/search
 
 ## ID lookup
-
 - `/api/posts/ids`
 - `/api/comments/ids`
-- Limit: 500 IDs
+- `/api/subreddits/ids`
+- `/api/users/ids` ([see notes](#search-2))
 - Examples
 	- Retrieve 2 posts with the IDs ei30r4 and eitwb3  
 	  [`/api/posts/ids?ids=ei30r4,eitwb3`](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=ei30r4,eitwb3)
@@ -23,60 +44,63 @@ Retrieve things based on their ID
 
 | Parameter | Type      | Default | Notes                                                                      |
 |-----------|-----------|---------|----------------------------------------------------------------------------|
-| `ids`     | `ID[]`    |         | Comma separated list                                                       |
+| `ids`     | `ID[]`    |         | Comma separated list. Limit: 500                                           |
 | `md2html` | `boolean` | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field           |
 | `fields`  | `string`  |         | Comma separated list of fields to return ([more info](#selectable-fields)) |
 
-## Search
+## Posts and comments
+
+### Search
 
 - `/api/posts/search`
 - `/api/comments/search`
 - Examples:
-	- Search in r/worldnews for 10 posts with "wuhan" in the title, between 2019-12-30 and 2020-01-10, sorted by ascending date
-	  [`/api/posts/search?sort=asc&after=2019-12-30&before=2020-01-10&subreddit=worldnews&title=wuhan&limit=10`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-30&before=2020-01-10&subreddit=worldnews&title=wuhan&limit=10)
+	- Search in r/worldnews for 10 posts with "wuhan" in the title, posted after 2019-12-30, sorted by ascending date  
+	  [`/api/posts/search?sort=asc&after=2019-12-30&subreddit=worldnews&title=wuhan&limit=10`](https://arctic-shift.photon-reddit.com/api/posts/search?sort=asc&after=2019-12-30&subreddit=worldnews&title=wuhan&limit=10)
 	- Search for up to 100 comments from u/PresidentObama under the post z1c9z  
 	  [`/api/comments/search?author=PresidentObama&link_id=z1c9z&limit=100`](https://arctic-shift.photon-reddit.com/api/comments/search?author=PresidentObama&link_id=z1c9z&limit=100)
 
-Search for posts or comments
-
 Common parameters:
 
-| Parameter   | Type            | Default | Notes                                                                      |
-|-------------|-----------------|---------|----------------------------------------------------------------------------|
-| `author`    | `string`        |         |                                                                            |
-| `subreddit` | `string`        |         |                                                                            |
-| `after`     | `Date`          |         |                                                                            |
-| `before`    | `Date`          |         |                                                                            |
-| `limit`     | `int` (1 - 100) | 25      |                                                                            |
-| `sort`      | `asc` \| `desc` |         | Results are sorted by `created_utc`                                        |
-| `md2html`   | `boolean`       | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field           |
-| `fields`    | `string`        |         | Comma separated list of fields to return ([more info](#selectable-fields)) |
+| Parameter           | Type                        | Default | Notes                                                                                            |
+|---------------------|-----------------------------|---------|--------------------------------------------------------------------------------------------------|
+| `author`            | `string`                    |         |                                                                                                  |
+| `subreddit`         | `string`                    |         |                                                                                                  |
+| `author_flair_text` | `string`                    |         | (full text search) for limitations see `title` or `body` below                                   |
+| `after`             | `Date`                      |         | Time when thing was posted                                                                       |
+| `before`            | `Date`                      |         | Time when thing was posted                                                                       |
+| `limit`             | `int` (1 - 100) \| `"auto"` | 25      | With `"auto"` between 100 and 1000 results are returned, depending on the capacity of the server |
+| `sort`              | `asc` \| `desc`             |         | Results are sorted by `created_utc`                                                              |
+| `md2html`           | `boolean`                   | `false` | If `true`, adds auto generated `selftext_html`/`body_html` field                                 |
+| `fields`            | `string`                    |         | Comma separated list of fields to return ([more info](#selectable-fields))                       |
 
 Post search parameters:
 
-| Parameter             | Type      | Default | Notes                                                                                                                                     |
-|-----------------------|-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `crosspost_parent_id` | `ID`      |         |                                                                                                                                           |
-| `over_18`             | `boolean` |         |                                                                                                                                           |
-| `spoiler`             | `boolean` |         |                                                                                                                                           |
-| `selftext`            | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                |
-| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                |
-| `url`                 | `string`  |         | prefix match, example: https://www.youtube.com/xyz will return https://www.youtube.com/xyz?p=abc or also https://www.youtube.com/xyz?=15s |
-| `url_exact`           | `boolean` | `false` | if `true`, `url` queries will only return exact matches                                                                                   |
+| Parameter             | Type      | Default | Notes                                                                                                                                      |
+|-----------------------|-----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| `crosspost_parent_id` | `ID`      |         |                                                                                                                                            |
+| `over_18`             | `boolean` |         |                                                                                                                                            |
+| `spoiler`             | `boolean` |         |                                                                                                                                            |
+| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                 |
+| `selftext`            | `string`  |         | (full text search) ...                                                                                                                     |
+| `link_flair_text`     | `string`  |         | (full text search) ...                                                                                                                     |
+| `query`               | `string`  |         | Search in both `title` and `selftext` (full text search) ...                                                                               |
+| `url`                 | `string`  |         | prefix match, example: https://www.youtube.com/xyz will return https://www.youtube.com/xyz?p=abc or also https://www.youtube.com/xyz?t=15s |
+| `url_exact`           | `boolean` | `false` | if `true`, `url` queries will only return exact matches                                                                                    |
 
 Comment search parameters:
 
 | Parameter   | Type                        | Default | Notes                                                                                                                           |
-|-------------|-----------------------------|---------|---------------------------------------------------------------|-----------------------------------------------------------------|
+|-------------|-----------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------|
 | `body`      | `string` (full text search) |         | Only in use with `author`, `subreddit`, `link_id` or `parent_id` parameter (not supported with very active users or subreddits) |
 | `link_id`   | `ID`                        |         | ID of post                                                                                                                      |
-| `parent_id` | `ID` \| empty               |         | empty means top level comment                                                                                                   |
+| `parent_id` | `ID` \| empty               |         | Parent comment id. Empty means top level comment                                                                                |
 
-## Comments tree
+### Comments tree
 
 - `/api/comments/tree`
 - Examples
-	- Get a comment tree for the post t3_7cff0b, with t1_dppum98 as the top level comment, and generate HTML for the body
+	- Get a comment tree for the post t3_7cff0b, with t1_dppum98 as the top level comment, and generate HTML for the body  
 	  [`/api/comments/tree?link_id=t3_7cff0b&parent_id=t1_dppum98&md2html=true`](https://arctic-shift.photon-reddit.com/api/comments/tree?link_id=t3_7cff0b&parent_id=t1_dppum98&md2html=true)
 	- Get all comments underneath the post x8i09x  
 	  [`/api/comments/tree?link_id=t3_x8i09x&limit=9999`](https://arctic-shift.photon-reddit.com/api/comments/tree?link_id=t3_x8i09x&limit=9999)
@@ -96,7 +120,7 @@ decrease by 1 for each depth level. Comments outside the current breadth or dept
 | `start_depth`   | `int` (>= 0)  | 4       | For comment collapsing                             |
 | `md2html`       | `boolean`     | `false` | If `true`, adds auto generated `body_html` field   |
 
-## Aggregations
+### Aggregations
 
 - `/api/posts/search/aggregate`
 - `/api/comments/search/aggregate`
@@ -110,6 +134,8 @@ Aggregate results based on date, author or subreddit.
 
 All filtering related parameters from the search endpoints are supported.
 
+Very active users or subreddits have a high chance of timing out.
+
 | Parameter   | Type                                     | Default                                              | Notes                                 |
 |-------------|------------------------------------------|------------------------------------------------------|---------------------------------------|
 | `aggregate` | `created_utc` \| `author` \| `subreddit` |                                                      |                                       |
@@ -118,20 +144,74 @@ All filtering related parameters from the search endpoints are supported.
 | `min_count` | `int` (>= 0)                             |                                                      | Not used with `aggregate=created_utc` |
 | `sort`      | `asc` \| `desc`                          | `asc` with `aggregate=created_utc`, otherwise `desc` |                                       |
 
-## User interactions data
+## Subreddits
+
+### Search
+
+- `/api/subreddits/search`
+- Examples:
+	- Search for subreddits starting with "r/ask" sorted by number of subscribers (default)  
+	  [`/api/subreddits/search?subreddit_prefix=ask`](https://arctic-shift.photon-reddit.com/api/subreddits/search?subreddit_prefix=ask)
+	- Search for oldest subreddits with more that 1000 subscribers  
+	  [`/api/subreddits/search?min_subscribers=1000&sort_type=created_utc&sort=asc`](https://arctic-shift.photon-reddit.com/api/subreddits/search?min_subscribers=1000&sort_type=created_utc&sort=asc)
+
+Note: List of subreddits and their data is only updated infrequently. Aggregate `_meta` data is updated more frequently.
+
+| Parameter          | Type                                          | Default       | Note                                                                       |
+|--------------------|-----------------------------------------------|---------------|----------------------------------------------------------------------------|
+| `subreddit`        | `string`                                      |               |                                                                            |
+| `subreddit_prefix` | `string`                                      |               |                                                                            |
+| `after`            | `Date`                                        |               | Subreddit creation date                                                    |
+| `before`           | `Date`                                        |               | Subreddit creation date                                                    |
+| `min_subscribers`  | `int`                                         |               |                                                                            |
+| `max_subscribers`  | `int`                                         |               |                                                                            |
+| `over18`           | `boolean`                                     |               | nsfw                                                                       |
+| `limit`            | `int` (1 - 1000)                              | 25            |                                                                            |
+| `sort`             | `asc` \| `desc`                               | `desc`        |                                                                            |
+| `sort_type`        | `created_utc` \| `subscribers` \| `subreddit` | `subscribers` |                                                                            |
+| `fields`           |                                               |               | Comma separated list of fields to return ([more info](#selectable-fields)) |
+
+## Users
+
+### Search
+
+- `/api/users/search`
+- Examples:
+	- Search for users with the most karma  
+	  [`/api/users/search?sort_type=total_karma`](https://arctic-shift.photon-reddit.com/api/users/search?sort_type=total_karma)
+	- Search for users starting with u/mod with at least 1000 comments sorted alphabetically  
+	  [`/api/users/search?author_prefix=mod&min_num_comments=1000&sort_type=author&sort=asc`](https://arctic-shift.photon-reddit.com/api/users/search?author_prefix=mod&min_num_comments=1000&sort_type=author&sort=asc)
+
+Note: This is endpoint only contains aggregate data of user names, ids, number of posts/comments, earliest/latest posts/comments, karma, etc.
+It is only updated infrequently. `_meta` data is updated more frequently.
+Ids might be `null` if the user hasn't been active in recent years.
+
+| Parameter          | Type                      | Default       | Note                                    |
+|--------------------|---------------------------|---------------|-----------------------------------------|
+| `author`           | `string`                  |               |                                         |
+| `author_prefix`    | `string`                  |               |                                         |
+| `min_num_posts`    | `int`                     |               |                                         |
+| `min_num_comments` | `int`                     |               |                                         |
+| `active_since`     | `Date`                    |               | Date of first post or comment           |
+| `min_karma`        | `int`                     |               |                                         |
+| `limit`            | `int` (1 - 1000)          | 25            |                                         |
+| `sort`             | `asc` \| `desc`           | `desc`        |                                         |
+| `sort_type`        | `author` \| `total_karma` | `total_karma` | Karma is the sum of post/comment scores |
+
+### Interactions
 
 Note: For very active users (especially bots), this has a high chance of timing out. In that case, try narrowing the time range using the `after` and `before` parameters.
 
-### User to user interactions
+#### User to user interactions
 
-- `/api/user_interactions/users`
+- `/api/users/interactions/users`
 - Example:
-	- Get all interactions of u/spez, with more than 10 interactions, up until 2017
-	  [`/api/user_interactions/users?author=spez&before=2017-01-01&min_count=10`](https://arctic-shift.photon-reddit.com/api/user_interactions/users?author=spez&before=2017-01-01&min_count=10)
+	- Get all interactions of u/spez, with more than 10 interactions, up until 2017  
+	  [`/api/users/interactions/users?author=spez&before=2017-01-01&min_count=10`](https://arctic-shift.photon-reddit.com/api/users/interactions/users?author=spez&before=2017-01-01&min_count=10)
 
 Aggregates number of interactions between users.
 
-- `/api/user_interactions/users/list`
+- `/api/users/interactions/users/list`
 
 Lists all individual interactions between users.
 
@@ -150,9 +230,9 @@ As an interactions counts:
 | `min_count` | `int` (>= 0)          |         | Minimum number of interactions  |
 | `limit`     | `int` (>= 1) \| empty | 100     | empty means no limit (`limit=`) |
 
-### User to subreddit interactions
+#### User to subreddit interactions
 
-- `/api/user_interactions/subreddits`
+- `/api/users/interactions/subreddits`
 
 See in which subreddits a user has been active. Similar to the above `/api/posts/search/aggregate`
 and `/api/comments/search/aggregate` endpoints, but both are combined into one, with weighting and
@@ -168,33 +248,46 @@ limiting options.
 | `min_count`       | `int` (>= 0)          |         | Minimum number of interactions  |
 | `limit`           | `int` (>= 1) \| empty | 100     | empty means no limit (`limit=`) |
 
+### Aggregate flairs
+
+- `/api/users/aggregate_flairs`
+- Examples:
+	- [`/api/users/aggregate_flairs?author=spez`](https://arctic-shift.photon-reddit.com/api/users/aggregate_flairs?author=spez)
+
+Aggregates all `author_flair_text` values of a user and groups them by subreddit.
+
+| Parameter | Type     | Default | Notes    |
+|-----------|----------|---------|----------|
+| `author`  | `string` |         | required |
+
 ## Data type notes
 
-#### **Selectable fields**
+### **Selectable fields**
 
 By only selecting the fields you need, you can potentially reduce the response time and size.
 
-Common: `author`, `author_fullname`, `author_flair_text`, `created_utc`, `distinguished`, `id`, `retrieved_on`, `subreddit`, `subreddit_id`, `score`  
+Both posts & comments: `author`, `author_fullname`, `author_flair_text`, `created_utc`, `distinguished`, `id`, `retrieved_on`, `subreddit`, `subreddit_id`, `score`  
 Posts: `crosspost_parent`, `link_flair_text`, `num_comments`, `over_18`, `post_hint`, `selftext`, `spoiler`, `title`, `url`  
-Comments: `body`, `link_id`, `parent_id`
+Comments: `body`, `link_id`, `parent_id`  
+Subreddits: `created_utc`, `description`, `public_description`, `display_name`, `id`, `over18`, `retrieved_on`, `subscribers`, `title`, (and _meta fields)
 
-**Boolean**
+### **Boolean**
 
 True values: `true`, `1`, `yes`, `y`  
 False values: `false`, `0`, `no`, `n`
 
-**ID**
+### **ID**
 
 Base 36 encoded number. Can optionally start with a t3_/t1_ prefix for posts/comments.
 The ID is part of the link to a post/comment. (reddit.com/.../comments/<post_id>/.../<comment_id>).
 
 Example valid IDs: `sphocx`, `t3_sphocx`, `dppum98`, `t1_dppum98`
 
-**Author and subreddit**
+### **Author and subreddit**
 
 If you include the `u/` or `r/` prefix, it will be ignored.
 
-**Date**
+### **Date**
 
 Dates can be specified in the following formats:
 
@@ -206,7 +299,7 @@ Dates can be specified in the following formats:
 	- `2020-01-01`
 - Offset from current time (e.g. `1year`, `3m`, `2d`, `1hour`, `5min` or `10s`)
 
-**Full text search**
+### **Full text search**
 
 For details, see [here](https://www.postgresql.org/docs/current/textsearch-controls.html), specifically the `websearch_to_tsquery` function.
 
@@ -218,7 +311,7 @@ But in short:
 
 ## Other notes
 
-**Query timeout**
+### **Query timeout**
 
 If you receive the message `"Query timed out"`, you probably used a parameter combination that I haven't optimized.
 Try reducing the `limit` parameter or use a more specific filter (`after`, `before`, `subreddit`, `author`).
@@ -227,7 +320,7 @@ This usually happens with `body`, `selftext` or `title` parameters.
 
 Sometimes the database needs to warm up, so if you try again a second time, it might work.
 
-**Upvotes count and number of comments**
+### **Upvotes count and number of comments**
 
 After 36 hours, all data is updated and should then be the same as that released in .zst dumps.
-Before that, `score`, `num_comments` will be 1 or 0, since data is archived the first time, the moment it was posted.
+Before that, `score`, `num_comments`, etc. will be 1 or 0, since data is archived initially the moment it was posted.
