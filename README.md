@@ -36,9 +36,10 @@ For using the helper scripts:
 
 ```bash
 git clone --recursive https://github.com/ArthurHeitmann/arctic_shift.git
+cd arctic_shift
 ```
 
-2. Install the zstandard library
+2. Install the `zstandard` library
 
 ```bash
 pip install zstandard
