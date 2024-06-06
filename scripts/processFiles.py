@@ -20,7 +20,7 @@ def processFile(path: str):
 	if jsonStream is None:
 		print(f"Skipping unknown file {path}")
 		return
-        i = 0 # in case jsonStream is corrupt
+	i = 0 # in case jsonStream is corrupt
 	for i, (lineLength, row) in enumerate(jsonStream):
 		if i % 10_000 == 0:
 			print(f"\rRow {i}", end="")
