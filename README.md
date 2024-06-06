@@ -35,12 +35,6 @@ For using the helper scripts:
 1. Clone this repository and its submodules
 
 ```bash
-git clone https://github.com/ArthurHeitmann/arctic_shift.git
-cd arctic_shift
-git submodule update --init
-```
-or
-```bash
 git clone --recursive https://github.com/ArthurHeitmann/arctic_shift.git
 ```
 
