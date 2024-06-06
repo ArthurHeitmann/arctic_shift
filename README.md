@@ -32,13 +32,16 @@ For using the helper scripts:
 
 (You need at least Python 3.10)
 
-1. Clone this repository
+1. Clone this repository and its submodules
 
 ```bash
 git clone https://github.com/ArthurHeitmann/arctic_shift.git
-```
-```bash
+cd arctic_shift
 git submodule update --init
+```
+or
+```bash
+git clone --recursive https://github.com/ArthurHeitmann/arctic_shift.git
 ```
 
 2. Install the zstandard library
