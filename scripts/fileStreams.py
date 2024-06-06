@@ -33,8 +33,7 @@ def getZstFileJsonStream(path: str, chunk_size=1024*1024*10) -> Iterator[tuple[i
 				chunk = reader.read(chunk_size)
 			except zstandard.ZstdError:
 				print("Error reading file: " + path)
-				print(traceback.format_exc())
-				break
+				raise
 			if not chunk:
 				break
 			currentString += chunk.decode("utf-8", "replace")
@@ -75,7 +74,10 @@ def getFileJsonStream(path: str) -> Iterator[tuple[int, dict]]|None:
 	if path.endswith(".json"):
 		return getJsonFileJsonStream(path)
 	elif path.endswith(".zst"):
-		return getZstFileJsonStream(path)
+		try:
+			return getZstFileJsonStream(path)
+		except zstandard.ZstdError:
+			return None
 	elif path.endswith(".zst_blocks"):
 		return getZstBlocksFileJsonStream(path)
 	else:
