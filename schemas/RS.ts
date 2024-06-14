@@ -1,5 +1,6 @@
 interface RedditPost {
 	_meta?: {
+		edited_title?: string,
 		is_edited?: boolean,
 		note?: "no_2nd_retrieval"|"initially_unavailable",
 		removal_type?: "deleted"|"moderator"|"reddit"|"automod_filtered"|"content_takedown"|"author"|"copyright_takedown"|"community_ops"|"anti_evil_ops",
@@ -58,8 +59,8 @@ interface RedditPost {
 		archived: boolean,
 		author: string,
 		author_cakeday?: boolean,
-		author_flair_background_color: null|""|"transparent"|"#ffb000"|"#373c3f"|"#23adf9"|"#dadada"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#ff4500",
-		author_flair_css_class: null|"zBowser"|"TheLeague1"|"ModJamieYoung"|"SHIELD1"|"OrphanBlack1"|"staff"|"108",
+		author_flair_background_color: null|""|"transparent"|"#dadada"|"#ffb000"|"#373c3f"|"#23adf9"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#ff4500"|"#1a1a1b",
+		author_flair_css_class: null|"zBowser"|"TheLeague1"|"ModJamieYoung"|"SHIELD1"|"OrphanBlack1"|"staff"|"108"|"blueflair",
 		author_flair_richtext?: {
 			a?: ":Bowser:"|":invincible3:"|":Chiefs:"|":Broncos:"|":robot2:"|":burgermarttrash:"|":dudeisawit:"|":snoo_dealwithit:"|":108:",
 			e: "text"|"emoji",
@@ -144,7 +145,7 @@ interface RedditPost {
 		locked: boolean,
 		media: null|{
 			oembed?: {
-				author_name: "Paramount Pictures"|"Lionsgate Movies"|"Prime Video"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ",
+				author_name: "Paramount Pictures"|"Lionsgate Movies"|"STARZ"|"Prime Video"|"The Tonight Show Starring Jimmy Fallon"|"Illumination",
 				author_url: string,
 				height: number,
 				html: string,
@@ -216,7 +217,7 @@ interface RedditPost {
 		parent_whitelist_status: "all_ads"|"no_ads"|null,
 		permalink: string,
 		pinned: boolean,
-		post_hint?: "image"|"link"|"rich:video"|"self"|"hosted:video",
+		post_hint?: "image"|"link"|"rich:video"|"hosted:video"|"self",
 		preview?: {
 			enabled: boolean,
 			images: {
@@ -258,7 +259,7 @@ interface RedditPost {
 		score: number,
 		secure_media: null|{
 			oembed?: {
-				author_name: "Paramount Pictures"|"Lionsgate Movies"|"Prime Video"|"The Tonight Show Starring Jimmy Fallon"|"Illumination"|"STARZ",
+				author_name: "Paramount Pictures"|"Lionsgate Movies"|"STARZ"|"Prime Video"|"The Tonight Show Starring Jimmy Fallon"|"Illumination",
 				author_url: string,
 				height: number,
 				html: string,
@@ -321,7 +322,7 @@ interface RedditPost {
 			is_chat_post_feature_enabled?: boolean,
 			is_default_banner?: boolean,
 			is_default_icon?: boolean,
-			key_color: ""|"#ea0027"|"#ff8717"|"#222222"|"#0079d3"|"#24a0ed"|"#545452"|"#ff4500"|"#a5a4a4"|"#ddbd37",
+			key_color: ""|"#ea0027"|"#ff8717"|"#545452"|"#222222"|"#0079d3"|"#24a0ed"|"#ff4500"|"#a5a4a4"|"#ddbd37",
 			link_flair_enabled: boolean,
 			link_flair_position: "left"|"right"|""|null,
 			name: string,
@@ -1237,7 +1238,7 @@ interface RedditPost {
 		url?: string,
 	},
 	over_18: boolean,
-	parent_whitelist_status?: "all_ads"|"promo_adult_nsfw"|"promo_all"|"house_only"|"no_ads"|"some_ads"|"promo_specified"|"promo_adult"|null,
+	parent_whitelist_status?: "all_ads"|"promo_adult_nsfw"|"house_only"|"promo_all"|"no_ads"|"some_ads"|"promo_specified"|"promo_adult"|null,
 	permalink: string,
 	pinned?: boolean,
 	poll_data?: null|{
@@ -1351,7 +1352,7 @@ interface RedditPost {
 	removal_reason?: null|"legal",
 	removed?: boolean,
 	removed_by?: null,
-	removed_by_category?: null|"deleted"|"reddit"|"moderator"|"author"|"content_takedown"|"automod_filtered"|"copyright_takedown"|"anti_evil_ops"|"community_ops",
+	removed_by_category?: null|"deleted"|"reddit"|"moderator"|"author"|"content_takedown"|"automod_filtered"|"copyright_takedown"|"community_ops"|"anti_evil_ops",
 	report_reasons?: null|[],
 	retrieved_on?: number,
 	retrieved_utc?: number,
@@ -1479,6 +1480,6 @@ interface RedditPost {
 	user_reports?: [],
 	view_count?: null,
 	visited?: boolean,
-	whitelist_status?: "all_ads"|"promo_adult_nsfw"|"promo_all"|"house_only"|"no_ads"|"some_ads"|"promo_specified"|"promo_adult"|null,
+	whitelist_status?: "all_ads"|"promo_adult_nsfw"|"house_only"|"promo_all"|"no_ads"|"some_ads"|"promo_specified"|"promo_adult"|null,
 	wls?: null|number,
 }

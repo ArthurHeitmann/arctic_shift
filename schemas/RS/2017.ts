@@ -226,7 +226,7 @@ interface RedditPost_2017 {
 	distinguished: null|"moderator"|"admin"|"special",
 	domain: string,
 	domain_override?: null|string,
-	edited: number|boolean,
+	edited: boolean|number,
 	embed_type?: null|"scrape"|"iframe",
 	embed_url?: null|string,
 	gilded: number,

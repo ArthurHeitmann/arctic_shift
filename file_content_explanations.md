@@ -24,15 +24,13 @@ the new content are merged, in the following way:
   `archived`, `controversiality`, `downs`, `hide_score`, `locked`,  
   `num_comments`, `num_crossposts`, `over_18`, `score`, `score_hidden`,  
   `spoiler`, `stickied`, `ups`, `upvote_ratio`
-- Any new meta data is stored in the `_meta` field
+- Any new meta data is stored in the optional `_meta` field
 - The timestamp of the 2nd retrieval is stored in `_meta.retrieved_2nd_on`
 - If a thing has been deleted in the updated version, `_meta.was_deleted_later` is set to `true`
 - If a thing was initially deleted, but is now available, `_meta.was_initially_deleted` is set to 
   `true` and the `body` or `selftext` field is restored
 - In both of the above cases, `_meta.removal_type` contains more information about the removal reason
 - If the text content of a thing has changed, `_meta.is_edited` is set to `true`
-- If a thing could not be retrieved a 2nd time (usually because the subreddit was banned),
-  `_meta.note` is set to `"no_2nd_retrieval"`
 - If a thing was initially unavailable, but now is, `_meta.note` is set to `"initially_unavailable"`
 
 ## 2024-04+

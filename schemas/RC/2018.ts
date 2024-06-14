@@ -28,7 +28,7 @@ interface RedditComment_2018 {
 	controversiality: number,
 	created_utc: number,
 	distinguished: null|"moderator"|"admin"|"special",
-	edited: number|boolean,
+	edited: boolean|number,
 	gilded: number,
 	gildings?: {
 		gid_1: number,

@@ -6,7 +6,7 @@ interface RedditComment_2016 {
 	controversiality: number,
 	created_utc: number,
 	distinguished: null|"moderator"|"admin"|"special",
-	edited: number|boolean,
+	edited: boolean|number,
 	gilded: number,
 	id: string,
 	link_id: string,

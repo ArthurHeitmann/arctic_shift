@@ -182,7 +182,7 @@ interface RedditComment {
 	distinguished: null|"moderator"|"admin"|"special",
 	downs?: number,
 	editable?: boolean,
-	edited: number|boolean,
+	edited: boolean|number,
 	expression_asset_data?: {
 		[key: string]: {
 			avatar: {
