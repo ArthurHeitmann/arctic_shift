@@ -1,6 +1,5 @@
-import time
 import traceback
-from typing import Iterator
+from typing import BinaryIO, Iterator
 try:
 	import orjson as json
 except ImportError:
@@ -11,8 +10,8 @@ import zstandard
 
 from zst_blocks_format.python_cli.ZstBlocksFile import ZstBlocksFile
 
-def getZstFileJsonStream(path: str, chunk_size=1024*1024*10) -> Iterator[tuple[int, dict]]:
-	dctx = zstandard.ZstdDecompressor(max_window_size=2147483648)
+def getZstFileJsonStream(f: BinaryIO, chunk_size=1024*1024*10) -> Iterator[dict]:
+	decompressor = zstandard.ZstdDecompressor(max_window_size=2**31)
 	currentString = ""
 	def yieldLinesJson():
 		nonlocal currentString
@@ -20,63 +19,61 @@ def getZstFileJsonStream(path: str, chunk_size=1024*1024*10) -> Iterator[tuple[i
 		currentString = lines[-1]
 		for line in lines[:-1]:
 			try:
-				yield len(line), json.loads(line)
-			except:
+				yield json.loads(line)
+			except json.JSONDecodeError:
 				print("Error parsing line: " + line)
-				print("Current string: " + currentString)
 				traceback.print_exc()
 				continue
-	with open(path, 'rb') as ifh:
-		reader = dctx.stream_reader(ifh)
-		while True:
-			try:
-				chunk = reader.read(chunk_size)
-			except zstandard.ZstdError:
-				print("Error reading file: " + path)
-				print(traceback.format_exc())
-				break
-			if not chunk:
-				break
-			currentString += chunk.decode("utf-8", "replace")
-			
-			for line in yieldLinesJson():
-				yield line
-	for line in yieldLinesJson():
-		yield line
+	zstReader = decompressor.stream_reader(f)
+	while True:
+		try:
+			chunk = zstReader.read(chunk_size)
+		except zstandard.ZstdError:
+			print("Error reading zst chunk")
+			traceback.print_exc()
+			break
+		if not chunk:
+			break
+		currentString += chunk.decode("utf-8", "replace")
+		
+		yield from yieldLinesJson()
+	
+	yield from yieldLinesJson()
+	
 	if len(currentString) > 0:
 		try:
-			yield len(currentString), json.loads(currentString)
-		except:
+			yield json.loads(currentString)
+		except json.JSONDecodeError:
 			print("Error parsing line: " + currentString)
 			print(traceback.format_exc())
 			pass
 
-def getJsonFileJsonStream(path: str) -> Iterator[tuple[int, dict]]:
-	with open(path, "r", encoding="utf-8") as f:
-		for line in f:
-			try:
-				yield len(line), json.loads(line)
-			except:
-				print("Error parsing line: " + line)
-				traceback.print_exc()
-				continue
+def getJsonLinesFileJsonStream(f: BinaryIO) -> Iterator[dict]:
+	for line in f:
+		line = line.decode("utf-8", errors="replace")
+		try:
+			yield json.loads(line)
+		except json.JSONDecodeError:
+			print("Error parsing line: " + line)
+			traceback.print_exc()
+			continue
 
-def getZstBlocksFileJsonStream(path: str) -> Iterator[tuple[int, dict]]:
-	with open(path, "rb") as f:
-		for row in ZstBlocksFile.streamRows(f):
-			try:
-				yield len(row), json.loads(row.decode("utf-8", errors="replace"))
-			except:
-				print("Error parsing line: " + str(row))
-				traceback.print_exc()
-				continue
+def getZstBlocksFileJsonStream(f: BinaryIO) -> Iterator[dict]:
+	for row in ZstBlocksFile.streamRows(f):
+		line = row.decode("utf-8", errors="replace")
+		try:
+			yield json.loads(line)
+		except json.JSONDecodeError:
+			print("Error parsing line: " + line)
+			traceback.print_exc()
+			continue
 
-def getFileJsonStream(path: str) -> Iterator[tuple[int, dict]]|None:
-	if path.endswith(".json"):
-		return getJsonFileJsonStream(path)
+def getFileJsonStream(path: str, f: BinaryIO) -> Iterator[dict]|None:
+	if path.endswith(".jsonl"):
+		return getJsonLinesFileJsonStream(f)
 	elif path.endswith(".zst"):
-		return getZstFileJsonStream(path)
+		return getZstFileJsonStream(f)
 	elif path.endswith(".zst_blocks"):
-		return getZstBlocksFileJsonStream(path)
+		return getZstBlocksFileJsonStream(f)
 	else:
 		return None

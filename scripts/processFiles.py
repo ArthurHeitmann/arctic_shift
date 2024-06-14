@@ -3,29 +3,43 @@ version = sys.version_info
 if version.major < 3 or (version.major == 3 and version.minor < 10):
 	raise RuntimeError("This script requires Python 3.10 or higher")
 import os
-from typing import Any, Iterable
+from typing import Iterable
 
 from fileStreams import getFileJsonStream
+from utils import FileProgressLog
 
 
 fileOrFolderPath = r"<path to file or folder>"
 recursive = False
 
-def processRow(row: dict[str, Any]):
-	# Do something with the row
-	pass
-
 def processFile(path: str):
-	jsonStream = getFileJsonStream(path)
-	if jsonStream is None:
-		print(f"Skipping unknown file {path}")
-		return
-	i = 0 # in case jsonStream is corrupt
-	for i, (lineLength, row) in enumerate(jsonStream):
-		if i % 10_000 == 0:
-			print(f"\rRow {i}", end="")
-		processRow(row)
-	print(f"\rRow {i+1}")
+	print(f"Processing file {path}")
+	with open(path, "rb") as f:
+		jsonStream = getFileJsonStream(path, f)
+		if jsonStream is None:
+			print(f"Skipping unknown file {path}")
+			return
+		progressLog = FileProgressLog(path, f)
+		for row in jsonStream:
+			progressLog.onRow()
+			# PUT YOUR CODE HERE
+			
+			# example fields
+			author = row["author"]
+			subreddit = row["subreddit"]
+			id = row["id"]
+			created = row["created_utc"]
+			score = row["score"]
+			# posts only
+			# title = row["title"]
+			# body = row["selftext"]
+			# url = row["url"]
+			# comments only
+			# body = row["body"]
+			# parent = row["parent_id"]	# id/name of the parent comment or post (e.g. t3_abc123 or t1_abc123)
+			# link_id = row["link_id"]	# id/name of the post (e.g. t3_abc123)
+		progressLog.logProgress("\n")
+	
 
 def processFolder(path: str):
 	fileIterator: Iterable[str]
