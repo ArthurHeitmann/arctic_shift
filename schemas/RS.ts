@@ -59,7 +59,7 @@ interface RedditPost {
 		archived: boolean,
 		author: string,
 		author_cakeday?: boolean,
-		author_flair_background_color: null|""|"transparent"|"#dadada"|"#ffb000"|"#373c3f"|"#23adf9"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#ff4500"|"#1a1a1b",
+		author_flair_background_color: null|""|"transparent"|"#dadada"|"#ffb000"|"#373c3f"|"#23adf9"|"#df73ff"|"#94e044"|"#0266b3"|"#ff8717"|"#c76c35"|"#ff4500"|"#1a1a1b"|"#0c173e",
 		author_flair_css_class: null|"zBowser"|"TheLeague1"|"ModJamieYoung"|"SHIELD1"|"OrphanBlack1"|"staff"|"108"|"blueflair",
 		author_flair_richtext?: {
 			a?: ":Bowser:"|":invincible3:"|":Chiefs:"|":Broncos:"|":robot2:"|":burgermarttrash:"|":dudeisawit:"|":snoo_dealwithit:"|":108:",
@@ -217,7 +217,7 @@ interface RedditPost {
 		parent_whitelist_status: "all_ads"|"no_ads"|null,
 		permalink: string,
 		pinned: boolean,
-		post_hint?: "image"|"link"|"rich:video"|"hosted:video"|"self",
+		post_hint?: "image"|"link"|"rich:video"|"self"|"hosted:video",
 		preview?: {
 			enabled: boolean,
 			images: {
@@ -352,7 +352,7 @@ interface RedditPost {
 		subreddit_name_prefixed: string,
 		subreddit_subscribers: number,
 		subreddit_type: "public"|"user"|"restricted",
-		suggested_sort: null|"new"|"qa"|"confidence"|"top",
+		suggested_sort: null|"new"|"top"|"qa"|"confidence",
 		thumbnail: string,
 		thumbnail_height: number|null,
 		thumbnail_width: number|null,
@@ -807,7 +807,7 @@ interface RedditPost {
 		num_crossposts: number,
 		num_reports: null,
 		over_18: boolean,
-		parent_whitelist_status: "all_ads"|"house_only"|"no_ads"|"promo_adult_nsfw"|"some_ads"|"promo_all"|"promo_specified"|"promo_adult"|null,
+		parent_whitelist_status: "all_ads"|"house_only"|"no_ads"|"some_ads"|"promo_adult_nsfw"|"promo_all"|"promo_specified"|"promo_adult"|null,
 		permalink: string,
 		pinned?: boolean,
 		poll_data?: {
