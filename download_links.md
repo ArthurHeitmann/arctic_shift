@@ -35,9 +35,11 @@ Please seed the torrents for as long as possible. Shortly after release download
 | 2024-03           | [Academic Torrents](https://academictorrents.com/details/deef710de36929e0aa77200fddda73c86142372c)              | [Academic Torrents](https://academictorrents.com/details/ca989aa94cbd0ac5258553500d9b0f3584f6e4f7) |
 | 2024-04           | [Academic Torrents](https://academictorrents.com/details/ad4617a3e9c1f52405197fc088b28a8018e12a7a)              | discontinued                                                                                       |
 | 2024-05           | [Academic Torrents](https://academictorrents.com/details/4f60634d96d35158842cd58b495dc3b444d78b0d)              |                                                                                                    |
+| 2024-06           | [Academic Torrents](https://academictorrents.com/details/dcdecc93ca9a9d758c045345112771cef5b4989a)              |                                                                                                    |
 
 ### Other
 
-| Release            | link                                                                                               |
-|--------------------|----------------------------------------------------------------------------------------------------|
-| Subreddits 2024-01 | [Academic Torrents](https://academictorrents.com/details/c902f4b65f0e82a5e37db205c3405f02a028ecdf) |
+| Release                              | link                                                                                               |
+|--------------------------------------|----------------------------------------------------------------------------------------------------|
+| 2005-06 - 2023-12 top 40k subreddits | [Academic Torrents](https://academictorrents.com/details/56aa49f9653ba545f48df2e33679f014d2829c10) |
+| Subreddits 2024-01                   | [Academic Torrents](https://academictorrents.com/details/c902f4b65f0e82a5e37db205c3405f02a028ecdf) |

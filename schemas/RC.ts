@@ -1,5 +1,6 @@
 interface RedditComment {
 	_meta?: {
+		corrupted_body?: string,
 		is_edited?: boolean,
 		note?: "no_2nd_retrieval"|"initially_unavailable",
 		removal_type?: "deleted"|"removed"|"removed by reddit",
