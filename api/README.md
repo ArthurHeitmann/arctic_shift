@@ -311,6 +311,14 @@ But in short:
 
 ## Other notes
 
+### **Rate limiting**
+
+If you're a normal user and only make a couple requests per second, you have nothing to worry about.
+
+But if you make excessive requests, you might get rate limited. Look at the `X-RateLimit-Remaining` header to see how many request are remaining. `X-RateLimit-Reset` shows when the rate limit is reset. Rate limits can change at any time.
+
+Remember, this is a free service, so be considerate. If you want to process massive amounts of data, use the monthly dumps instead.
+
 ### **Query timeout**
 
 If you receive the message `"Query timed out"`, you probably used a parameter combination that I haven't optimized.
@@ -322,5 +330,5 @@ Sometimes the database needs to warm up, so if you try again a second time, it m
 
 ### **Upvotes count and number of comments**
 
-After 36 hours, all data is updated and should then be the same as that released in .zst dumps.
+After roughly 36 hours, all data is updated and should then be the same as that released in .zst dumps.
 Before that, `score`, `num_comments`, etc. will be 1 or 0, since data is archived initially the moment it was posted.
