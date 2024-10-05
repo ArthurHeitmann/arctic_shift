@@ -345,7 +345,7 @@ interface RedditPost_2024 {
 	campaign_id?: null,
 	can_gild: boolean,
 	can_mod_post: boolean,
-	category: null|"diy_and_crafts"|"drawing_and_painting"|"entertainment"|"photography"|"animals"|"gaming"|"memes"|"music"|""|"videos"|"funny",
+	category: null|"diy_and_crafts"|"entertainment"|"drawing_and_painting"|"photography"|"animals"|"gaming"|"memes"|"music"|""|"videos"|"funny",
 	clicked: boolean,
 	collections?: {
 		author_id: string,
@@ -419,7 +419,7 @@ interface RedditPost_2024 {
 		call_to_action?: "",
 		can_gild: boolean,
 		can_mod_post: boolean,
-		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"entertainment"|""|"animals"|"memes"|"gaming"|"food"|"videos",
+		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"entertainment"|"animals"|""|"memes"|"gaming"|"food"|"videos",
 		clicked: boolean,
 		collections?: {
 			author_id: string,
@@ -508,7 +508,7 @@ interface RedditPost_2024 {
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
-			event_id?: "18hnzysb1elcs"|"1bsso361afr0r",
+			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -699,7 +699,7 @@ interface RedditPost_2024 {
 		saved: boolean,
 		score: number,
 		secure_media: null|{
-			event_id?: "18hnzysb1elcs"|"1bsso361afr0r",
+			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -1024,7 +1024,7 @@ interface RedditPost_2024 {
 	},
 	priority_id?: null,
 	product_ids?: [],
-	promo_layout?: null|"PRODUCT"|"SPOTLIGHT_VIDEO",
+	promo_layout?: null|"SPOTLIGHT_VIDEO"|"PRODUCT",
 	promoted?: boolean,
 	promoted_by?: null,
 	promoted_display_name?: null,

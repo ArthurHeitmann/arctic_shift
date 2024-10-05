@@ -199,7 +199,7 @@ interface RedditComment {
 				e: " Image",
 				l: "FRONT"|"BACK",
 				m: "image/png",
-				n: "cry"|"bravo"|"fire"|"starstruck"|"heart"|"clown"|"take_my_energy"|"holo_card"|"winner"|"nani"|"laugh"|"webman"|"dizziness"|"spooky"|"cameras",
+				n: "cry"|"fire"|"heart"|"laugh"|"dizziness"|"bravo"|"starstruck"|"clown"|"take_my_energy"|"holo_card"|"winner"|"nani"|"webman"|"spooky"|"cameras",
 				s: {
 					u: string,
 					x: number,
