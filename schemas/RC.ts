@@ -199,7 +199,7 @@ interface RedditComment {
 				e: " Image",
 				l: "FRONT"|"BACK",
 				m: "image/png",
-				n: "cry"|"fire"|"heart"|"laugh"|"dizziness"|"bravo"|"starstruck"|"clown"|"take_my_energy"|"holo_card"|"winner"|"nani"|"webman"|"spooky"|"cameras",
+				n: "fire"|"heart"|"cry"|"laugh"|"dizziness"|"bravo"|"starstruck"|"clown"|"take_my_energy"|"holo_card"|"winner"|"nani"|"webman"|"spooky"|"cameras",
 				s: {
 					u: string,
 					x: number,
@@ -208,7 +208,7 @@ interface RedditComment {
 			}[],
 			perspective: "CROPPED"|"FULL_BODY",
 			position: "CENTER"|"LEFT",
-			size: "SIZE_1_X_1"|"SIZE_1_X_2",
+			size: "SIZE_1_X_2"|"SIZE_1_X_1",
 		},
 	},
 	gilded: number,
