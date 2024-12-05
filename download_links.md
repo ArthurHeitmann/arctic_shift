@@ -40,6 +40,7 @@ Please seed the torrents for as long as possible. Shortly after release download
 | 2024-08           | [Academic Torrents](https://academictorrents.com/details/8c2d4b00ce8ff9d45e335bed106fe9046c60adb0)              |                                                                                                    |
 | 2024-09           | [Academic Torrents](https://academictorrents.com/details/43a6e113d6ecacf38e58ecc6caa28d68892dd8af)              |                                                                                                    |
 | 2024-10           | [Academic Torrents](https://academictorrents.com/details/507dfcda29de9936dd77ed4f34c6442dc675c98f)              |                                                                                                    |
+| 2024-11           | [Academic Torrents](https://academictorrents.com/details/a1b490117808d9541ab9e3e67a3447e2f4f48f01)              |                                                                                                    |
 
 ### Other
 

@@ -1444,7 +1444,7 @@ interface RedditPost {
 	subreddit_id?: string|null,
 	subreddit_name_prefixed?: string,
 	subreddit_subscribers?: number,
-	subreddit_type?: "public"|"restricted"|"archived"|"user"|"gold_restricted"|"private"|"gold_only"|"employees_only",
+	subreddit_type?: "public"|"restricted"|"archived"|"user"|"private"|"gold_restricted"|"gold_only"|"employees_only",
 	suggested_sort?: null|"new"|"confidence"|"top"|"old"|"qa"|"controversial"|"random"|"live",
 	third_party_trackers?: string[]|null,
 	third_party_tracking?: null|string,

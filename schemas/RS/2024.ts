@@ -508,7 +508,7 @@ interface RedditPost_2024 {
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
-			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07",
+			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07"|"1db9knzhqzdfp",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -699,7 +699,7 @@ interface RedditPost_2024 {
 		saved: boolean,
 		score: number,
 		secure_media: null|{
-			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07",
+			event_id?: "18hnzysb1elcs"|"1bsso361afr0r"|"t8jnufucss07"|"1db9knzhqzdfp",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
