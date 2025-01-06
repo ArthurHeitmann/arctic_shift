@@ -345,7 +345,7 @@ interface RedditPost_2024 {
 	campaign_id?: null,
 	can_gild: boolean,
 	can_mod_post: boolean,
-	category: null|"diy_and_crafts"|"entertainment"|"drawing_and_painting"|"photography"|"animals"|"gaming"|"memes"|"music"|""|"videos"|"funny"|"food",
+	category: null|"diy_and_crafts"|"entertainment"|"drawing_and_painting"|"photography"|"gaming"|"animals"|"memes"|"music"|""|"videos"|"funny"|"food",
 	clicked: boolean,
 	collections?: {
 		author_id: string,
@@ -419,7 +419,7 @@ interface RedditPost_2024 {
 		call_to_action?: "",
 		can_gild: boolean,
 		can_mod_post: boolean,
-		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"animals"|"entertainment"|""|"memes"|"gaming"|"food"|"videos",
+		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"entertainment"|"animals"|""|"gaming"|"memes"|"food"|"videos",
 		clicked: boolean,
 		collections?: {
 			author_id: string,
@@ -557,7 +557,7 @@ interface RedditPost_2024 {
 				hlsUrl?: string,
 				id?: string,
 				isGif?: boolean,
-				m?: "image/jpg"|"image/png"|"image/gif",
+				m?: "image/jpg"|"image/png"|"image/gif"|"image/jpeg",
 				o?: {
 					u: string,
 					x: number,
@@ -694,7 +694,7 @@ interface RedditPost_2024 {
 		quarantine: boolean,
 		removal_reason: null|"legal",
 		removed_by: null,
-		removed_by_category: null|"deleted"|"moderator"|"reddit"|"copyright_takedown"|"content_takedown"|"author"|"automod_filtered",
+		removed_by_category: null|"deleted"|"moderator"|"reddit"|"copyright_takedown"|"content_takedown"|"automod_filtered"|"author",
 		report_reasons: null,
 		saved: boolean,
 		score: number,

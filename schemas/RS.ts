@@ -791,7 +791,7 @@ interface RedditPost {
 				hlsUrl?: string,
 				id?: string,
 				isGif?: boolean,
-				m?: "image/jpg"|"image/png"|"image/gif",
+				m?: "image/jpg"|"image/png"|"image/gif"|"image/jpeg",
 				o?: {
 					u: string,
 					x: number,
