@@ -215,7 +215,7 @@ interface RedditPost {
 		num_crossposts: number,
 		num_reports: null,
 		over_18: boolean,
-		parent_whitelist_status: "all_ads"|"no_ads"|null,
+		parent_whitelist_status?: "all_ads"|"no_ads"|null,
 		permalink: string,
 		pinned: boolean,
 		poll_data?: {
@@ -385,7 +385,7 @@ interface RedditPost {
 		user_reports: [],
 		view_count: null,
 		visited: boolean,
-		whitelist_status: "all_ads"|"no_ads"|null,
+		whitelist_status?: "all_ads"|"no_ads"|null,
 		wls: number|null,
 	}[],
 	ad_supplementary_text_md?: null|string,
@@ -932,7 +932,7 @@ interface RedditPost {
 		quarantine: boolean,
 		removal_reason: null|"legal",
 		removed_by?: null,
-		removed_by_category?: null|"deleted"|"reddit"|"moderator"|"copyright_takedown"|"content_takedown"|"author"|"automod_filtered"|"community_ops"|"anti_evil_ops",
+		removed_by_category?: null|"deleted"|"reddit"|"moderator"|"copyright_takedown"|"content_takedown"|"automod_filtered"|"author"|"community_ops"|"anti_evil_ops",
 		report_reasons: null,
 		rpan_video?: {
 			hls_url: string,
