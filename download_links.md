@@ -50,3 +50,4 @@ Please seed the torrents for as long as possible. Shortly after release download
 |--------------------------------------|----------------------------------------------------------------------------------------------------|
 | 2005-06 - 2023-12 top 40k subreddits | [Academic Torrents](https://academictorrents.com/details/56aa49f9653ba545f48df2e33679f014d2829c10) |
 | Subreddits 2024-01                   | [Academic Torrents](https://academictorrents.com/details/c902f4b65f0e82a5e37db205c3405f02a028ecdf) |
+| Subreddits, rules & wikis 2025-01    | [Academic Torrents](https://academictorrents.com/details/5d0bf258a025a5b802572ddc29cde89bf093185c) |

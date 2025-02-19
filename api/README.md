@@ -171,6 +171,47 @@ Note: List of subreddits and their data is only updated infrequently. Aggregate 
 | `sort_type`        | `created_utc` \| `subscribers` \| `subreddit` | `subscribers` |                                                                            |
 | `fields`           |                                               |               | Comma separated list of fields to return ([more info](#selectable-fields)) |
 
+### Rules
+
+- `/api/subreddits/rules`
+- Examples:
+	- Get the rules of r/askreddit and r/politics  
+	  [`/api/subreddits/rules?subreddits=askreddit,politics`](https://arctic-shift.photon-reddit.com/api/subreddits/rules?subreddits=askreddit,politics)
+
+Retrieve the rules of a subreddit.
+
+| Parameter    | Type       | Default | Notes                                                |
+|--------------|------------|---------|------------------------------------------------------|
+| `subreddits` | `string[]` |         | Comma separated list of subreddit names. Limit: 1000 |
+
+### Wikis
+
+- `/api/subreddits/wikis`
+- Examples:
+	- Get the wiki pages of r/askreddit  
+	  [`/api/subreddits/wikis?subreddit=askreddit`](https://arctic-shift.photon-reddit.com/api/subreddits/wikis?subreddit=askreddit)
+	- Get multiple wiki pages  
+	  [`/api/subreddits/wikis?paths=/r/reddit.com/wiki/faq,/r/travel/wiki/faq`](https://arctic-shift.photon-reddit.com/api/subreddits/wikis?paths=/r/reddit.com/wiki/faq,/r/travel/wiki/faq)
+
+Retrieve the wiki pages of a subreddit.
+
+| Parameter   | Type       | Default | Notes                                                          |
+|-------------|------------|---------|----------------------------------------------------------------|
+| `paths`     | `string[]` |         | Comma separated list of wiki pages. Limit: 100                 |
+| `subreddit` | `string`   |         | Return all wiki pages of a subreddit         		           |
+| `limit`     | `int`      | 100     | Number of wiki pages to return. Max: 100                        |
+
+- `/api/subreddits/wikis/list`
+- Examples:
+	- Get all wiki page paths of r/askreddit  
+	  [`/api/subreddits/wikis/list?subreddit=askreddit`](https://arctic-shift.photon-reddit.com/api/subreddits/wikis/list?subreddit=askreddit)
+
+Retrieve the paths of all wiki pages of a subreddit.
+
+| Parameter   | Type     | Default | Notes                                |
+|-------------|----------|---------|--------------------------------------|
+| `subreddit` | `string` |         | Return all wiki pages of a subreddit |
+
 ## Users
 
 ### Search
@@ -259,6 +300,19 @@ Aggregates all `author_flair_text` values of a user and groups them by subreddit
 | Parameter | Type     | Default | Notes    |
 |-----------|----------|---------|----------|
 | `author`  | `string` |         | required |
+
+## Short links
+
+- `/api/short_links`
+- Examples:
+	- Get the full link of a short link  
+	  [`/api/short_links?paths=/r/running/s/3TzXiyxaMD,/u/CEO_Gola/s/WO7Ro11h1a`](https://arctic-shift.photon-reddit.com/api/short_links?paths=/r/running/s/3TzXiyxaMD,/u/CEO_Gola/s/WO7Ro11h1a)
+
+Retrieve the full link of a short link.
+
+| Parameter | Type       | Default | Notes                                                     |
+|-----------|------------|---------|-----------------------------------------------------------|
+| `paths`   | `string[]` |         | Comma separated list of paths (case sensitive). Max: 1000 |
 
 ## Data type notes
 

@@ -2,7 +2,7 @@ interface Subreddit {
 	_meta: {
 		earliest_comment_at: null|number,
 		earliest_post_at: number|null,
-		num_comments: number|null,
+		num_comments: null|number,
 		num_comments_updated_at: null|number,
 		num_posts: number|null,
 		num_posts_updated_at: number|null,
@@ -32,12 +32,12 @@ interface Subreddit {
 	can_assign_user_flair: boolean,
 	collapse_deleted_comments: boolean|null,
 	comment_contribution_settings: {
-		allowed_media_types?: null|("giphy"|"static"|"animated"|"expression"|"video")[],
+		allowed_media_types?: null|("giphy"|"static"|"animated"|"expression"|"video")[], // 9837307/21865531 (44.99%)
 	},
 	comment_score_hide_mins: number|null,
 	community_icon: string,
 	community_reviewed: boolean|null,
-	content_category?: "photography"|"drawing_and_painting"|"gaming"|"entertainment"|"videos"|"animals"|"food"|"music"|"diy_and_crafts"|"memes"|"funny"|"writing",
+	content_category?: "photography"|"gaming"|"drawing_and_painting"|"entertainment"|"videos"|"animals"|"food"|"music"|"memes"|"diy_and_crafts"|"funny"|"writing", // 61/21865531 (0.00%)
 	created: number,
 	created_utc: number,
 	description: string|null,
@@ -53,12 +53,12 @@ interface Subreddit {
 	header_title: string|null,
 	hide_ads: boolean|null,
 	icon_img: string|null,
-	icon_size: null|number[],
+	icon_size: number[]|null,
 	id: string,
-	interstitial_warning_message?: string,
+	interstitial_warning_message?: string, // 98/21865531 (0.00%)
 	is_crosspostable_subreddit: boolean|null,
-	is_default_banner?: boolean,
-	is_default_icon?: boolean[],
+	is_default_banner?: boolean, // 16982966/21865531 (77.67%)
+	is_default_icon?: boolean[], // 16982966/21865531 (77.67%)
 	is_enrolled_in_new_modmail: null,
 	key_color: string|null,
 	lang: string|null,
@@ -66,7 +66,7 @@ interface Subreddit {
 	link_flair_position: ""|"right"|"left"|null,
 	mobile_banner_image: string|null,
 	name: string,
-	notification_level: null|"low",
+	notification_level: null,
 	original_content_tag_enabled: boolean|null,
 	over18: boolean|null,
 	prediction_leaderboard_entry_type: number|null,
@@ -74,8 +74,8 @@ interface Subreddit {
 	public_description: string,
 	public_traffic: boolean|null,
 	quarantine: boolean|null,
-	quarantine_message?: string,
-	quarantine_message_html?: string,
+	quarantine_message?: string, // 379/21865531 (0.00%)
+	quarantine_message_html?: string, // 379/21865531 (0.00%)
 	quarantine_permissions?: {
 		crossposts: boolean,
 		galleries: boolean,
@@ -87,7 +87,7 @@ interface Subreddit {
 		styles: boolean,
 		subscriber_count: boolean,
 		videos: boolean,
-	},
+	}, // 379/21865531 (0.00%)
 	restrict_commenting: boolean|null,
 	restrict_posting: boolean|null,
 	retrieved_on: number,
@@ -112,20 +112,20 @@ interface Subreddit {
 	user_flair_enabled_in_sr: boolean|null,
 	user_flair_position: "right"|"left"|""|null,
 	user_flair_richtext: [],
-	user_flair_template_id: null|string,
+	user_flair_template_id: null,
 	user_flair_text: null,
-	user_flair_text_color: null|string,
+	user_flair_text_color: null,
 	user_flair_type: "text"|"richtext",
-	user_has_favorited: null|boolean,
-	user_is_banned: null|boolean,
-	user_is_contributor: null|boolean,
-	user_is_moderator: null|boolean,
-	user_is_muted: null|boolean,
-	user_is_subscriber: null|boolean,
+	user_has_favorited: boolean|null,
+	user_is_banned: boolean|null,
+	user_is_contributor: boolean|null,
+	user_is_moderator: boolean|null,
+	user_is_muted: boolean|null,
+	user_is_subscriber: boolean|null,
 	user_sr_flair_enabled: null,
 	user_sr_theme_enabled: boolean|null,
-	videostream_links_count?: number,
-	whitelist_status?: null|"all_ads"|"some_ads"|"house_only"|"promo_all"|"promo_adult_nsfw",
+	videostream_links_count?: number, // 15968818/21865531 (73.03%)
+	whitelist_status?: null, // 41/21865531 (0.00%)
 	wiki_enabled: null|boolean,
 	wls: null|number,
 }

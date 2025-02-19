@@ -1,0 +1,1966 @@
+[
+  {
+    "type": "object",
+    "usage": "always",
+    "schema": {
+      "_meta": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "earliest_comment_at": [
+              {
+                "type": "null",
+                "usage": 0.75,
+                "schema": null
+              },
+              {
+                "type": "int",
+                "usage": 0.25,
+                "schema": {
+                  "min_value": 1134365188,
+                  "max_value": 1739744168,
+                  "avr_value": 1638048708.05
+                }
+              }
+            ],
+            "earliest_post_at": [
+              {
+                "type": "int",
+                "usage": 1.0,
+                "schema": {
+                  "min_value": 1119552233,
+                  "max_value": 1739731872,
+                  "avr_value": 1646483445.78
+                }
+              },
+              {
+                "type": "null",
+                "usage": 0.0,
+                "schema": null
+              }
+            ],
+            "num_comments": [
+              {
+                "type": "null",
+                "usage": 0.75,
+                "schema": null
+              },
+              {
+                "type": "int",
+                "usage": 0.25,
+                "schema": {
+                  "min_value": 1,
+                  "max_value": 813442675,
+                  "avr_value": 3917.22
+                }
+              }
+            ],
+            "num_comments_updated_at": [
+              {
+                "type": "null",
+                "usage": 0.75,
+                "schema": null
+              },
+              {
+                "type": "int",
+                "usage": 0.25,
+                "schema": {
+                  "min_value": 1738583108,
+                  "max_value": 1739744209,
+                  "avr_value": 1739743828.11
+                }
+              }
+            ],
+            "num_posts": [
+              {
+                "type": "int",
+                "usage": 1.0,
+                "schema": {
+                  "min_value": 1,
+                  "max_value": 39098474,
+                  "avr_value": 135.9
+                }
+              },
+              {
+                "type": "null",
+                "usage": 0.0,
+                "schema": null
+              }
+            ],
+            "num_posts_updated_at": [
+              {
+                "type": "int",
+                "usage": 1.0,
+                "schema": {
+                  "min_value": 1722832783,
+                  "max_value": 1739731892,
+                  "avr_value": 1739728405.9
+                }
+              },
+              {
+                "type": "null",
+                "usage": 0.0,
+                "schema": null
+              }
+            ]
+          }
+        }
+      ],
+      "accept_followers": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14309594,
+            "false": 404148
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "accounts_active": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "accounts_active_is_fuzzed": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713742
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "active_user_count": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "advertiser_category": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 20,
+            "avr_length": 0.0,
+            "values": [
+              {
+                "value": "",
+                "usage": 1.0
+              },
+              {
+                "value": "Games",
+                "usage": 0.0
+              },
+              {
+                "value": "Automotive",
+                "usage": 0.0
+              },
+              {
+                "value": "Sports",
+                "usage": 0.0
+              },
+              {
+                "value": "Lifestyles",
+                "usage": 0.0
+              },
+              {
+                "value": "Entertainment",
+                "usage": 0.0
+              },
+              {
+                "value": "College / University",
+                "usage": 0.0
+              },
+              {
+                "value": "Technology",
+                "usage": 0.0
+              },
+              {
+                "value": "Local",
+                "usage": 0.0
+              },
+              {
+                "value": "Family & Youth",
+                "usage": 0.0
+              },
+              {
+                "value": "Travel",
+                "usage": 0.0
+              },
+              {
+                "value": "Business / Finance",
+                "usage": 0.0
+              },
+              {
+                "value": "Retail",
+                "usage": 0.0
+              },
+              {
+                "value": "Health",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "all_original_content": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 411,
+            "false": 14713331
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "allow_discovery": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14696414,
+            "false": 17328
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "allow_galleries": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14699691,
+            "false": 14051
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "allow_images": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14676534,
+            "false": 37208
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "allow_polls": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14597806,
+            "false": 115936
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "allow_prediction_contributors": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 21865531
+          }
+        }
+      ],
+      "allow_predictions": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 21865531
+          }
+        }
+      ],
+      "allow_predictions_tournament": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 21865531
+          }
+        }
+      ],
+      "allow_talks": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 21865531
+          }
+        }
+      ],
+      "allow_videogifs": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 21789970,
+            "false": 75561
+          }
+        }
+      ],
+      "allow_videos": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 15968818,
+            "false": 5896713
+          }
+        }
+      ],
+      "allowed_media_in_comments": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 10000,
+            "avr_length": 0.31,
+            "schema": [
+              {
+                "type": "string",
+                "usage": "always",
+                "schema": {
+                  "min_length": 5,
+                  "max_length": 10,
+                  "avr_length": 6.95,
+                  "values": [
+                    {
+                      "value": "giphy",
+                      "usage": 0.29
+                    },
+                    {
+                      "value": "static",
+                      "usage": 0.27
+                    },
+                    {
+                      "value": "animated",
+                      "usage": 0.27
+                    },
+                    {
+                      "value": "expression",
+                      "usage": 0.18
+                    },
+                    {
+                      "value": "video",
+                      "usage": 0.0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "banner_background_color": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 0.04
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "banner_background_image": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 152,
+            "avr_length": 3.54
+          }
+        }
+      ],
+      "banner_img": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 172,
+            "avr_length": 37.56
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "banner_size": [
+        {
+          "type": "null",
+          "usage": 0.85,
+          "schema": null
+        },
+        {
+          "type": "array",
+          "usage": 0.15,
+          "schema": {
+            "min_length": 2,
+            "max_length": 2,
+            "avr_length": 2.0,
+            "schema": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 192,
+                  "max_value": 1280,
+                  "avr_value": 831.19
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "can_assign_link_flair": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 356355,
+            "false": 21509176
+          }
+        }
+      ],
+      "can_assign_user_flair": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 268119,
+            "false": 21597412
+          }
+        }
+      ],
+      "collapse_deleted_comments": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 13345166,
+            "false": 1368576
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "comment_contribution_settings": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "allowed_media_types": [
+              {
+                "type": "null",
+                "usage": 0.71,
+                "schema": null
+              },
+              {
+                "type": "array",
+                "usage": 0.29,
+                "schema": {
+                  "min_length": 1,
+                  "max_length": 10000,
+                  "avr_length": 3.34,
+                  "schema": [
+                    {
+                      "type": "string",
+                      "usage": "always",
+                      "schema": {
+                        "min_length": 5,
+                        "max_length": 10,
+                        "avr_length": 6.95,
+                        "values": [
+                          {
+                            "value": "giphy",
+                            "usage": 0.29
+                          },
+                          {
+                            "value": "static",
+                            "usage": 0.27
+                          },
+                          {
+                            "value": "animated",
+                            "usage": 0.26
+                          },
+                          {
+                            "value": "expression",
+                            "usage": 0.18
+                          },
+                          {
+                            "value": "video",
+                            "usage": 0.0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "comment_score_hide_mins": [
+        {
+          "type": "int",
+          "usage": 0.67,
+          "schema": {
+            "min_value": 0,
+            "max_value": 1440,
+            "avr_value": 0.4
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "community_icon": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 143,
+            "avr_length": 10.95
+          }
+        }
+      ],
+      "community_reviewed": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 106654,
+            "false": 14607088
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "created": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 1137537905,
+            "max_value": 1739743989,
+            "avr_value": 1632492561.9
+          }
+        }
+      ],
+      "created_utc": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 1137537905,
+            "max_value": 1739743989,
+            "avr_value": 1632492561.9
+          }
+        }
+      ],
+      "description": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 10240,
+            "avr_length": 15.6
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "disable_contributor_requests": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 18008,
+            "false": 14695734
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "display_name": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 2,
+            "max_length": 24,
+            "avr_length": 14.78
+          }
+        }
+      ],
+      "display_name_prefixed": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 4,
+            "max_length": 26,
+            "avr_length": 15.22
+          }
+        }
+      ],
+      "emojis_custom_size": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "array",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 2,
+            "max_length": 2,
+            "avr_length": 2.0,
+            "schema": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 1,
+                  "max_value": 40,
+                  "avr_value": 32.29
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "emojis_enabled": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 84186,
+            "false": 21781345
+          }
+        }
+      ],
+      "free_form_reports": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 12913260,
+            "false": 1800482
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "has_menu_widget": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 0,
+            "false": 21865531
+          }
+        }
+      ],
+      "header_img": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 42,
+            "max_length": 80,
+            "avr_length": 72.46
+          }
+        }
+      ],
+      "header_size": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "array",
+          "usage": 0.0,
+          "schema": {
+            "min_length": 2,
+            "max_length": 2,
+            "avr_length": 2.0,
+            "schema": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 1,
+                  "max_value": 29000,
+                  "avr_value": 397.74
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "header_title": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 500,
+            "avr_length": 0.07
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "hide_ads": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 10,
+            "false": 14713732
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "icon_img": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 295,
+            "avr_length": 111.83
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "icon_size": [
+        {
+          "type": "array",
+          "usage": 0.56,
+          "schema": {
+            "min_length": 2,
+            "max_length": 2,
+            "avr_length": 2.0,
+            "schema": [
+              {
+                "type": "int",
+                "usage": "always",
+                "schema": {
+                  "min_value": 240,
+                  "max_value": 256,
+                  "avr_value": 256.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.44,
+          "schema": null
+        }
+      ],
+      "id": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 1,
+            "max_length": 6,
+            "avr_length": 5.85
+          }
+        }
+      ],
+      "is_crosspostable_subreddit": [
+        {
+          "type": "bool",
+          "usage": 1.0,
+          "schema": {
+            "true": 2479006,
+            "false": 19354586
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.0,
+          "schema": null
+        }
+      ],
+      "is_enrolled_in_new_modmail": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "key_color": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 0.09
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "lang": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 2,
+            "max_length": 5,
+            "avr_length": 2.0
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "link_flair_enabled": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 392039,
+            "false": 14321703
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "link_flair_position": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 0.13,
+            "values": [
+              {
+                "value": "",
+                "usage": 0.97
+              },
+              {
+                "value": "right",
+                "usage": 0.02
+              },
+              {
+                "value": "left",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "mobile_banner_image": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 84,
+            "avr_length": 0.76
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "name": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 4,
+            "max_length": 9,
+            "avr_length": 8.85
+          }
+        }
+      ],
+      "notification_level": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "original_content_tag_enabled": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14538,
+            "false": 14699204
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "over18": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 2837371,
+            "false": 11876371
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "prediction_leaderboard_entry_type": [
+        {
+          "type": "int",
+          "usage": 0.67,
+          "schema": {
+            "min_value": 1,
+            "max_value": 2,
+            "avr_value": 1.0
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "primary_color": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 7,
+            "avr_length": 0.13
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "public_description": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 500,
+            "avr_length": 29.74
+          }
+        }
+      ],
+      "public_traffic": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713742
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "quarantine": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 92,
+            "false": 14713650
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "restrict_commenting": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14362,
+            "false": 14699380
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "restrict_posting": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14711174,
+            "false": 2568
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "retrieved_on": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 1707349792,
+            "max_value": 1739783476,
+            "avr_value": 1739596631.57
+          }
+        }
+      ],
+      "should_archive_posts": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 27631,
+            "false": 14686111
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "should_show_media_in_comments_setting": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 16180982,
+            "false": 5684549
+          }
+        }
+      ],
+      "show_media": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14609234,
+            "false": 104508
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "show_media_preview": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14704829,
+            "false": 8913
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "spoilers_enabled": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14690563,
+            "false": 23179
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "submission_type": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 3,
+            "max_length": 4,
+            "avr_length": 3.0,
+            "values": [
+              {
+                "value": "any",
+                "usage": 1.0
+              },
+              {
+                "value": "self",
+                "usage": 0.0
+              },
+              {
+                "value": "link",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "submit_link_label": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 60,
+            "avr_length": 0.04
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "submit_text": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 1024,
+            "avr_length": 1.0
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "submit_text_html": [
+        {
+          "type": "null",
+          "usage": 0.99,
+          "schema": null
+        },
+        {
+          "type": "string",
+          "usage": 0.01,
+          "schema": {
+            "min_length": 51,
+            "max_length": 3125,
+            "avr_length": 198.35
+          }
+        }
+      ],
+      "submit_text_label": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 60,
+            "avr_length": 0.04
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "subreddit_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 4,
+            "max_length": 14,
+            "avr_length": 4.81,
+            "values": [
+              {
+                "value": "restricted",
+                "usage": 0.09
+              },
+              {
+                "value": "private",
+                "usage": 0.01
+              },
+              {
+                "value": "public",
+                "usage": 0.13
+              },
+              {
+                "value": "employees_only",
+                "usage": 0.0
+              },
+              {
+                "value": "user",
+                "usage": 0.78
+              },
+              {
+                "value": "archived",
+                "usage": 0.0
+              },
+              {
+                "value": "gold_only",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "subscribers": [
+        {
+          "type": "int",
+          "usage": 0.67,
+          "schema": {
+            "min_value": -667,
+            "max_value": 305601639,
+            "avr_value": 564.97
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "suggested_comment_sort": [
+        {
+          "type": "string",
+          "usage": 0.56,
+          "schema": {
+            "min_length": 2,
+            "max_length": 13,
+            "avr_length": 2.01,
+            "values": [
+              {
+                "value": "confidence",
+                "usage": 0.0
+              },
+              {
+                "value": "new",
+                "usage": 0.0
+              },
+              {
+                "value": "top",
+                "usage": 0.0
+              },
+              {
+                "value": "controversial",
+                "usage": 0.0
+              },
+              {
+                "value": "old",
+                "usage": 0.0
+              },
+              {
+                "value": "blank",
+                "usage": 0.0
+              },
+              {
+                "value": "qa",
+                "usage": 1.0
+              },
+              {
+                "value": "live",
+                "usage": 0.0
+              },
+              {
+                "value": "random",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.44,
+          "schema": null
+        }
+      ],
+      "title": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 100,
+            "avr_length": 5.91
+          }
+        }
+      ],
+      "url": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 6,
+            "max_length": 28,
+            "avr_length": 19.55
+          }
+        }
+      ],
+      "user_can_flair_in_sr": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_background_color": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_css_class": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_enabled_in_sr": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713742
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_flair_position": [
+        {
+          "type": "string",
+          "usage": 0.67,
+          "schema": {
+            "min_length": 0,
+            "max_length": 5,
+            "avr_length": 5.0,
+            "values": [
+              {
+                "value": "right",
+                "usage": 1.0
+              },
+              {
+                "value": "left",
+                "usage": 0.0
+              },
+              {
+                "value": "",
+                "usage": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_flair_richtext": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 0,
+            "max_length": 0,
+            "avr_length": 0.0,
+            "schema": []
+          }
+        }
+      ],
+      "user_flair_template_id": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_text": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_text_color": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_flair_type": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 4,
+            "max_length": 8,
+            "avr_length": 4.0,
+            "values": [
+              {
+                "value": "text",
+                "usage": 1.0
+              },
+              {
+                "value": "richtext",
+                "usage": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "user_has_favorited": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_is_banned": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_is_contributor": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_is_moderator": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_is_muted": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_is_subscriber": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 0,
+            "false": 14713724
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "user_sr_flair_enabled": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ],
+      "user_sr_theme_enabled": [
+        {
+          "type": "bool",
+          "usage": 0.67,
+          "schema": {
+            "true": 14713742,
+            "false": 0
+          }
+        },
+        {
+          "type": "null",
+          "usage": 0.33,
+          "schema": null
+        }
+      ],
+      "wiki_enabled": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "bool",
+          "usage": 0.0,
+          "schema": {
+            "true": 82137,
+            "false": 18
+          }
+        }
+      ],
+      "wls": [
+        {
+          "type": "null",
+          "usage": 1.0,
+          "schema": null
+        },
+        {
+          "type": "int",
+          "usage": 0.0,
+          "schema": {
+            "min_value": 1,
+            "max_value": 7,
+            "avr_value": 6.13
+          }
+        }
+      ],
+      "is_default_banner": [
+        {
+          "type": "bool",
+          "usage": "always",
+          "schema": {
+            "true": 12689932,
+            "false": 4293034
+          }
+        }
+      ],
+      "is_default_icon": [
+        {
+          "type": "array",
+          "usage": "always",
+          "schema": {
+            "min_length": 1,
+            "max_length": 1,
+            "avr_length": 1.0,
+            "schema": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 7158742,
+                  "false": 9824224
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "videostream_links_count": [
+        {
+          "type": "int",
+          "usage": "always",
+          "schema": {
+            "min_value": 0,
+            "max_value": 0,
+            "avr_value": 0.0
+          }
+        }
+      ],
+      "quarantine_message": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 48,
+            "max_length": 992,
+            "avr_length": 132.69
+          }
+        }
+      ],
+      "quarantine_message_html": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 107,
+            "max_length": 1105,
+            "avr_length": 199.24
+          }
+        }
+      ],
+      "quarantine_permissions": [
+        {
+          "type": "object",
+          "usage": "always",
+          "schema": {
+            "crossposts": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 1,
+                  "false": 378
+                }
+              }
+            ],
+            "galleries": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 379
+                }
+              }
+            ],
+            "images": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 379
+                }
+              }
+            ],
+            "media": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 240,
+                  "false": 139
+                }
+              }
+            ],
+            "polls": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 379
+                }
+              }
+            ],
+            "sharing": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 379
+                }
+              }
+            ],
+            "sr_images": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 243,
+                  "false": 136
+                }
+              }
+            ],
+            "styles": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 307,
+                  "false": 72
+                }
+              }
+            ],
+            "subscriber_count": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 63,
+                  "false": 316
+                }
+              }
+            ],
+            "videos": [
+              {
+                "type": "bool",
+                "usage": "always",
+                "schema": {
+                  "true": 0,
+                  "false": 379
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "interstitial_warning_message": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 59,
+            "max_length": 842,
+            "avr_length": 447.02
+          }
+        }
+      ],
+      "content_category": [
+        {
+          "type": "string",
+          "usage": "always",
+          "schema": {
+            "min_length": 4,
+            "max_length": 20,
+            "avr_length": 9.21,
+            "values": [
+              {
+                "value": "photography",
+                "usage": 0.13
+              },
+              {
+                "value": "gaming",
+                "usage": 0.11
+              },
+              {
+                "value": "entertainment",
+                "usage": 0.1
+              },
+              {
+                "value": "drawing_and_painting",
+                "usage": 0.11
+              },
+              {
+                "value": "animals",
+                "usage": 0.08
+              },
+              {
+                "value": "funny",
+                "usage": 0.05
+              },
+              {
+                "value": "memes",
+                "usage": 0.07
+              },
+              {
+                "value": "food",
+                "usage": 0.08
+              },
+              {
+                "value": "music",
+                "usage": 0.08
+              },
+              {
+                "value": "diy_and_crafts",
+                "usage": 0.07
+              },
+              {
+                "value": "videos",
+                "usage": 0.1
+              },
+              {
+                "value": "writing",
+                "usage": 0.02
+              }
+            ]
+          }
+        }
+      ],
+      "whitelist_status": [
+        {
+          "type": "null",
+          "usage": "always",
+          "schema": null
+        }
+      ]
+    }
+  }
+]
