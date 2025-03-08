@@ -8,7 +8,10 @@ except ImportError:
 
 import zstandard
 
-from zst_blocks_format.python_cli.ZstBlocksFile import ZstBlocksFile
+try:
+	from zst_blocks_format.python_cli.ZstBlocksFile import ZstBlocksFile
+except ImportError:
+	pass
 
 def getZstFileJsonStream(f: BinaryIO, chunk_size=1024*1024*10) -> Iterator[dict]:
 	decompressor = zstandard.ZstdDecompressor(max_window_size=2**31)
@@ -68,12 +71,18 @@ def getZstBlocksFileJsonStream(f: BinaryIO) -> Iterator[dict]:
 			traceback.print_exc()
 			continue
 
+def getJsonFileStream(f: BinaryIO) -> Iterator[dict]:
+	data = json.loads(f.read())
+	yield from data
+
 def getFileJsonStream(path: str, f: BinaryIO) -> Iterator[dict]|None:
-	if path.endswith(".jsonl"):
+	if path.endswith(".jsonl") or path.endswith(".ndjson"):
 		return getJsonLinesFileJsonStream(f)
 	elif path.endswith(".zst"):
 		return getZstFileJsonStream(f)
 	elif path.endswith(".zst_blocks"):
 		return getZstBlocksFileJsonStream(f)
+	elif path.endswith(".json"):
+		return getJsonFileStream(f)
 	else:
 		return None

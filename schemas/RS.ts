@@ -1070,7 +1070,7 @@ interface RedditPost {
 	from_kind?: null,
 	gallery_data?: {
 		items: {
-			call_to_action?: "Shop Now"|"View More"|"Learn More"|"Download"|"Install"|"Watch Now"|"Play Now"|"Apply Now"|"Sign Up"|"Get Showtimes"|"Pre-order Now"|"Get a Quote"|"Contact Us"|"See Menu"|"Order Now",
+			call_to_action?: string,
 			caption?: string,
 			display_url?: string,
 			id: number,

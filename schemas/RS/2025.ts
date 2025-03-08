@@ -214,7 +214,7 @@ interface RedditPost_2025 {
 	awarders: [],
 	banned_at_utc: null,
 	banned_by: null,
-	call_to_action?: "Learn More"|"Shop Now"|"Download"|"Sign Up"|"Install"|"View More"|"Apply Now"|"Play Now"|"Contact Us"|"Order Now"|"Pre-order Now"|"Watch Now"|"Get a Quote"|"Get Showtimes"|"See Menu",
+	call_to_action?: string,
 	campaign_id?: null,
 	can_gild: boolean,
 	can_mod_post: boolean,
@@ -254,7 +254,7 @@ interface RedditPost_2025 {
 		banned_by: null,
 		can_gild: boolean,
 		can_mod_post: boolean,
-		category: null|"diy_and_crafts"|"photography"|"gaming"|"drawing_and_painting",
+		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"gaming",
 		clicked: boolean,
 		content_categories: null|("photography"|"drawing_and_painting"|"comics"|"gaming"|"diy_and_crafts"|"entertainment"|"writing"|"music"|"videos")[],
 		contest_mode: boolean,
@@ -487,7 +487,7 @@ interface RedditPost_2025 {
 		quarantine: boolean,
 		removal_reason: null|"legal",
 		removed_by: null,
-		removed_by_category: null|"reddit"|"deleted"|"moderator"|"content_takedown"|"automod_filtered"|"copyright_takedown",
+		removed_by_category: null|"reddit"|"deleted"|"moderator"|"content_takedown"|"automod_filtered"|"copyright_takedown"|"author",
 		report_reasons: null,
 		saved: boolean,
 		score: number,
@@ -573,7 +573,7 @@ interface RedditPost_2025 {
 	eventsOnRender?: [],
 	gallery_data?: {
 		items: {
-			call_to_action?: "Shop Now"|"Learn More"|"View More"|"Sign Up"|"Download"|"Contact Us"|"Get a Quote"|"Order Now"|"Play Now"|"Install"|"Apply Now"|"Get Showtimes"|"Watch Now"|"Pre-order Now"|"See Menu",
+			call_to_action?: string,
 			caption?: string,
 			display_url?: string,
 			id: number,
@@ -581,7 +581,7 @@ interface RedditPost_2025 {
 			outbound_url?: string,
 			product?: {
 				description: string,
-				price: string,
+				price?: string,
 				title: string,
 			},
 		}[],
@@ -622,7 +622,7 @@ interface RedditPost_2025 {
 	link_flair_type: "text"|"richtext",
 	locked: boolean,
 	media: null|{
-		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u",
+		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u"|"1eghw017em4fs"|"1ehvmyywoskvn"|"1eiiqm1yen1eb"|"1ej9pi0zkftqo"|"1ek317796cevr"|"1ekodx5arfval",
 		oembed?: {
 			author_name?: string,
 			author_url?: string,
@@ -819,13 +819,13 @@ interface RedditPost_2025 {
 	removal_reason: null|"legal",
 	removed?: boolean,
 	removed_by: null,
-	removed_by_category: null|"reddit"|"moderator"|"automod_filtered"|"deleted"|"content_takedown"|"author",
+	removed_by_category: null|"reddit"|"moderator"|"automod_filtered"|"deleted"|"content_takedown"|"author"|"copyright_takedown",
 	report_reasons: null,
 	retrieved_on: number,
 	saved: boolean,
 	score: number,
 	secure_media: null|{
-		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u",
+		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u"|"1eghw017em4fs"|"1ehvmyywoskvn"|"1eiiqm1yen1eb"|"1ej9pi0zkftqo"|"1ek317796cevr"|"1ekodx5arfval",
 		oembed?: {
 			author_name?: string,
 			author_url?: string,

@@ -6,7 +6,6 @@ Interact with the data through large dumps, an API or web interface.
 
 ## Downloads
 
-
 All download links are organized [here](./download_links.md). Once a new dump is available, it will
 also be added on the [releases page](https://github.com/ArthurHeitmann/arctic_shift/releases).
 
@@ -26,9 +25,6 @@ Generally I'd recommend to work with the compressed files instead of unpacking t
 course you have seemingly infinite disk space.
 
 With the helper scripts in this repository you can quickly get started.
-For working with zst_blocks files though a cli, go to the [zst_blocks repository](https://github.com/ArthurHeitmann/zst_blocks_format).
-
-For using the helper scripts:
 
 (You need at least Python 3.10)
 
@@ -45,8 +41,7 @@ cd arctic_shift
 pip install zstandard
 ```
 
-3. Open [scripts/processFiles.py](scripts/processFiles.py) in your editor. That script can process .zst_blocks,
-   .zst and new line delimited .jsonl files.
+3. Open [scripts/processFiles.py](scripts/processFiles.py) in your editor. That script can process .zst, .zst_blocks, .jsonl/ndjson and .json files.
 
 4. Enter the path to a file or folder in `fileOrFolderPath` (since it is a raw string, you don't have to escape
    backslashes). If you enter a folder, all files in that folder will be processed.
@@ -62,6 +57,6 @@ To check if your data is in the dataset, search for your username [here](https:/
 
 Removal forms of other archives: [Pushshift](https://docs.google.com/forms/d/1JSYY0HbudmYYjnZaAMgf2y_GDFgHzZTolK6Yqaz6_kQ) | [PullPush](https://removals.pullpush.io) | potentially [archive.org](https://help.archive.org/help/how-do-i-request-to-remove-something-from-archive-org).
 
-If you have questions, you can DM me on [reddit](https://reddit.com/user/RaiderBDev), [discord](https://discord.com/users/282513022734565377) (*raiderbv* if the link doesn't work) or [email](mailto:arctic.shift.contact@gmail.com
+If you have questions, you can DM me on [discord](https://discord.com/users/282513022734565377) (*raiderbv* if the link doesn't work) or [email](mailto:arctic.shift.contact@gmail.com
 ).
 Alternatively open an issue or pull request.
