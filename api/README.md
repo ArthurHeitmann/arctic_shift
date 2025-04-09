@@ -19,6 +19,7 @@
 			- [User to subreddit interactions](#user-to-subreddit-interactions)
 		- [Aggregate flairs](#aggregate-flairs)
 	- [Short links](#short-links)
+	- [Time series](#time-series)
 	- [Data type notes](#data-type-notes)
 	- [Other notes](#other-notes)
 
@@ -316,6 +317,32 @@ Retrieve the full link of a short link.
 | Parameter | Type       | Default | Notes                                                     |
 |-----------|------------|---------|-----------------------------------------------------------|
 | `paths`   | `string[]` |         | Comma separated list of paths (case sensitive). Max: 1000 |
+
+## Time series
+
+- `/api/time_series`
+- Examples
+	- Get number of posts per year  
+	  [`/api/time_series?key=global/posts/count&precision=year`](https://arctic-shift.photon-reddit.com/api/time_series?key=global/posts/count&precision=year)
+	- Get subscribers of r/askreddit per year  
+	  [`/api/time_series?key=r/askreddit/subscribers&precision=year`](https://arctic-shift.photon-reddit.com/api/time_series?key=r/askreddit/subscribers&precision=year)
+
+Retrieve aggregated data over time. Data might not be 100% accurate, and might take a few hours or days to fully update.
+
+| Parameter   | Type       | Default | Notes                                                              |
+|-------------|------------|---------|--------------------------------------------------------------------|
+| `key`       | `string`   |         | Time series type or category. See below for available values       |
+| `precision` | `string`   |         | One of `year`, `quarter`, `month`, `week`, `day`, `hour`, `minute` |
+| `after`     | `Date`     |         | Start date. If not set, the earliest date of the data is used      |
+| `before`    | `Date`     |         | End date. If not set, the latest date of the data is used          |
+
+Available keys:
+- `global/posts/count`, `global/comments/count` - Number of posts and comments across all of reddit
+- `global/posts/sum_score`, `global/comments/sum_score` - Sum of all upvotes
+- `global/posts/sum_retrieved_after_seconds`, `global/comments/sum_retrieved_after_seconds` - Sum of the time between the creation of post/comment and the time it was archived
+- `r/<subreddit>/posts/count`, `r/<subreddit>/comments/count` - Number of posts and comments in a subreddit
+- `r/<subreddit>/posts/sum_score`, `r/<subreddit>/comments/sum_score` - Sum of all upvotes in a subreddit
+- `r/<subreddit>/subscribers` - Number of subscribers in a subreddit
 
 ## Data type notes
 

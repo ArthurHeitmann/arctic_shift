@@ -218,7 +218,7 @@ interface RedditPost_2025 {
 	campaign_id?: null,
 	can_gild: boolean,
 	can_mod_post: boolean,
-	category: null|"diy_and_crafts"|"entertainment"|"memes",
+	category: null|"diy_and_crafts"|"entertainment"|"memes"|"drawing_and_painting",
 	clicked: boolean,
 	content_categories: null|("drawing_and_painting"|"gaming"|"photography"|"diy_and_crafts"|"entertainment"|"writing"|"music"|"comics"|"videos")[],
 	contest_mode: boolean,
@@ -303,6 +303,7 @@ interface RedditPost_2025 {
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
+			event_id?: "18hnzysb1elcs",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -492,6 +493,7 @@ interface RedditPost_2025 {
 		saved: boolean,
 		score: number,
 		secure_media: null|{
+			event_id?: "18hnzysb1elcs",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -622,7 +624,7 @@ interface RedditPost_2025 {
 	link_flair_type: "text"|"richtext",
 	locked: boolean,
 	media: null|{
-		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u"|"1eghw017em4fs"|"1ehvmyywoskvn"|"1eiiqm1yen1eb"|"1ej9pi0zkftqo"|"1ek317796cevr"|"1ekodx5arfval",
+		event_id?: string,
 		oembed?: {
 			author_name?: string,
 			author_url?: string,
@@ -819,13 +821,13 @@ interface RedditPost_2025 {
 	removal_reason: null|"legal",
 	removed?: boolean,
 	removed_by: null,
-	removed_by_category: null|"reddit"|"moderator"|"automod_filtered"|"deleted"|"content_takedown"|"author"|"copyright_takedown",
+	removed_by_category: null|"reddit"|"moderator"|"automod_filtered"|"deleted"|"content_takedown"|"author"|"copyright_takedown"|"community_ops",
 	report_reasons: null,
 	retrieved_on: number,
 	saved: boolean,
 	score: number,
 	secure_media: null|{
-		event_id?: "18hnzysb1elcs"|"1eah8fw2darq8"|"1ec65d0zaty1o"|"1ecy3e6t8yzib"|"1edkfkek3rs6c"|"1eecsm0l7siek"|"1ef3onylbnekd"|"1efxysl6tad1u"|"1eghw017em4fs"|"1ehvmyywoskvn"|"1eiiqm1yen1eb"|"1ej9pi0zkftqo"|"1ek317796cevr"|"1ekodx5arfval",
+		event_id?: string,
 		oembed?: {
 			author_name?: string,
 			author_url?: string,
