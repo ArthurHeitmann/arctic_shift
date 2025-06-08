@@ -661,7 +661,7 @@ interface RedditPost_2025 {
 		type?: string,
 	},
 	media_embed: {
-		content?: string,
+		content?: string|null,
 		height?: number,
 		scrolling?: boolean,
 		width?: number,
@@ -864,7 +864,7 @@ interface RedditPost_2025 {
 		type?: string,
 	},
 	secure_media_embed: {
-		content?: string,
+		content?: string|null,
 		height?: number,
 		media_domain_url?: string,
 		scrolling?: boolean,
