@@ -254,7 +254,7 @@ interface RedditPost_2025 {
 		banned_by: null,
 		can_gild: boolean,
 		can_mod_post: boolean,
-		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"gaming",
+		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"gaming"|"entertainment",
 		clicked: boolean,
 		content_categories: null|("photography"|"drawing_and_painting"|"comics"|"gaming"|"diy_and_crafts"|"entertainment"|"writing"|"music"|"videos")[],
 		contest_mode: boolean,
@@ -303,7 +303,7 @@ interface RedditPost_2025 {
 		link_flair_type: "text"|"richtext",
 		locked: boolean,
 		media: null|{
-			event_id?: "18hnzysb1elcs",
+			event_id?: "18hnzysb1elcs"|"1f6c5t0liqj9c",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
@@ -493,7 +493,7 @@ interface RedditPost_2025 {
 		saved: boolean,
 		score: number,
 		secure_media: null|{
-			event_id?: "18hnzysb1elcs",
+			event_id?: "18hnzysb1elcs"|"1f6c5t0liqj9c",
 			oembed?: {
 				author_name?: string,
 				author_url?: string,
