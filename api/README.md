@@ -119,7 +119,7 @@ decrease by 1 for each depth level. Comments outside the current breadth or dept
 |-----------------|---------------|---------|----------------------------------------------------|
 | `link_id`       | `ID`          |         | ID of post (required)                              |
 | `parent_id`     | `ID`          |         | If unset, all comments under the post are returned |
-| `limit`         | `int` (>= 1)  | 50      | Something like 999999 returns all comments         |
+| `limit`         | `int` (1 - 25000)  | 50      | Something like 9999 returns all comments         |
 | `start_breadth` | `int` (>= 0)  | 4       | For comment collapsing                             |
 | `start_depth`   | `int` (>= 0)  | 4       | For comment collapsing                             |
 | `md2html`       | `boolean`     | `false` | If `true`, adds auto generated `body_html` field   |
