@@ -254,7 +254,7 @@ interface RedditPost_2025 {
 		banned_by: null,
 		can_gild: boolean,
 		can_mod_post: boolean,
-		category: null|"diy_and_crafts"|"photography"|"drawing_and_painting"|"gaming"|"entertainment"|"animals"|"videos",
+		category: null|"diy_and_crafts"|"drawing_and_painting"|"photography"|"gaming"|"entertainment"|"animals"|"videos"|"music",
 		clicked: boolean,
 		content_categories: null|("photography"|"drawing_and_painting"|"comics"|"gaming"|"diy_and_crafts"|"entertainment"|"writing"|"music"|"videos")[],
 		contest_mode: boolean,
