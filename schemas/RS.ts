@@ -845,7 +845,7 @@ interface RedditPost {
 			user_won_amount?: null,
 			vote_updates_remained?: null,
 			voting_end_timestamp: number,
-		}|null,
+		}|null|boolean,
 		post_categories?: null,
 		post_hint?: "image"|"link"|"rich:video"|"self"|"hosted:video"|"video"|"gallery",
 		preview?: {
@@ -1276,7 +1276,7 @@ interface RedditPost {
 		user_won_amount?: null,
 		vote_updates_remained?: null,
 		voting_end_timestamp: number,
-	},
+	}|boolean,
 	post_categories?: null,
 	post_hint?: "link"|"image"|"rich:video"|"self"|"video"|"hosted:video"|"gallery",
 	preview?: {
