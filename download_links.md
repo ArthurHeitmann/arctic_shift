@@ -51,6 +51,7 @@ Please seed the torrents for as long as possible. Shortly after release download
 | 2025-07           | [Academic Torrents](https://academictorrents.com/details/b6a7ccf72368a7d39c018c423e01bc15aa551122)              |                                                                                                    |
 | 2025-08           | [Academic Torrents](https://academictorrents.com/details/c71a97c1f7f676c56963c4e15a81f20afb0109be)              |                                                                                                    |
 | 2025-09           | [Academic Torrents](https://academictorrents.com/details/a92ce24b4180e4aa9295353f4d26f050031e3058)              |                                                                                                    |
+| 2025-10           | [Academic Torrents](https://academictorrents.com/details/cb4fa22ea76ea0a2bb38885b27323c94a5d9d16c)              |                                                                                                    |
 
 ### Other
 
