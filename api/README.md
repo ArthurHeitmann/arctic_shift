@@ -70,7 +70,7 @@ Common parameters:
 |---------------------|-----------------------------|---------|--------------------------------------------------------------------------------------------------|
 | `author`            | `string`                    |         |                                                                                                  |
 | `subreddit`         | `string`                    |         |                                                                                                  |
-| `author_flair_text` | `string`                    |         | (full text search) for limitations see `title` or `body` below                                   |
+| `author_flair_text` | `string`                    |         | (keyword search) for limitations see `title` or `body` below                                     |
 | `after`             | `Date`                      |         | Time when thing was posted                                                                       |
 | `before`            | `Date`                      |         | Time when thing was posted                                                                       |
 | `limit`             | `int` (1 - 100) \| `"auto"` | 25      | With `"auto"` between 100 and 1000 results are returned, depending on the capacity of the server |
@@ -85,10 +85,10 @@ Post search parameters:
 | `crosspost_parent_id` | `ID`      |         |                                                                                                                                            |
 | `over_18`             | `boolean` |         |                                                                                                                                            |
 | `spoiler`             | `boolean` |         |                                                                                                                                            |
-| `title`               | `string`  |         | (full text search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                 |
-| `selftext`            | `string`  |         | (full text search) ...                                                                                                                     |
-| `link_flair_text`     | `string`  |         | (full text search) ...                                                                                                                     |
-| `query`               | `string`  |         | Search in both `title` and `selftext` (full text search) ...                                                                               |
+| `title`               | `string`  |         | (keyword search) Only in use with `author` or `subreddit` parameter (not supported with very active users or subreddits)                   |
+| `selftext`            | `string`  |         | (keyword search) ...                                                                                                                       |
+| `link_flair_text`     | `string`  |         | (keyword search) ...                                                                                                                       |
+| `query`               | `string`  |         | Search in both `title` and `selftext` (keyword search) ...                                                                                 |
 | `url`                 | `string`  |         | prefix match, example: https://www.youtube.com/xyz will return https://www.youtube.com/xyz?p=abc or also https://www.youtube.com/xyz?t=15s |
 | `url_exact`           | `boolean` | `false` | if `true`, `url` queries will only return exact matches                                                                                    |
 
@@ -96,7 +96,7 @@ Comment search parameters:
 
 | Parameter   | Type                        | Default | Notes                                                                                                                           |
 |-------------|-----------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------|
-| `body`      | `string` (full text search) |         | Only in use with `author`, `subreddit`, `link_id` or `parent_id` parameter (not supported with very active users or subreddits) |
+| `body`      | `string` (keyword search)   |         | Only in use with `author`, `subreddit`, `link_id` or `parent_id` parameter (not supported with very active users or subreddits) |
 | `link_id`   | `ID`                        |         | ID of post                                                                                                                      |
 | `parent_id` | `ID` \| empty               |         | Parent comment id. Empty means top level comment                                                                                |
 
@@ -383,7 +383,11 @@ Dates can be specified in the following formats:
 	- `2020-01-01`
 - Offset from current time (e.g. `1year`, `3m`, `2d`, `1hour`, `5min` or `10s`)
 
-### **Full text search**
+### **Full text search / Keyword search**
+
+**This section is now out of date! Available search features might change and are not guaranteed**
+
+**Currently: when searching posts: simply keyword search only (fast), when searching comments: postgres FTS features (slow)**
 
 For details, see [here](https://www.postgresql.org/docs/current/textsearch-controls.html), specifically the `websearch_to_tsquery` function.
 
