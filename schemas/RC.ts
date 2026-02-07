@@ -255,6 +255,8 @@ interface RedditComment {
 	parent_id: string,
 	permalink?: string,
 	permalink_url?: string,
+	profile_img?: string,
+	profile_over_18?: boolean,
 	quarantined?: boolean,
 	removal_reason?: null|"legal",
 	removed?: boolean,
