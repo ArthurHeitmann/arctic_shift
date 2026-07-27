@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="reddit_dump_ingestion_library"
+readme = "README.md"
+requires-python = ">=3.10"
+description="Reads ArticShift Reddit dumps to be read into M52"
+authors = [
+  {name = "Jack Pay", email="jackp@casmtechnology.com"}
+]
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "as_reddit.version.__version__"}
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+

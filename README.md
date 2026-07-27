@@ -15,7 +15,7 @@ For information on how the data was collected and modified, see [here](./file_co
 
 ## API
 
-Depending on your use case, you can try my (limited) [API](./api). For manual queries, you can use [this tool](https://arctic-shift.photon-reddit.com/search).
+Depending on your use case, you can try my (limited) [API](as_reddit/api). For manual queries, you can use [this tool](https://arctic-shift.photon-reddit.com/search).
 
 ## Usage
 
