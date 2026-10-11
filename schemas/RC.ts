@@ -180,6 +180,7 @@ interface RedditComment {
 	controversiality: number,
 	created?: number|null,
 	created_utc: number|string,
+	depth?: number,
 	distinguished: null|"moderator"|"admin"|"special",
 	downs?: number,
 	editable?: boolean,

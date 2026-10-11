@@ -43,6 +43,7 @@ interface RedditComment_2026 {
 	controversiality: number,
 	created: number,
 	created_utc: number,
+	depth?: number,
 	distinguished: null|"moderator"|"admin",
 	downs: number,
 	editable?: boolean,
