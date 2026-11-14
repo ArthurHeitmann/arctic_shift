@@ -50,6 +50,9 @@ Please seed the torrents for as long as possible. Shortly after release download
 | 2026-07           | [Academic Torrents](https://academictorrents.com/details/e04a4fda12826ab1d181eef6512b36aca63c70ff)              |   |
 | 2026-08           | [Academic Torrents](https://academictorrents.com/details/f4848163a5fb650e4b15eee0202858447bca120a)              |                                                                                                    |
 | 2026-09           | [Academic Torrents](https://academictorrents.com/details/98b6dbad155750c4d5f65d5923e0c2d11f46da85)              |                                                                                                    |
+| 2026-10 \*        | [Academic Torrents](https://academictorrents.com/details/cad23a4958be1af511a0f85d7cdb6b5ff50ea972)              |                                                                                                    |
+
+\* Due to changes in the reddit API and archiving methods, there might be some small differences in the json schema. If there's anything broken, please let me know
 
 2005-06 - 2025-12 magnet link: `magnet:?xt=urn:btih:3d426c47c767d40f82c7ef0f47c3acacedd2bf44&dn=reddit&xl=3804096351995&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce`
 
