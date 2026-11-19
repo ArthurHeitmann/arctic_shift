@@ -1,3 +1,4 @@
+import codecs
 import traceback
 from typing import BinaryIO, Iterator
 try:
@@ -15,6 +16,8 @@ except ImportError:
 
 def getZstFileJsonStream(f: BinaryIO, chunk_size=1024*1024*10) -> Iterator[dict]:
 	decompressor = zstandard.ZstdDecompressor(max_window_size=2**31)
+	# incremental decoder, so that characters split across two chunks are decoded correctly
+	decoder = codecs.getincrementaldecoder("utf-8")(errors="replace")
 	currentString = ""
 	def yieldLinesJson():
 		nonlocal currentString
@@ -37,10 +40,11 @@ def getZstFileJsonStream(f: BinaryIO, chunk_size=1024*1024*10) -> Iterator[dict]
 			break
 		if not chunk:
 			break
-		currentString += chunk.decode("utf-8", "replace")
+		currentString += decoder.decode(chunk)
 		
 		yield from yieldLinesJson()
 	
+	currentString += decoder.decode(b"", final=True)
 	yield from yieldLinesJson()
 	
 	if len(currentString) > 0:
